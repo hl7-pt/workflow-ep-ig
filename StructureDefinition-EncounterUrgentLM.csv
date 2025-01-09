@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EncounterUrgentLM","EncounterUrgentLM","","","",0,*,"","","","null {[]} {[]}
+","Episódio - Urgência (modelo)","Modelo Lógico - Episódio de Urgência","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EncounterUrgentLM.id","EncounterUrgentLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do episódio","Identificador do episódio","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.id",1,1,"",""
+"EncounterUrgentLM.class","EncounterUrgentLM.class","","","",1,1,"","","","code {[]} {[]}
+","Classe do episódio (e.g.: EMR)","Classe do episódio (e.g.: EMR)","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.class",1,1,"",""
+"EncounterUrgentLM.type","EncounterUrgentLM.type","","","",1,1,"","","","code {[]} {[]}
+","Tipo de episódio da urgência (e.g.: 183452005 | Emergency hospital admission) (SNOMED CT)","Tipo de episódio da urgência (e.g.: 183452005 | Emergency hospital admission) (SNOMED CT)","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.type",1,1,"",""
+"EncounterUrgentLM.appointment","EncounterUrgentLM.appointment","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM {[]} {[]}
+","Referência ao agendamento associado ao episódio","Referência ao agendamento associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.appointment",0,1,"",""
+"EncounterUrgentLM.patient","EncounterUrgentLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado ao episódio","Referência ao paciente associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.patient",1,1,"",""
+"EncounterUrgentLM.location","EncounterUrgentLM.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Local associado ao episódio de urgência","Local associado ao episódio de urgência","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.location",0,1,"",""
+"EncounterUrgentLM.doctor","EncounterUrgentLM.doctor","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Referência ao Profissional reponsável pelo episódio identificado por PPRF","Referência ao Profissional reponsável pelo episódio identificado por PPRF","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.doctor",0,1,"",""
+"EncounterUrgentLM.nurse","EncounterUrgentLM.nurse","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Enfermeiro responsável pelo episódio identificado por ATND","Enfermeiro responsável pelo episódio identificado por ATND","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.nurse",0,1,"",""
+"EncounterUrgentLM.start","EncounterUrgentLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de inicio do episodio","Data e hora reais de inicio do episodio","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.start",1,1,"",""
+"EncounterUrgentLM.end","EncounterUrgentLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de término de episódio","Data e hora reais de término de episódio","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.end",0,1,"",""
+"EncounterUrgentLM.status","EncounterUrgentLM.status","","","",1,1,"","","","code {[]} {[]}
+","arrived | in-progress | finished | cancelled","Estado episódio. Valores possiveis:
+- arrived: O paciente foi admitido na instituição
+- in-progress: O episódio está em progresso
+- finished: O paciente teve alta
+- cancelled: O episódio foi cancelado antes de iniciar","","","","","","","","","",,,,,"",,,,"EncounterUrgentLM.status",1,1,"",""

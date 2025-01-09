@@ -1,0 +1,77 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CommonUCUMCodesForDuration",
+      "title" : "Common UCUM Codes for Duration",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.61"],
+      "sources" : ["2.16.840.1.113883.4.642.3.61"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html" : "BirthPlace",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html" : "Nationality"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdmissionType",
+      "title" : "hl7VS-admissionType",
+      "description" : "Value Set of codes that specify the circumstances under which the patient was or will be admitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0007"],
+      "oids" : ["2.16.840.1.113883.21.10"],
+      "sources" : ["2.16.840.1.113883.21.10"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0201",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "Hl7VSTelecommunicationUseCode",
+      "title" : "hl7VS-telecommunicationUseCode",
+      "description" : "Concepts for specifying a specific use of a telecommunication number.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0201"],
+      "oids" : ["2.16.840.1.113883.21.118"],
+      "sources" : ["2.16.840.1.113883.21.118"],
+      "uses" : {
+      },
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    }
+  ]
+}

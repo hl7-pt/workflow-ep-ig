@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Glossário - HL7 PT FHIR Implementation Guide: Visita do Utente v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Visita do Utente</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li><a href="index.html">Inicio IG</a></li>
+    <li><a href="toc.html">Índice</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="fun_spec.html">Funcional</a>
+            </li>
+            <li>
+                <a href="tech_spec.html">Técnica</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="artifacts.html">Artefactos</a></li>
+    <li><a href="glossary.html">Glossário</a></li>
+    <li><a href="usage.html">Usar este IG</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informações<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="configurations.html">Configurações</a>
+            </li>
+            <li>
+                <a href="changes.html">Histórico de Alterações</a>
+            </li>
+            <li>
+                <a href="error_handling.html">Erros</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="examples.html">Exemplos</a></li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Glossário</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Visita do Utente, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/workflow-ep-ig/tree/master">https://github.com/hl7-pt/workflow-ep-ig/tree/master</a> and changes regularly. See the <a href="http://hl7.pt/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Glossário</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#a" id="markdown-toc-a">A</a></li>
+  <li><a href="#b" id="markdown-toc-b">B</a></li>
+  <li><a href="#c" id="markdown-toc-c">C</a></li>
+  <li><a href="#d" id="markdown-toc-d">D</a></li>
+  <li><a href="#e" id="markdown-toc-e">E</a></li>
+  <li><a href="#f" id="markdown-toc-f">F</a></li>
+  <li><a href="#g" id="markdown-toc-g">G</a></li>
+  <li><a href="#h" id="markdown-toc-h">H</a></li>
+  <li><a href="#i" id="markdown-toc-i">I</a></li>
+  <li><a href="#j" id="markdown-toc-j">J</a></li>
+  <li><a href="#k" id="markdown-toc-k">K</a></li>
+  <li><a href="#l" id="markdown-toc-l">L</a></li>
+  <li><a href="#m" id="markdown-toc-m">M</a></li>
+  <li><a href="#n" id="markdown-toc-n">N</a></li>
+  <li><a href="#o" id="markdown-toc-o">O</a></li>
+  <li><a href="#p" id="markdown-toc-p">P</a></li>
+  <li><a href="#q" id="markdown-toc-q">Q</a></li>
+  <li><a href="#r" id="markdown-toc-r">R</a></li>
+  <li><a href="#s" id="markdown-toc-s">S</a></li>
+  <li><a href="#t" id="markdown-toc-t">T</a></li>
+  <li><a href="#u" id="markdown-toc-u">U</a></li>
+  <li><a href="#v" id="markdown-toc-v">V</a></li>
+  <li><a href="#x" id="markdown-toc-x">X</a></li>
+  <li><a href="#w" id="markdown-toc-w">W</a></li>
+  <li><a href="#z" id="markdown-toc-z">Z</a></li>
+</ul>
+
+</div>
+<h3 id="a">A</h3>
+<ul>
+  <li>
+    <p><strong>Acompanhante:</strong> Pessoa de referência para o utente em situações de acompanhamento médico, podendo ser um familiar ou outra pessoa de confiança.</p>
+  </li>
+  <li>
+    <p><strong>Admissão:</strong> Processo formal de entrada do utente num hospital para receber cuidados médicos. Inclui o registo de dados clínicos conhecidos e administrativos do utente.</p>
+  </li>
+  <li>
+    <p><strong>Agendamento:</strong> Marcação/ registo formal de uma consulta ou procedimento, determinando a data e hora para a prestação de cuidados.</p>
+  </li>
+  <li>
+    <p><strong>Alta médica:</strong> Finalização do tratamento hospitalar, em que o utente é considerado clinicamente apto a deixar o hospital. Inclui orientações para a continuidade dos cuidados fora da unidade hospitalar.</p>
+  </li>
+  <li>
+    <p><strong>Apelido:</strong> Sobrenome do utente, usado para identificação formal nos sistemas de saúde e em documentos administrativos.</p>
+  </li>
+  <li>
+    <p><strong>Assigner:</strong> Entidade ou organização responsável pela atribuição do identificador ao episódio, como um hospital ou clínica.</p>
+  </li>
+</ul>
+
+<h3 id="b">B</h3>
+<h3 id="c">C</h3>
+<ul>
+  <li>
+    <p><strong>Cidade:</strong> Localidade onde o utente reside, facilitando a organização de cuidados baseados na proximidade e na rede de serviços locais.</p>
+  </li>
+  <li>
+    <p><strong>Classificação do episódio:</strong> Categoria que define o tipo geral do episódio com base na natureza e urgência dos cuidados (ex. consulta programada, urgência, internamento).</p>
+  </li>
+  <li>
+    <p><strong>Codificação da classificação do episódio:</strong> Código que define a classificação do episódio, normalmente referenciando um sistema de codificação padrão.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do diagnóstico:</strong> Código que define um diagnóstico médico, com base em sistemas de classificação reconhecidos, como a CID-10.</p>
+  </li>
+  <li>
+    <p><strong>Codificação da disposição de alta médica:</strong> Código que define a disposição de alta médica, como alta por recuperação ou alta por transferência.</p>
+  </li>
+  <li>
+    <p><strong>Codificação da origem de admissão:</strong> Código que identifica a origem pela qual um utente foi admitido, como emergência, consulta externa ou hospitalização programada.</p>
+  </li>
+  <li>
+    <p><strong>Codificação da preferência nutricional:</strong> Código que identifica as diferentes preferências alimentares e restrições de um utente.</p>
+  </li>
+  <li>
+    <p><strong>Codificação da prioridade:</strong> Código que define o nível de urgência ou importância de um episódio, como prioridade alta ou normal.</p>
+  </li>
+  <li>
+    <p><strong>Codificação da readmissão:</strong> Códigos que define as classificações das readmissões de utentes ao hospital.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do identificador da pré-admissão:</strong> Código que define o identificador de pré-admissão de um utente a um serviço de saúde.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do requerimento especial:</strong> Código que define requerimentos especiais feitos por um utente ou profissional de saúde.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do tipo de episódio:</strong> Código que define a natureza do episódio, como primeira consulta, consulta de seguimento ou internamento.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do tipo de identificador do episódio:</strong> Representação codificada do tipo de identificador, como um número de processo clínico ou um identificador único do hospital.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do tipo de serviço:</strong> Código que identifica o tipo de serviço prestado, como consulta de medicina geral, cirurgia, ou outros.</p>
+  </li>
+  <li>
+    <p><strong>Codificação do tratamento especial:</strong> Código que define diferentes tipos de tratamentos que exijam cortesias especiais.</p>
+  </li>
+  <li>
+    <p><strong>Código postal:</strong> Código de com dígitos, associado ao endereço do utente.</p>
+  </li>
+  <li>
+    <p><strong>Consulta:</strong> Encontro presencial ou remoto entre o utente e um profissional.</p>
+  </li>
+  <li>
+    <p><strong>Contato telefónico:</strong> Número de telefone de contato do utente, usado para comunicações diretas com o utente ou seus responsáveis em contexto de saúde.</p>
+  </li>
+</ul>
+
+<h3 id="d">D</h3>
+<ul>
+  <li>
+    <p><strong>Data de fim da admissão:</strong> Momento em que o utente finaliza o seu período de internamento no hospital, formalizando a alta médica.</p>
+  </li>
+  <li>
+    <p><strong>Data e hora da última atualização do episódio:</strong> Indica o momento exato da última alteração registada no respetivo episódio, geralmente em formato ISO.</p>
+  </li>
+  <li>
+    <p><strong>Data de fim da pré-admissão:</strong> Momento de conclusão do processo de preparação para a admissão, como a realização de exames preliminares.</p>
+  </li>
+  <li>
+    <p><strong>Data de fim de validade do identificador:</strong> Data em que o identificador perde a sua validade, normalmente ao fim do período do episódio.</p>
+  </li>
+  <li>
+    <p><strong>Data de início da admissão:</strong> Momento em que o utente começa formalmente o seu processo de internamento.</p>
+  </li>
+  <li>
+    <p><strong>Data de início de validade do identificador:</strong> Data em que o identificador foi atribuído e entrou em vigor para o episódio.</p>
+  </li>
+  <li>
+    <p><strong>Data de início da pré-admissão:</strong> Momento de início do processo de preparação para a admissão hospitalar, por vezes antes da chegada do utente.</p>
+  </li>
+  <li>
+    <p><strong>Data e hora da última atualização do recurso:</strong> Momento exato em que o registo do episódio foi atualizado pela última vez, importante para garantir a rastreabilidade da informação.</p>
+  </li>
+  <li>
+    <p><strong>Data de nascimento:</strong> Dia, mês e ano de nascimento do utente, permitindo determinar a sua idade.</p>
+  </li>
+  <li>
+    <p><strong>Destino:</strong> Local para onde o utente será transferido após alta, como o domicílio ou uma unidade de cuidados continuados.</p>
+  </li>
+  <li>
+    <p><strong>Descrição da disposição de alta médica:</strong> Texto que explica ou detalha as condições e as recomendações associadas à alta de um utente, como cuidados a ter em casa ou necessidade de acompanhamento.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do motivo da readmissão:</strong> Texto que explica ou detalha as circunstâncias que levaram um utente a ser readmitido no hospital, como complicações de um tratamento anterior.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do requerimento especial:</strong> Texto que explica ou detalha as necessidades adicionais de um utente que não são cobertas pelos cuidados padrão, como necessidade de um quarto privado ou tratamento especializado.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do tratamento especial:</strong> Texto que explica ou detalha informações sobre os cuidados e procedimentos adicionais necessários para utentes que requerem cortesia especial.</p>
+  </li>
+  <li>
+    <p><strong>Descrição da preferência nutricional:</strong> Texto que explica ou detalha as necessidades alimentares específicas de um utente, que podem incluir restrições dietéticas ou escolhas alimentares devido a condições médicas. Este registo é importante para assegurar que a dieta do utente seja adequada durante a hospitalização.</p>
+  </li>
+  <li>
+    <p><strong>Descrição da prioridade:</strong> Texto que explica ou detalha o nível de prioridade atribuído ao episódio.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do identificador do sistema:</strong> Texto explicativo que descreve o propósito do identificador usado no episódio.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do tipo de episódio:</strong> Texto que detalha a natureza do episódio, como “internamento para cirurgia” ou “consulta de seguimento”.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do tipo de profissional hospitalar:</strong> Texto que descreve os diferentes tipos de profissionais de saúde que podem estar envolvidos no atendimento de um utente, como médicos, enfermeiros, administrativos, etc.</p>
+  </li>
+  <li>
+    <p><strong>Descrição do tipo de serviço:</strong> Texto que descreve o serviço prestado, como “consulta de oncologia” ou “atendimento de urgência”.</p>
+  </li>
+  <li>
+    <p><strong>Diagnóstico:</strong> Condição clínica identificada como a razão principal para o tratamento ou acompanhamento do utente durante o episódio.</p>
+  </li>
+  <li>
+    <p><strong>Disposição de alta médica:</strong> Categoria ou tipo de local após a alta.</p>
+  </li>
+  <li>
+    <p><strong>Distrito:</strong> Subdivisão administrativa em Portugal que indica a área geográfica onde o utente reside, ajudando na gestão e organização dos cuidados regionais.</p>
+  </li>
+  <li>
+    <p><strong>Duração da consulta:</strong> Tempo total da interação entre o utente e o profissional de saúde.</p>
+  </li>
+  <li>
+    <p><strong>Duração do ato:</strong> Tempo de execução de um procedimento ou tratamento específico realizado durante o episódio.</p>
+  </li>
+</ul>
+
+<h3 id="e">E</h3>
+<ul>
+  <li>
+    <p><strong>E-mail:</strong> Endereço de e-mail do utente, usado para comunicações oficiais, envio de lembretes de consultas ou avisos importantes, respeitando as políticas de privacidade.</p>
+  </li>
+  <li>
+    <p><strong>Episódio:</strong> Processo integral que abrange o momento no qual o utente recebe cuidados ou tratamento, desde a entrada até à alta.</p>
+  </li>
+  <li>
+    <p><strong>Estado:</strong> Situação atual do episódio, podendo ser ativo, suspenso ou concluído, refletindo a realidade do tratamento no respetivo momento.</p>
+  </li>
+  <li>
+    <p><strong>Estado civil:</strong> Situação conjugal do utente, que pode influenciar o seu contexto de apoio familiar e social, relevante para contextos específicos de cuidados.</p>
+  </li>
+  <li>
+    <p><strong>Estado do episódio:</strong> Condição administrativa que reflete a fase em que o episódio se encontra (ex.: em progresso, finalizado).</p>
+  </li>
+  <li>
+    <p><strong>Estado da localização:</strong>  Situação atual de um espaço dentro de uma instituição de saúde, por exemplo ocupado ou disponível.</p>
+  </li>
+  <li>
+    <p><strong>Especialidade:</strong> Área de atuação clínica responsável pelo cuidado do utente durante o episódio (ex.: cardiologia, pediatria, etc.).</p>
+  </li>
+  <li>
+    <p><strong>Endereço:</strong>  Local de residência do utente, que inclui informações completas como rua, cidade e código postal, importante para contatos e referências em contexto de saúde.</p>
+  </li>
+</ul>
+
+<h3 id="f">F</h3>
+<ul>
+  <li>
+    <p><strong>Fundamento do episódio:</strong>  Referência do motivo que este episódio satisfaz (por exemplo, encaminhamento pedido ou solicitação de procedimento).</p>
+  </li>
+  <li>
+    <p><strong>Finalidade no episódio:</strong>  Influência que este diagnóstico tem dentro do episódio (ex.: admissão, faturação, alta…)</p>
+  </li>
+</ul>
+
+<h3 id="g">G</h3>
+<h3 id="h">H</h3>
+<ul>
+  <li>
+    <p><strong>Histórico:</strong>  Registo cronológico das alterações e eventos ocorridos durante o episódio, essencial para manter um registo coerente e completo.</p>
+  </li>
+  <li>
+    <p><strong>Histórico da classificação do episódio:</strong>  Registo cronológico das alterações realizadas à categoria do episódio ao longo do tempo.</p>
+  </li>
+  <li>
+    <p><strong>Histórico do estado do episódio:</strong>  Registo cronológico das alterações realizadas à categoria do estado  ao longo do tempo.</p>
+  </li>
+  <li>
+    <p><strong>Hospitalização:</strong>  Período em que o utente permanece internado para receber cuidados contínuos (no hospital, no domicílio, etc.).</p>
+  </li>
+</ul>
+
+<h3 id="i">I</h3>
+<ul>
+  <li>
+    <p><strong>Identificador do episódio:</strong>  Código único que identificar de forma única o registo do episódio no sistema informático que gerou ou administra o dado do episódio.</p>
+  </li>
+  <li>
+    <p><strong>Identificador de pré-admissão:</strong>  O identificador da pré-admissão é um número único atribuído a um utente no momento da pré-admissão a um serviço de saúde, permitindo a sua identificação em sistemas de informação.</p>
+  </li>
+  <li>
+    <p><strong>Identificador do profissional de saúde:</strong>  Código único que identifica o profissional de saúde envolvido no atendimento ao utente.</p>
+  </li>
+  <li>
+    <p><strong>Identificador do utente:</strong>  Código único atribuído ao utente no sistema informático de saúde em vigência.</p>
+  </li>
+  <li>
+    <p><strong>Idioma:</strong>  Língua preferencial do utente para comunicação, facilitando interações mais eficazes e compreensíveis com os profissionais de saúde.</p>
+  </li>
+  <li>
+    <p><strong>Irmão gémeo:</strong>  Indicação se o utente faz parte de um nascimento múltiplo, o que pode ser relevante em estudos genéticos e no histórico clínico.</p>
+  </li>
+</ul>
+
+<h3 id="j">J</h3>
+<h3 id="k">K</h3>
+<h3 id="l">L</h3>
+<ul>
+  <li><strong>Localização:</strong>  Serviço de especialidade onde ocorre o episódio.</li>
+</ul>
+
+<h3 id="m">M</h3>
+<ul>
+  <li>
+    <p><strong>Motivo do episódio:</strong> Justificação clínica ou razão para a realização do episódio, normalmente relacionado com a condição de saúde do utente.</p>
+  </li>
+  <li>
+    <p><strong>Médico de família:</strong> Profissional de saúde responsável pelo acompanhamento continuado do utente, essencial para a coordenação dos cuidados e histórico clínico.</p>
+  </li>
+</ul>
+
+<h3 id="n">N</h3>
+<h3 id="o">O</h3>
+<ul>
+  <li>
+    <p><strong>Organização de saúde:</strong> Entidade que presta serviços de saúde à população, incluindo hospitais, clínicas, centros de saúde e instituições de cuidados prolongados. Estas organizações podem ser públicas, privadas ou sem fins lucrativos e têm a responsabilidade de fornecer cuidados de saúde de qualidade, gerir recursos humanos e financeiros, e garantir o acesso e a continuidade dos cuidados aos utentes.</p>
+  </li>
+  <li>
+    <p><strong>Origem de admissão:</strong> Contexto em que o utente foi admitido (ex.:  encaminhamento médico, transferência, etc.).</p>
+  </li>
+  <li>
+    <p><strong>Origem da hospitalização:</strong> Local físico de onde o utente proveio até ao momento da admissão no hospital, como o domicílio ou outro hospital.</p>
+  </li>
+</ul>
+
+<h3 id="p">P</h3>
+<ul>
+  <li>
+    <p><strong>Pedido:</strong> Solicitação de cuidados ou serviços adicionais feitos durante o episódio, como exames ou tratamentos específicos.</p>
+  </li>
+  <li>
+    <p><strong>Pedido especial:</strong> Requisição de cuidados ou condições particulares para o utente, como dieta específica ou equipamentos médicos.</p>
+  </li>
+  <li>
+    <p><strong>Período da classificação do episódio:</strong> Intervalo de tempo durante o qual uma determinada classificação esteve atribuída ao episódio.</p>
+  </li>
+  <li>
+    <p><strong>Período do estado do episódio:</strong> Intervalo de tempo durante o qual o episódio permaneceu num estado específico, como ativo ou suspenso.</p>
+  </li>
+  <li>
+    <p><strong>Pré-admissão:</strong> Processo preparatório antes da admissão formal do utente, que pode incluir avaliação clínica e planeamento de cuidados.</p>
+  </li>
+  <li>
+    <p><strong>Preferências nutricionais:</strong> Escolhas alimentares e/ ou restrições dietéticas que um utente pode apresenta.</p>
+  </li>
+  <li>
+    <p><strong>Prestador de serviço:</strong> Referências aos dados da organização de saúde responsável por este episódio.</p>
+  </li>
+  <li>
+    <p><strong>Prioridade:</strong> Grau de urgência atribuído no episódio ou procedimento, determinando a ordem de atendimento do utente.</p>
+  </li>
+  <li>
+    <p><strong>Profissional de saúde:</strong> Pessoa habilitada para prestar cuidados médicos, de enfermagem ou outros serviços de saúde ao utente.</p>
+  </li>
+  <li>
+    <p><strong>Profissional hospitalar:</strong> Pessoa que presta qualquer tipo de serviço hospitalar ao utente, como por exemplo administrativos.</p>
+  </li>
+  <li>
+    <p><strong>Propósito do identificador do episódio:</strong> Explica o motivo pelo qual o identificador foi atribuído, como rastrear o episódio ao longo do tempo.</p>
+  </li>
+  <li>
+    <p><strong>Propósito do identificador da pré-admissão:</strong> Explica o motivo pelo qual o identificador foi atribuído, como rastrear a pré-admissão ao longo do tempo.</p>
+  </li>
+</ul>
+
+<h3 id="q">Q</h3>
+<h3 id="r">R</h3>
+<ul>
+  <li>
+    <p><strong>Readmissão:</strong> Processo em que o utente retorna ao hospital após ter recebido alta anteriormente, necessitando de nova avaliação ou tratamento.</p>
+  </li>
+  <li>
+    <p><strong>Recurso físico:</strong> Infraestruturas e equipamentos específicos necessários para o atendimento do utente, como cama, sala de operações ou aparelhos de suporte.</p>
+  </li>
+  <li>
+    <p><strong>Referência ao motivo do episódio:</strong> Código de ligação entre um episódio clínico e o motivo pelo qual um utente foi atendido.</p>
+  </li>
+  <li>
+    <p><strong>Responsável da admissão:</strong> Profissional designado para supervisionar o processo de admissão e garantir que o utente receba os cuidados adequados.</p>
+  </li>
+  <li>
+    <p><strong>Responsável da pré-admissão:</strong> Profissional que coordena a fase de pré-admissão do utente, preparando todos os aspetos administrativos e clínicos.</p>
+  </li>
+</ul>
+
+<h3 id="s">S</h3>
+<ul>
+  <li>
+    <p><strong>Serviço:</strong> Conjunto de cuidados prestados ao utente, como consultas, tratamentos ou intervenções cirúrgicas, durante o episódio, de acordo com a sua condição clínica.</p>
+  </li>
+  <li>
+    <p><strong>Serviço de especialidade:</strong> Unidade especializada no respetivo hospital que presta serviços específicos, como cirurgia, oncologia ou ortopedia.</p>
+  </li>
+  <li>
+    <p><strong>Sistema:</strong> Responsável pela atribuição e gestão dos identificadores, como o Sistema Nacional de Saúde (SNS) ou outro sistema interno hospitalar.</p>
+  </li>
+</ul>
+
+<h3 id="t">T</h3>
+<ul>
+  <li>
+    <p><strong>Tipo de admissão:</strong> Categoria do processo de admissão, como emergente ou programada, refletindo a urgência do caso.</p>
+  </li>
+  <li>
+    <p><strong>Tipo de episódio:</strong> Classificação geral do episódio, definindo a sua natureza (ex.: ambulatório, internamento, consulta de rotina, cirurgia de emergência, etc…).</p>
+  </li>
+  <li>
+    <p><strong>Tipo de identificador do sistema:</strong> Categorização do identificador usado pelo sistema de saúde para distinguir o episódio.</p>
+  </li>
+  <li>
+    <p><strong>Tipo de serviço:</strong> Natureza dos cuidados prestados durante o episódio, como consulta, intervenção cirúrgica ou tratamento paliativo.</p>
+  </li>
+  <li>
+    <p><strong>Tipo de recurso físico:</strong> Categoria que descreve as infraestruturas e equipamentos específicos necessários para o atendimento do utente, como cama, sala de operações, aparelhos de suporte, etc.</p>
+  </li>
+  <li>
+    <p><strong>Tratamento:</strong> Conjunto de intervenções terapêuticas realizadas no utente durante o episódio, com o objetivo de melhorar ou estabilizar a sua condição de saúde.</p>
+  </li>
+  <li>
+    <p><strong>Tratamento especial:</strong> Cuidados adicionais ou específicos solicitados particularmente para o utente, como quartos privados ou assistência personalizada.</p>
+  </li>
+</ul>
+
+<h3 id="u">U</h3>
+<ul>
+  <li>
+    <p><strong>Unidade da duração do agendamento:</strong> Medida de tempo utilizada para registar a duração de um episódio, como minutos ou horas.</p>
+  </li>
+  <li>
+    <p><strong>URI da classificação do episódio:</strong> Endereço de referência único que identifica a classificação atribuída ao episódio.</p>
+  </li>
+  <li>
+    <p><strong>URI do identificador da pré-admissão:</strong> Endereço de referência único que identifica a pré-admissão.</p>
+  </li>
+  <li>
+    <p><strong>URI da prioridade:</strong> Endereço de referência único que identifica a classificação de prioridade do episódio.</p>
+  </li>
+  <li>
+    <p><strong>URI do tipo de episódio:</strong> Endereço de referência único que identifica o tipo do episódio.</p>
+  </li>
+  <li>
+    <p><strong>URI do tipo de serviço:</strong> Endereço de referência único que identifica o tipo de serviço prestado.</p>
+  </li>
+  <li>
+    <p><strong>URI do tipo de identificador do episódio:</strong> Endereço de referência único para o tipo de identificador utilizado no episódio.</p>
+  </li>
+  <li>
+    <p><strong>Utente:</strong> Referências aos dados demográficos e clínicos do utilizador do sistema de saúde, registado no episódio para o qual foi prestado o serviço.</p>
+  </li>
+  <li>
+    <p><strong>Utente ativo:</strong> Indica se o utente está ativo no sistema de saúde, ou seja, se o registo está em uso e atualizado, importante para a gestão de dados e histórico clínico.</p>
+  </li>
+</ul>
+
+<h3 id="v">V</h3>
+<ul>
+  <li><strong>Valor do identificador da pré-admissão:</strong> Número específico atribuído a um utente no momento da sua pré-admissão, que serve como chave para a sua identificação em registos clínicos.</li>
+</ul>
+
+<h3 id="x">X</h3>
+<h3 id="w">W</h3>
+<h3 id="z">Z</h3>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package pt-patient-visit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 9, 2025 17:45+0000">2025-01-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

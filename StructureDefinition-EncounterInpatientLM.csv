@@ -1,0 +1,98 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EncounterInpatientLM","EncounterInpatientLM","","","",0,*,"","","","null {[]} {[]}
+","Episódio - Internamento (modelo)","Modelo Lógico - Episódio de Internamento","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EncounterInpatientLM.id","EncounterInpatientLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do episódio","Identificador do episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.id",1,1,"",""
+"EncounterInpatientLM.identifiers","EncounterInpatientLM.identifiers","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Lista de identificadores únicos do local associado ao episódio, como identificações internas ou códigos específicos.","Lista de identificadores únicos do local associado ao episódio, como identificações internas ou códigos específicos.","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.identifiers",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EncounterInpatientLM.identifiers.id","EncounterInpatientLM.identifiers.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"EncounterInpatientLM.identifiers.extension","EncounterInpatientLM.identifiers.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.identifiers.modifierExtension","EncounterInpatientLM.identifiers.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.identifiers.value","EncounterInpatientLM.identifiers.value","","","",1,1,"","","","string {[]} {[]}
+","Valor do identificador","Valor do identificador","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.identifiers.value",1,1,"",""
+"EncounterInpatientLM.identifiers.type","EncounterInpatientLM.identifiers.type","","","",1,1,"","","","code {[]} {[]}
+","Tipo de identificador (e.g.: MD, EI)","Tipo de identificador (e.g.: MD, EI)","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.identifiers.type",1,1,"",""
+"EncounterInpatientLM.status","EncounterInpatientLM.status","","","",1,1,"","","","code {[]} {[]}
+","planned | arrived | in-progress | finished | cancelled","Estado episódio. Valores possiveis:
+- planned: Episódio planeado ou agendado
+- arrived: O paciente foi admitido na instituição
+- in-progress: O episódio está em progresso
+- finished: O paciente teve alta
+- cancelled: O episódio foi cancelado antes de iniciar","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.status",1,1,"",""
+"EncounterInpatientLM.statusHistory","EncounterInpatientLM.statusHistory","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Histórico de alterações do estado do local durante o episódio","Histórico de alterações do estado do local durante o episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.statusHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EncounterInpatientLM.statusHistory.id","EncounterInpatientLM.statusHistory.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"EncounterInpatientLM.statusHistory.extension","EncounterInpatientLM.statusHistory.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.statusHistory.modifierExtension","EncounterInpatientLM.statusHistory.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.statusHistory.status","EncounterInpatientLM.statusHistory.status","","","",1,1,"","","","code {[]} {[]}
+","Estado do local num período específico","Estado do local num período específico","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.statusHistory.status",1,1,"",""
+"EncounterInpatientLM.statusHistory.start","EncounterInpatientLM.statusHistory.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora de início de alteração do estado","Data e hora de início de alteração do estado","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.statusHistory.start",1,1,"",""
+"EncounterInpatientLM.statusHistory.end","EncounterInpatientLM.statusHistory.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora de término do período de alteração do estado","Data e hora de término do período de alteração do estado","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.statusHistory.end",0,1,"",""
+"EncounterInpatientLM.class","EncounterInpatientLM.class","","","",1,1,"","","","code {[]} {[]}
+","Classe do episódio (e.g.: IMP)","Classe do episódio (e.g.: IMP)","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.class",1,1,"",""
+"EncounterInpatientLM.services","EncounterInpatientLM.services","","","",0,*,"","","","code {[]} {[]}
+","Serviços realizados durante o episódio, como consultas, cirurgias, etc.","Serviços realizados durante o episódio, como consultas, cirurgias, etc.","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.services",0,*,"",""
+"EncounterInpatientLM.specialty","EncounterInpatientLM.specialty","","","",0,1,"","","","code {[]} {[]}
+","Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc","Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.specialty",0,1,"",""
+"EncounterInpatientLM.priority","EncounterInpatientLM.priority","","","",0,1,"","","","code {[]} {[]}
+","stat | urgent | routine","Nivel de prioridade do episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.priority",0,1,"",""
+"EncounterInpatientLM.patient","EncounterInpatientLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado ao episódio","Referência ao paciente associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.patient",1,1,"",""
+"EncounterInpatientLM.doctor","EncounterInpatientLM.doctor","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Médico responsável pelo episódio, onde o tipo = PPRF","Médico responsável pelo episódio, onde o tipo = PPRF","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.doctor",0,1,"",""
+"EncounterInpatientLM.nurse","EncounterInpatientLM.nurse","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Enfermeiro responsável pelo episódio identificado por ATND","Enfermeiro responsável pelo episódio identificado por ATND","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.nurse",0,1,"",""
+"EncounterInpatientLM.start","EncounterInpatientLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de inicio do episodio","Data e hora reais de inicio do episodio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.start",1,1,"",""
+"EncounterInpatientLM.end","EncounterInpatientLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de término de episódio","Data e hora reais de término de episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.end",0,1,"",""
+"EncounterInpatientLM.duration","EncounterInpatientLM.duration","","","",0,1,"","","","integer {[]} {[]}
+","Duração real do episódio em minutos","Duração real do episódio em minutos","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.duration",0,1,"",""
+"EncounterInpatientLM.appointment","EncounterInpatientLM.appointment","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM {[]} {[]}
+","Referência ao agendamento associado ao episódio","Referência ao agendamento associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.appointment",0,1,"",""
+"EncounterInpatientLM.locations","EncounterInpatientLM.locations","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Lista de locais associados ao episódio","Lista de locais associados ao episódio","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.locations",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"EncounterInpatientLM.locations.id","EncounterInpatientLM.locations.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"EncounterInpatientLM.locations.extension","EncounterInpatientLM.locations.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.locations.modifierExtension","EncounterInpatientLM.locations.modifierExtension","","extensions
+user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
+","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
+
+Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"EncounterInpatientLM.locations.location","EncounterInpatientLM.locations.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Local associado ao episódio de urgência","Local associado ao episódio de urgência","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.locations.location",0,1,"",""
+"EncounterInpatientLM.locations.status","EncounterInpatientLM.locations.status","","","",0,1,"","","","code {[]} {[]}
+","Estado do local durante o episódio (e.g.: available, occupied)","Estado do local durante o episódio (e.g.: available, occupied)","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.locations.status",0,1,"",""
+"EncounterInpatientLM.locations.type","EncounterInpatientLM.locations.type","","","",0,1,"","","","code {[]} {[]}
+","Tipo físico do local (e.g.: bd (Cama), wa (Enfermaria), ro (quarto))","Tipo físico do local (e.g.: bd (Cama), wa (Enfermaria), ro (quarto))","","","","","","","","","",,,,,"",,,,"EncounterInpatientLM.locations.type",0,1,"",""

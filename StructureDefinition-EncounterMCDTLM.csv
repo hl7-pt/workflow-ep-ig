@@ -1,0 +1,36 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EncounterMCDTLM","EncounterMCDTLM","","","",0,*,"","","","null {[]} {[]}
+","Episódio - MCDT (modelo)","Modelo Lógico - Episódio de MCDT","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EncounterMCDTLM.id","EncounterMCDTLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do episódio","Identificador do episódio","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.id",1,1,"",""
+"EncounterMCDTLM.class","EncounterMCDTLM.class","","","",1,1,"","","","code {[]} {[]}
+","Classe do episódio (e.g.: AMB)","Classe do episódio (e.g.: AMB)","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.class",1,1,"",""
+"EncounterMCDTLM.type","EncounterMCDTLM.type","","","",1,1,"","","","code {[]} {[]}
+","Tipo de episódio da urgência (e.g.: 371931008 | Combined diagnostic and therapeutic procedure) (SNOMED CT)","Tipo de episódio da urgência (e.g.: 371931008 | Combined diagnostic and therapeutic procedure) (SNOMED CT)","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.type",1,1,"",""
+"EncounterMCDTLM.priority","EncounterMCDTLM.priority","","","",0,1,"","","","code {[]} {[]}
+","stat | urgent | routine","Nivel de prioridade do episódio","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.priority",0,1,"",""
+"EncounterMCDTLM.category","EncounterMCDTLM.category","","","",0,1,"","","","code {[]} {[]}
+","Categoria do serviço (e.g.: 11429006 | execution episode) (SNOMED CT)","Categoria do serviço (e.g.: 11429006 | execution episode) (SNOMED CT)","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.category",0,1,"",""
+"EncounterMCDTLM.specialty","EncounterMCDTLM.specialty","","","",0,1,"","","","code {[]} {[]}
+","Especialidade médica associada ao episódio como radiologia ou patologia clínica","Especialidade médica associada ao episódio como radiologia ou patologia clínica","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.specialty",0,1,"",""
+"EncounterMCDTLM.appointment","EncounterMCDTLM.appointment","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM {[]} {[]}
+","Referência ao agendamento associado ao episódio","Referência ao agendamento associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.appointment",0,1,"",""
+"EncounterMCDTLM.patient","EncounterMCDTLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado ao episódio, agendamento ou procedimento","Referência ao paciente associado ao episódio, agendamento ou procedimento","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.patient",1,1,"",""
+"EncounterMCDTLM.location","EncounterMCDTLM.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Local associado ao episódio de urgência","Local associado ao episódio de urgência","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.location",0,1,"",""
+"EncounterMCDTLM.doctor","EncounterMCDTLM.doctor","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Referência ao Profissional reponsável pelo episódio identificado por PPRF","Referência ao Profissional reponsável pelo episódio identificado por PPRF","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.doctor",0,1,"",""
+"EncounterMCDTLM.start","EncounterMCDTLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de inicio do episodio","Data e hora reais de inicio do episodio","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.start",1,1,"",""
+"EncounterMCDTLM.end","EncounterMCDTLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de término de episódio","Data e hora reais de término de episódio","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.end",0,1,"",""
+"EncounterMCDTLM.duration","EncounterMCDTLM.duration","","","",0,1,"","","","integer {[]} {[]}
+","Duração real do episódio em minutos","Duração real do episódio em minutos","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.duration",0,1,"",""
+"EncounterMCDTLM.status","EncounterMCDTLM.status","","","",1,1,"","","","code {[]} {[]}
+","planned | arrived | in-progress | finished | cancelled","Estado episódio. Valores possiveis:
+- planned: Episódio planeado ou agendado
+- arrived: O paciente foi admitido na instituição
+- in-progress: O episódio está em progresso
+- finished: O paciente teve alta
+- cancelled: O episódio foi cancelado antes de iniciar","","","","","","","","","",,,,,"",,,,"EncounterMCDTLM.status",1,1,"",""

@@ -1,0 +1,64 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdmissionType",
+      "title" : "admissionType",
+      "description" : "Code system of concepts specifying the circumstances under which the patient was or will be admitted.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.9"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v2-0007.html" : "hl7VS-admissionType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0201",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "TelecommunicationUse",
+      "title" : "telecommunicationUse",
+      "description" : "HL7-defined code system of concepts for specifying a specific use of a telecommunication number.  Best practice is to use this concept whenever a telecommunication number or access string is specified.  Used in HL7 Version 2.x messaging in the XTN segment.",
+      "oids" : ["2.16.840.1.113883.18.106"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v2-0201.html" : "hl7VS-telecommunicationUseCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.1.0/ValueSet-v2-0203.html" : "hl7VS-identifierType"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-duration-units.html" : "Common UCUM Codes for Duration"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-iso3166-1-2.html" : "Iso 3166 Part 1: 2 Letter Codes"
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Especificação Funcional - HL7 PT FHIR Implementation Guide: Visita do Utente v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Visita do Utente</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li><a href="index.html">Inicio IG</a></li>
+    <li><a href="toc.html">Índice</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="fun_spec.html">Funcional</a>
+            </li>
+            <li>
+                <a href="tech_spec.html">Técnica</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="artifacts.html">Artefactos</a></li>
+    <li><a href="glossary.html">Glossário</a></li>
+    <li><a href="usage.html">Usar este IG</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informações<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="configurations.html">Configurações</a>
+            </li>
+            <li>
+                <a href="changes.html">Histórico de Alterações</a>
+            </li>
+            <li>
+                <a href="error_handling.html">Erros</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="examples.html">Exemplos</a></li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Especificação Funcional</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Visita do Utente, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/workflow-ep-ig/tree/master">https://github.com/hl7-pt/workflow-ep-ig/tree/master</a> and changes regularly. See the <a href="http://hl7.pt/fhir/example/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Especificação Funcional</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introdução" id="markdown-toc-introdução">Introdução</a></li>
+  <li><a href="#processos-existentes-no-episódio-do-utente" id="markdown-toc-processos-existentes-no-episódio-do-utente">Processos existentes no Episódio do Utente:</a></li>
+  <li><a href="#casos-de-uso---gestão-do-episódio-do-utente" id="markdown-toc-casos-de-uso---gestão-do-episódio-do-utente">Casos de Uso - Gestão do Episódio do Utente</a></li>
+</ul>
+
+</div>
+<h3 id="introdução">Introdução</h3>
+<h4 id="o-que-é-um-utente">O que é um Utente?</h4>
+<p>Um utente é uma pessoa que recebe ou necessita de cuidados e está sob os cuidados de um sistema ou profissional de saúde, seja por prevenção de doenças e manutenção da saúde até o diagnóstico, tratamento e acompanhamento de condições agudas ou crónicas. Este termo abrange desde indivíduos que procuram atendimento de forma ativa até aqueles incluídos em programas preventivos ou de vigilância de saúde.</p>
+
+<p>Os utentes são o foco principal dos sistemas de saúde e podem apresentar-se em diferentes contextos, como consultas de rotina, urgências, internamentos, entre outros. A relação entre utente e profissional de saúde é orientada pela confiança, ética e a personalização dos cuidados, considerando as necessidades individuais.
+No contexto digital e de interoperabilidade em saúde, o utente é representado por dados demográficos e clínicos que são organizados e acedidos através de sistemas para melhorar a qualidade e eficiência dos cuidados prestados.</p>
+
+<p>No FHIR, o recurso <strong><em>Patient</em></strong> é a representação digital do conceito de utente dentro de sistemas de informação em saúde, traduzindo para os sistemas as características essenciais de um utente, permitindo que essas informações sejam interoperáveis entre diferentes plataformas e organizações de saúde. Este recurso inclui detalhes como:</p>
+<ul>
+  <li>Nome, data de nascimento, género, e informações de contato.</li>
+  <li>Identificadores únicos, como números de registo hospitalar ou de saúde.</li>
+  <li>Informações opcionais, como preferências linguísticas, estado civil, e contatos de emergência.</li>
+</ul>
+
+<p>Este recurso é essencial para garantir que os dados de saúde sejam corretamente associados à pessoa certa, promovendo segurança e continuidade do cuidado. Recomenda-se a utilização do Número Nacional do Utente (NNU) como identificador oficial. No entanto cada implementação tem a capacidade de definir o identificador oficial na troca de informações:</p>
+
+<ul>
+  <li>O identificador <strong>NNU</strong> deve ser incluído no recurso <strong><em>Patient</em></strong> como identifier com use = official.</li>
+  <li>Identificadores temporários podem ser registados como use = temp e substituídos quando o NNU for conhecido.</li>
+</ul>
+
+<p>A relação entre um utente e um episódio de saúde é central no contexto de cuidados médicos e na organização dos sistemas de saúde. Essa conexão reflete como o indivíduo interage com os serviços de saúde ao longo de diferentes momentos ou situações que exigem cuidado.</p>
+
+<p>O utente é o ponto de origem de todos os episódios de saúde. Esses episódios, por sua vez, são as unidades organizacionais que estruturam e documentam as interações clínicas e administrativas no cuidado ao utente. Essa relação permite uma visão integrada e longitudinal da saúde do indivíduo, essencial para um cuidado centrado na pessoa.</p>
+
+<p>Enquanto o recurso <strong><em>Patient</em></strong> fornece uma visão completa e estruturada dos dados pessoais e demográficos do utente, o conceito de episódio de saúde é o elemento que organiza e contextualiza as interações específicas do utente com o sistema de saúde.</p>
+
+<p>Este recurso é essencial para garantir que os dados de saúde sejam corretamente associados à pessoa certa.</p>
+
+<p>Em Portugal, o <ins>Registo Nacional de Utentes</ins> (RNU) é responsável por gerir os dados administrativos de utentes do sistema de saúde. O seu principal objetivo é garantir que cada cidadão tenha um identificador único, o NNU, que permita a sua identificação de forma consistente e inequívoca em todas as instituições de saúde do país.</p>
+
+<p>O RNU centraliza e padroniza os dados administrativos dos utentes, assegurando que as informações sejam interoperáveis entre diferentes <ins>sistemas de informação hospitalar </ins>(HIS) e unidades de saúde. Este identificador nacional é fundamental para ligar episódios clínicos e administrativos de diferentes organizações de saúde, promovendo continuidade e qualidade nos cuidados.</p>
+
+<h4 id="o-que-é-um-episódio">O que é um Episódio?</h4>
+<p>No contexto do FHIR, um episódio de saúde refere-se a um conjunto de interações administrativas e clínicas que ocorrem entre um utente e o sistema de saúde, concentradas em torno de uma condição de saúde ou evento específico. Estas interações podem incluir consultas, internamentos, procedimentos, tratamentos e acompanhamento médico. Um episódio organiza e relaciona todas as informações e intervenções feitas durante o processo de atendimento, facilitando a gestão e o rastreio das atividades do utente.</p>
+
+<p>No FHIR, o conceito de episódio é frequentemente representado pelo recurso <strong><em>Encounter</em></strong>, que documenta o envolvimento do utente com um serviço de saúde, seja em consulta ambulatorial, hospitalização ou tratamento específico.</p>
+
+<p>Desta forma, para existir um episódio é necessário existir um Utente.</p>
+
+<p>Existem dois tipos de contextos nos episódios: administrativo e clínico.</p>
+
+<h5 id="episódio-no-contexto-administrativo">Episódio no Contexto Administrativo</h5>
+
+<p>No contexto administrativo, o episódio de saúde assume um papel central para a gestão dos dados financeiros e operacionais de uma instituição de saúde. Ele está intimamente ligado à gestão de custos e faturação dos serviços prestados, garantindo que todas as ações realizadas no episódio de saúde sejam corretamente registadas para efeitos administrativos.</p>
+
+<p><strong>Características Administrativas</strong>:</p>
+
+<ul>
+  <li><strong>Identificação do Episódio</strong>: O episódio no sistema administrativo é identificado por um número único, geralmente gerado pelo Sistema de Informação Hospitalar (HIS), que é associado ao utente e a todas as interações e serviços prestados durante o episódio.
+Nota: Por vezes, em Portugal, a identificação do episódio é feita em conjunto com a identificação da classificação de episódio (e.g: Urgência, Internamento, entre outros).</li>
+  <li><strong>Gestão de Recursos</strong>: Os custos associados ao episódio incluem serviços médicos, hospitalares, exames e tratamentos. A associação de todos os serviços a um episódio facilita a gestão financeira.</li>
+  <li><strong>Faturação e Relatórios</strong>: A informação do episódio é usada para gerar faturas para os utentes e/ou seguradoras, e pode ser incluída em relatórios estatísticos e operacionais.
+No FHIR, o <strong><em>Encounter</em></strong> também é usado para representar os aspetos administrativos do episódio. Ele contém informações como o <ins><strong>tipo de localização</strong></ins> (ex: hospital, clínica), <ins><strong>status</strong></ins> (ex: ativo, encerrado), <ins><strong>datas de entrada e saída</strong></ins> e, muitas vezes, a <ins><strong>classificação do episódio</strong></ins> (ex: internamento, consulta). Além disso, pode ser vinculado ao recurso <strong><em>Claim</em></strong> (para faturação) e a outros recursos administrativos.</li>
+</ul>
+
+<h5 id="episódio-no-contexto-clínico">Episódio no Contexto Clínico</h5>
+
+<p>No contexto clínico, o episódio de saúde envolve todas as interações e ações médicas realizadas durante um período específico, que pode ser contínuo ou pontual, e tem um objetivo clínico determinado, como tratar uma condição, monitorar um diagnóstico ou realizar um procedimento específico.</p>
+
+<p><strong>Características Principais</strong>:</p>
+
+<ul>
+  <li><strong>Início e Término Definidos</strong>: O episódio tem um ponto de entrada (ex: admissão, início de um tratamento) e um ponto de saída (ex: alta hospitalar, conclusão do tratamento).</li>
+  <li><strong>Eventos Clínicos</strong>: Durante o episódio, são realizados diagnósticos, intervenções, tratamentos e acompanhamento.</li>
+  <li><strong>Vínculo a Problemas de Saúde</strong>: O episódio pode estar associado a um ou mais problemas de saúde (por exemplo, um episódio de internamento devido a uma cirurgia ou uma consulta de acompanhamento para diabetes).</li>
+</ul>
+
+<p>No FHIR, o <strong><em>Encounter</em></strong> é o recurso central para representar este conceito, e é frequentemente associado a outros recursos, como <strong><em>Condition</em></strong> (para doenças ou condições), <strong><em>Procedure</em></strong> (para procedimentos realizados) e <strong><em>Observation</em></strong> (para resultados de exames).</p>
+
+<h3 id="processos-existentes-no-episódio-do-utente">Processos existentes no Episódio do Utente:</h3>
+
+<ul>
+  <li>Admissão do Utente: ocorre quando este inicia um episódio de interação com o sistema de saúde, como uma urgência ou internamento.</li>
+  <li>Transferência do Utente: mudança do local onde o utente se encontra ou serviço responsável dentro da mesma instituição (intra-hospitalar) ou entre instituições (inter-hospitalar).</li>
+  <li>Alta do Utente: marca o encerramento de um episódio de interação com o sistema de saúde.</li>
+  <li>Cancelamento da Admissão do Utente: ocorre quando o registo de um episódio é iniciado, mas o utente não chega a ser admitido formalmente.</li>
+  <li>Cancelamento da Alta do Utente: ocorre quando, após o registo inicial da alta, é decidida a continuidade do atendimento do utente no mesmo episódio.</li>
+</ul>
+
+<h3 id="casos-de-uso---gestão-do-episódio-do-utente">Casos de Uso - Gestão do Episódio do Utente</h3>
+<p>Neste caso de uso, os sistemas partilham informações do episódio em cuidados de saúde tanto para doentes internados, como para doentes externos (urgência ou consulta). Aqui estão incluídos os eventos descritos no ponto 1.
+São usadas transações de eventos de criação, atualização e cancelamento, assim como eventos de transferências que possam ocorrer. 
+De seguida, de forma mais detalhada, estão descritos os eventos possíveis de existirem na Gestão do Episódio do Utente.</p>
+
+<h4 id="registo-da-admissão">Registo da Admissão</h4>
+<p>O utente encontra-se na unidade de saúde, onde o administrativo realiza a admissão do utente através do sistema de informação. Nesta situação, são consideradas as seguintes informações:</p>
+
+<ul>
+  <li>Registo inicial: identificação do utente, motivo da admissão e tipo de episódio (internamento, consulta, etc.). Em caso de Urgência, é indicado qual o motivo da mesma e a prioridade definida na triagem.</li>
+  <li>Dados administrativos: criação ou associação de um número de processo clínico, assim como um identificador do episódio em si, definição da unidade ou serviço responsável, e profissionais associados.</li>
+  <li>Estado do episódio: o episódio fica “Ativo”, indicando que o utente foi admitido e que o episódio está em curso.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="166px" preserveAspectRatio="none" style="width:448px;height:166px;background:#FFFFFF;" version="1.1" viewBox="0 0 448 166" width="448px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="56" x2="56" y1="81.2969" y2="159.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="247" x2="247" y1="81.2969" y2="159.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="401" x2="401" y1="81.2969" y2="159.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="5" y="77.9951">Administrativo</text><ellipse cx="56" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M56,21.5 L56,48.5 M43,29.5 L69,29.5 M56,48.5 L43,63.5 M56,48.5 L69,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="206" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="213" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="360" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="367" y="69.9951">Sistema 2</text><polygon fill="#181818" points="235,108.4297,245,112.4297,235,116.4297,239,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="56" x2="241" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="63" y="107.3638">Novo registo de admiss&#227;o</text><polygon fill="#181818" points="258,137.5625,248,141.5625,258,145.5625,254,141.5625" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="389,137.5625,399,141.5625,389,145.5625,393,141.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="252" x2="395" y1="141.5625" y2="141.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="264" y="136.4966">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h4 id="registo-de-transferência">Registo de Transferência</h4>
+<p>O utente, já admitido na unidade de saúde, é transferido de um local, por exemplo sala de triagem, para outro local como quarto ou cama. Nesta situação, são consideradas as seguintes informações:</p>
+
+<ul>
+  <li>Registo da transferência: inclui o motivo da transferência, unidade/serviço de origem e destino, e profissionais responsáveis;</li>
+  <li>Atualização do episódio: a informação do episódio é atualizada com os novos dados de localização e os participantes envolvidos na continuidade do cuidado;</li>
+  <li>Notificação e coordenação: comunicação entre as equipas envolvidas para garantir a continuidade do cuidado e o registo da aceitação da transferência pela unidade de destino.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:417px;height:208px;background:#FFFFFF;" version="1.1" viewBox="0 0 417 208" width="417px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="212" x2="212" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="370" x2="370" y1="81.2969" y2="201.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="5" y="77.9951">M&#233;dico</text><ellipse cx="33" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M33,21.5 L33,48.5 M20,29.5 L46,29.5 M33,48.5 L20,63.5 M33,48.5 L46,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="171" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="178" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="329" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="336" y="69.9951">Sistema 2</text><polygon fill="#181818" points="200,108.4297,210,112.4297,200,116.4297,204,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="33" x2="206" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="155" x="40" y="107.3638">Registo de transfer&#234;ncia</text><line style="stroke:#181818;stroke-width:1.0;" x1="212" x2="254" y1="141.5625" y2="141.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="254" x2="254" y1="141.5625" y2="154.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="213" x2="254" y1="154.5625" y2="154.5625" /><polygon fill="#181818" points="223,150.5625,213,154.5625,223,158.5625,219,154.5625" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="219" y="136.4966">Atualiza&#231;&#227;o dos dados</text><polygon fill="#181818" points="358,179.6953,368,183.6953,358,187.6953,362,183.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="212" x2="364" y1="183.6953" y2="183.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="219" y="178.6294">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h4 id="registo-da-alta">Registo da Alta</h4>
+<p>Após todas as interações necessárias com o utente nos seus cuidados de saúde, é dada a alta do do episódio. Nesta situação, são consideradas as seguintes informações:</p>
+
+<ul>
+  <li>Condição de saída: informação sobre o estado clínico do utente, diagnósticos finais e recomendações para cuidados subsequentes. É também indicado a data de alta e o destino da alta (domicílio, outra instituição, entre outros);</li>
+  <li>Atualização do estado do episódio: o episódio é alterado para o estado "Concluído", indicando o encerramento do episódio;</li>
+  <li>Documentação associada: emissão de documentos como relatório de alta, receitas e eventuais encaminhamentos para acompanhamento.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:357px;height:208px;background:#FFFFFF;" version="1.1" viewBox="0 0 357 208" width="357px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="152" x2="152" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="310" x2="310" y1="81.2969" y2="201.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="5" y="77.9951">M&#233;dico</text><ellipse cx="33" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M33,21.5 L33,48.5 M20,29.5 L46,29.5 M33,48.5 L20,63.5 M33,48.5 L46,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="111" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="118" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="269" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="276" y="69.9951">Sistema 2</text><polygon fill="#181818" points="140,108.4297,150,112.4297,140,116.4297,144,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="33" x2="146" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="40" y="107.3638">Registo da alta</text><line style="stroke:#181818;stroke-width:1.0;" x1="152" x2="194" y1="141.5625" y2="141.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="194" x2="194" y1="141.5625" y2="154.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="153" x2="194" y1="154.5625" y2="154.5625" /><polygon fill="#181818" points="163,150.5625,153,154.5625,163,158.5625,159,154.5625" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="159" y="136.4966">Atualiza&#231;&#227;o dos dados</text><polygon fill="#181818" points="298,179.6953,308,183.6953,298,187.6953,302,183.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="152" x2="304" y1="183.6953" y2="183.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="159" y="178.6294">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h4 id="efetivação-em-urgência">Efetivação em Urgência</h4>
+<p>A efetivação ocorre quando o utente é formalmente registado como um caso ativo na urgência, após triagem ou primeira avaliação.</p>
+
+<ul>
+  <li>
+    <p>Registo do episódio: Criação ou atualização do recurso Encounter com os dados do utente, motivo da urgência e prioridade definida na triagem.</p>
+  </li>
+  <li>
+    <p>Estado inicial: O episódio é registado como "Ativo" (ou semelhante), com informações sobre a unidade de urgência, localização e profissionais associados.</p>
+  </li>
+  <li>
+    <p>Monitorização contínua: O estado e os detalhes do episódio são atualizados ao longo do atendimento na urgência, incluindo diagnósticos e intervenções.</p>
+  </li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="166px" preserveAspectRatio="none" style="width:466px;height:166px;background:#FFFFFF;" version="1.1" viewBox="0 0 466 166" width="466px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="81" x2="81" y1="81.2969" y2="159.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="265.5" x2="265.5" y1="81.2969" y2="159.5625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="419.5" x2="419.5" y1="81.2969" y2="159.5625" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="5" y="77.9951">Profissional de sa&#250;de</text><ellipse cx="81.5" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M81.5,21.5 L81.5,48.5 M68.5,29.5 L94.5,29.5 M81.5,48.5 L68.5,63.5 M81.5,48.5 L94.5,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="224.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="231.5" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="378.5" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="385.5" y="69.9951">Sistema 2</text><polygon fill="#181818" points="253.5,108.4297,263.5,112.4297,253.5,116.4297,257.5,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="81.5" x2="259.5" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="88.5" y="107.3638">Novo registo de urg&#234;ncia</text><polygon fill="#181818" points="276.5,137.5625,266.5,141.5625,276.5,145.5625,272.5,141.5625" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="407.5,137.5625,417.5,141.5625,407.5,145.5625,411.5,141.5625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="270.5" x2="413.5" y1="141.5625" y2="141.5625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="282.5" y="136.4966">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h4 id="registo-do-cancelamento-da-admissão">Registo do Cancelamento da Admissão</h4>
+<p>Nesta situação, o utente foi admitido na unidade de saúde, mas por algum motivo, como por exemplo engano ou desistência do utente, é feito o cancelamento da admissão.</p>
+
+<ul>
+  <li>Motivo do cancelamento: indicação do motivo pelo qual a admissão não foi concluída (por exemplo, desistência do utente ou decisão clínica);</li>
+  <li>Atualização do estado do episódio: o episódio é atualizado para o estado "Cancelado" (ou semelhante), e nenhuma interação é associada ao episódio.</li>
+  <li>Auditoria e transparência: o registo do cancelamento deve ser mantido para fins de rastreabilidade.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:441px;height:208px;background:#FFFFFF;" version="1.1" viewBox="0 0 441 208" width="441px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="236" x2="236" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="394" x2="394" y1="81.2969" y2="201.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="5" y="77.9951">M&#233;dico</text><ellipse cx="33" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M33,21.5 L33,48.5 M20,29.5 L46,29.5 M33,48.5 L20,63.5 M33,48.5 L46,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="195" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="202" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="353" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="360" y="69.9951">Sistema 2</text><polygon fill="#181818" points="224,108.4297,234,112.4297,224,116.4297,228,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="33" x2="230" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="40" y="107.3638">Cancelamento da admiss&#227;o</text><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="278" y1="141.5625" y2="141.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="278" x2="278" y1="141.5625" y2="154.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="237" x2="278" y1="154.5625" y2="154.5625" /><polygon fill="#181818" points="247,150.5625,237,154.5625,247,158.5625,243,154.5625" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="243" y="136.4966">Atualiza&#231;&#227;o dos dados</text><polygon fill="#181818" points="382,179.6953,392,183.6953,382,187.6953,386,183.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="388" y1="183.6953" y2="183.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="243" y="178.6294">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+<h4 id="registo-do-cancelamento-da-alta">Registo do Cancelamento da Alta</h4>
+<p>O cancelamento da alta ocorre quando, após o registo inicial da alta, é decidida a continuidade do atendimento do utente no mesmo episódio.</p>
+
+<ul>
+  <li>Justificação da ação: informação sobre o motivo que levou ao cancelamento da alta (por exemplo, agravamento clínico ou erro no registo);</li>
+  <li>Reativação do episódio: o estado do episódio é revertido de "Cancelado" para "Ativo" (ou semelhante), permitindo a continuidade da gestão do caso;</li>
+  <li>Comunicação interna: atualização das equipas envolvidas sobre a mudança no plano de cuidado do utente.</li>
+</ul>
+
+<div><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="208px" preserveAspectRatio="none" style="width:403px;height:208px;background:#FFFFFF;" version="1.1" viewBox="0 0 403 208" width="403px" zoomAndPan="magnify"><defs /><g><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="33" x2="33" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="198" x2="198" y1="81.2969" y2="201.6953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="356" x2="356" y1="81.2969" y2="201.6953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="5" y="77.9951">M&#233;dico</text><ellipse cx="33" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M33,21.5 L33,48.5 M20,29.5 L46,29.5 M33,48.5 L20,63.5 M33,48.5 L46,63.5 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="157" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="164" y="69.9951">Sistema 1</text><rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="315" y="50" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="322" y="69.9951">Sistema 2</text><polygon fill="#181818" points="186,108.4297,196,112.4297,186,116.4297,190,112.4297" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="33" x2="192" y1="112.4297" y2="112.4297" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="40" y="107.3638">Cancelamento da alta</text><line style="stroke:#181818;stroke-width:1.0;" x1="198" x2="240" y1="141.5625" y2="141.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="240" x2="240" y1="141.5625" y2="154.5625" /><line style="stroke:#181818;stroke-width:1.0;" x1="199" x2="240" y1="154.5625" y2="154.5625" /><polygon fill="#181818" points="209,150.5625,199,154.5625,209,158.5625,205,154.5625" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="205" y="136.4966">Atualiza&#231;&#227;o dos dados</text><polygon fill="#181818" points="344,179.6953,354,183.6953,344,187.6953,348,183.6953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="198" x2="350" y1="183.6953" y2="183.6953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="130" x="205" y="178.6294">Envio de informa&#231;&#227;o</text></g></svg></div>
+<p><br clear="all" /></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package pt-patient-visit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 9, 2025 17:45+0000">2025-01-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

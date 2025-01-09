@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EncounterORLM","EncounterORLM","","","",0,*,"","","","null {[]} {[]}
+","Episódio - Bloco Operatório (modelo)","Modelo Lógico - Episódio de Bloco Operatório","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EncounterORLM.id","EncounterORLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do episódio","Identificador do episódio","","","","","","","","","",,,,,"",,,,"EncounterORLM.id",1,1,"",""
+"EncounterORLM.class","EncounterORLM.class","","","",1,1,"","","","code {[]} {[]}
+","Classe do episódio (e.g.: IMP)","Classe do episódio (e.g.: IMP)","","","","","","","","","",,,,,"",,,,"EncounterORLM.class",1,1,"",""
+"EncounterORLM.category","EncounterORLM.category","","","",0,1,"","","","code {[]} {[]}
+","Categoria do serviço","Appointment.serviceCategory= 387713003 | Surgical procedure | SNOMED (central operating theatre)
+Appointment.serviceCategory= 110468005 | Ambulatory surgery | SNOMED (ambulatory operating theatre)","","","","","","","","","",,,,,"",,,,"EncounterORLM.category",0,1,"",""
+"EncounterORLM.appointment","EncounterORLM.appointment","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM {[]} {[]}
+","Referência ao agendamento associado ao episódio","Referência ao agendamento associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterORLM.appointment",0,1,"",""
+"EncounterORLM.patient","EncounterORLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado ao episódio, agendamento ou procedimento","Referência ao paciente associado ao episódio, agendamento ou procedimento","","","","","","","","","",,,,,"",,,,"EncounterORLM.patient",1,1,"",""
+"EncounterORLM.location","EncounterORLM.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Local associado ao episódio de urgência","Local associado ao episódio de urgência","","","","","","","","","",,,,,"",,,,"EncounterORLM.location",0,1,"",""
+"EncounterORLM.surgeon","EncounterORLM.surgeon","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Profissional que atuou como cirurgião principal","Profissional que atuou como cirurgião principal","","","","","","","","","",,,,,"",,,,"EncounterORLM.surgeon",0,1,"",""
+"EncounterORLM.start","EncounterORLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de inicio do episodio","Data e hora reais de inicio do episodio","","","","","","","","","",,,,,"",,,,"EncounterORLM.start",1,1,"",""
+"EncounterORLM.end","EncounterORLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de término de episódio","Data e hora reais de término de episódio","","","","","","","","","",,,,,"",,,,"EncounterORLM.end",0,1,"",""
+"EncounterORLM.status","EncounterORLM.status","","","",1,1,"","","","code {[]} {[]}
+","planned | arrived | in-progress | finished | cancelled","Estado episódio. Valores possiveis:
+- planned: Episódio planeado ou agendado
+- arrived: O paciente foi admitido na instituição
+- in-progress: O episódio está em progresso
+- finished: O paciente teve alta
+- cancelled: O episódio foi cancelado antes de iniciar","","","","","","","","","",,,,,"",,,,"EncounterORLM.status",1,1,"",""

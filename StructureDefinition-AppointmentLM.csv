@@ -1,0 +1,37 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"AppointmentLM","AppointmentLM","","","",0,*,"","","","null {[]} {[]}
+","Agendamento (modelo)","Modelo Lógico - Agendamento","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"AppointmentLM.id","AppointmentLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do agendamento","Identificador do agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.id",1,1,"",""
+"AppointmentLM.status","AppointmentLM.status","","","",1,1,"","","","code {[]} {[]}
+","proposed | booked | arrived","Estado do agendamento. Valores possiveis:
+- proposed: Pedido de agendamento
+- booked: Agendamento efetuado
+- arrived: Chegou para o agendamento efetuado
+- cancelled: Angendamento cancelado","","","","","","","","","",,,,,"",,,,"AppointmentLM.status",1,1,"",""
+"AppointmentLM.canceled","AppointmentLM.canceled","","","",0,1,"","","","string {[]} {[]}
+","Motivo do cancelamento do agendamento","Motivo do cancelamento do agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.canceled",0,1,"",""
+"AppointmentLM.category","AppointmentLM.category","","","",1,1,"","","","code {[]} {[]}
+","Categoria do Serviço (e.g: 11429006 | Consultation, , 11429006 | day care episode, 11429006 | mcdt execution episode) (SNOMED)","Categoria do Serviço (e.g: 11429006 | Consultation, , 11429006 | day care episode, 11429006 | mcdt execution episode) (SNOMED)","","","","","","","","","",,,,,"",,,,"AppointmentLM.category",1,1,"",""
+"AppointmentLM.type","AppointmentLM.type","","","",1,1,"","","","code {[]} {[]}
+","Tipo de agendamento","Tipo de agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.type",1,1,"",""
+"AppointmentLM.specialty","AppointmentLM.specialty","","","",0,1,"","","","code {[]} {[]}
+","Especialidade médica associada ao episódio como radiologia ou patologia clínica","Especialidade médica associada ao episódio como radiologia ou patologia clínica","","","","","","","","","",,,,,"",,,,"AppointmentLM.specialty",0,1,"",""
+"AppointmentLM.motive","AppointmentLM.motive","","","",0,*,"","","","code {[]} {[]}
+","Motivo clínico do agendamento","Motivo clínico do agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.motive",0,*,"",""
+"AppointmentLM.priority","AppointmentLM.priority","","","",0,1,"","","","code {[]} {[]}
+","stat | urgent | routine","Nivel de prioridade do agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.priority",0,1,"",""
+"AppointmentLM.start","AppointmentLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora agendadas para o início do evento","Data e hora agendadas para o início do evento","","","","","","","","","",,,,,"",,,,"AppointmentLM.start",1,1,"",""
+"AppointmentLM.end","AppointmentLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora agendadas para o término do evento","Data e hora agendadas para o término do evento","","","","","","","","","",,,,,"",,,,"AppointmentLM.end",0,1,"",""
+"AppointmentLM.duration","AppointmentLM.duration","","","",0,1,"","","","integer {[]} {[]}
+","Duração estimada do episódio, em minutos","Duração estimada do episódio, em minutos","","","","","","","","","",,,,,"",,,,"AppointmentLM.duration",0,1,"",""
+"AppointmentLM.doctor","AppointmentLM.doctor","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Referência ao Profissional reponsável","Referência ao Profissional reponsável","","","","","","","","","",,,,,"",,,,"AppointmentLM.doctor",0,1,"",""
+"AppointmentLM.patient","AppointmentLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado agendamento","Referência ao paciente associado agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.patient",1,1,"",""
+"AppointmentLM.location","AppointmentLM.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Referência à localização do agendamento","Referência à localização do agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.location",0,1,"",""
+"AppointmentLM.observations","AppointmentLM.observations","","","",0,1,"","","","string {[]} {[]}
+","Observações gerais registadas durante o agendamento","Observações gerais registadas durante o agendamento","","","","","","","","","",,,,,"",,,,"AppointmentLM.observations",0,1,"",""

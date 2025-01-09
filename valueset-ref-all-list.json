@@ -1,0 +1,717 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html" : "BirthPlace",
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html" : "BirthPlace",
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CommonUCUMCodesForDuration",
+      "title" : "Common UCUM Codes for Duration",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.61"],
+      "sources" : ["2.16.840.1.113883.4.642.3.61"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html" : "BirthPlace",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html" : "Nationality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter",
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdmissionType",
+      "title" : "hl7VS-admissionType",
+      "description" : "Value Set of codes that specify the circumstances under which the patient was or will be admitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0007"],
+      "oids" : ["2.16.840.1.113883.21.10"],
+      "sources" : ["2.16.840.1.113883.21.10"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0201",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "Hl7VSTelecommunicationUseCode",
+      "title" : "hl7VS-telecommunicationUseCode",
+      "description" : "Concepts for specifying a specific use of a telecommunication number.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0201"],
+      "oids" : ["2.16.840.1.113883.21.118"],
+      "sources" : ["2.16.840.1.113883.21.118"],
+      "uses" : {
+      },
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient",
+      "StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html" : "PT_Location"
+    }
+  ]
+}

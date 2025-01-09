@@ -1,0 +1,308 @@
+{
+  "package": "pt-patient-visit",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/Address",
+      "title": "Address",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/BirthPlace",
+      "title": "BirthPlace",
+      "types": [
+        "Address",
+        "string",
+        "Extension",
+        "code",
+        "code",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "Period"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/Death",
+      "title": "Death",
+      "types": [
+        "dateTime",
+        "string",
+        "Extension",
+        "dateTime",
+        "boolean",
+        "string",
+        "Extension",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/Nationality",
+      "title": "Nationality",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "Period",
+        "string",
+        "Extension",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/NativeLanguage",
+      "title": "NativeLanguage",
+      "types": [
+        "boolean",
+        "string",
+        "Extension",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.pt/fhir/StructureDefinition/Proficiency",
+      "title": "Proficiency",
+      "types": [
+        "string",
+        "string",
+        "Extension",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Encounter": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_Encounter",
+        "title": "PT_Encounter"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_Location",
+        "title": "PT_Location"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+        "title": "PT_Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+        "title": "PT_Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+        "title": "PT_Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+        "title": "PT_PractitionerRole"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/Address": [
+      "Location.address",
+      "Organization.address",
+      "Patient.address",
+      "Patient.contact.address",
+      "Practitioner.address"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/BirthPlace": [
+      "Patient"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/Death": [
+      "Practitioner"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/Nationality": [
+      "Patient",
+      "Practitioner"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/NativeLanguage": [
+      "Practitioner.communication"
+    ],
+    "https://hl7.pt/fhir/StructureDefinition/Proficiency": [
+      "Practitioner.qualification"
+    ]
+  }
+}

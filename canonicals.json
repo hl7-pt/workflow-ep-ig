@@ -1,0 +1,163 @@
+[
+  {
+    "id" : "pt-patient-visit",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.pt/fhir/example",
+    "version" : "1.0.0",
+    "name" : "HL7PTIGPatientVisit"
+  },
+  {
+    "id" : "AppointmentLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM",
+    "version" : "1.0.0",
+    "name" : "AppointmentLM"
+  },
+  {
+    "id" : "EncounterConsultationLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterConsultationLM",
+    "version" : "1.0.0",
+    "name" : "EncounterConsultationLM"
+  },
+  {
+    "id" : "EncounterDayCareLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterDayCareLM",
+    "version" : "1.0.0",
+    "name" : "EncounterDayCareLM"
+  },
+  {
+    "id" : "EncounterInpatientLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterInpatientLM",
+    "version" : "1.0.0",
+    "name" : "EncounterInpatientLM"
+  },
+  {
+    "id" : "EncounterMCDTLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterMCDTLM",
+    "version" : "1.0.0",
+    "name" : "EncounterMCDTLM"
+  },
+  {
+    "id" : "EncounterORLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterORLM",
+    "version" : "1.0.0",
+    "name" : "EncounterORLM"
+  },
+  {
+    "id" : "EncounterUrgentLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/EncounterUrgentLM",
+    "version" : "1.0.0",
+    "name" : "EncounterUrgentLM"
+  },
+  {
+    "id" : "LocationLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/LocationLM",
+    "version" : "1.0.0",
+    "name" : "LocationLM"
+  },
+  {
+    "id" : "PatientLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/PatientLM",
+    "version" : "1.0.0",
+    "name" : "PatientLM"
+  },
+  {
+    "id" : "PractitionerLM",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM",
+    "version" : "1.0.0",
+    "name" : "PractitionerLM"
+  },
+  {
+    "id" : "b6fdd39f-616f-4d90-9de1-11eb0c029f23",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/Address",
+    "version" : "1.0.0",
+    "name" : "Address"
+  },
+  {
+    "id" : "63310252-7722-4031-8f01-a2c642d0f2a7",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/BirthPlace",
+    "version" : "1.0.0",
+    "name" : "BirthPlace"
+  },
+  {
+    "id" : "7f1e6aee-7154-48e1-902e-30eef79bf1d2",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/Death",
+    "version" : "1.0.0",
+    "name" : "Death"
+  },
+  {
+    "id" : "a4126b30-e00e-451a-830c-4db050c60cdf",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/Nationality",
+    "version" : "1.0.0",
+    "name" : "Nationality"
+  },
+  {
+    "id" : "f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/NativeLanguage",
+    "version" : "1.0.0",
+    "name" : "NativeLanguage"
+  },
+  {
+    "id" : "63fa53d8-9116-42d2-b2c9-06830c25876d",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_Encounter",
+    "version" : "1.0.0",
+    "name" : "PT_Encounter"
+  },
+  {
+    "id" : "ae5389ed-ec12-4804-a181-748fce7bd23c",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_Location",
+    "version" : "1.0.0",
+    "name" : "PT_Location"
+  },
+  {
+    "id" : "6e9480b2-6dc1-4fff-a828-6aa231411647",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+    "version" : "1.0.0",
+    "name" : "PT_Organization"
+  },
+  {
+    "id" : "176c7c2b-865c-4942-9bd6-cfaa04678d10",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+    "version" : "1.0.0",
+    "name" : "PT_Patient"
+  },
+  {
+    "id" : "ac7bcb60-c472-44c2-8a98-d412e8645c6d",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+    "version" : "1.0.0",
+    "name" : "PT_Practitioner"
+  },
+  {
+    "id" : "c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+    "version" : "1.0.0",
+    "name" : "PT_PractitionerRole"
+  },
+  {
+    "id" : "f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.pt/fhir/StructureDefinition/Proficiency",
+    "version" : "1.0.0",
+    "name" : "Proficiency"
+  }
+]

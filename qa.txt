@@ -1,0 +1,124 @@
+HL7PTIGPatientVisit : Validation Results
+=========================================
+
+err = 36, warn = 25, info = 2
+IG Publisher Version: 1.8.7
+Generated Thu Jan 09 17:46:09 UTC 2025. FHIR version 4.0.1 for pt-patient-visit#1.0.0 (canonical = http://hl7.pt/fhir/example)
+ Build Errors : 6 / 4 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit : 3 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterConsultationLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterDayCareLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterInpatientLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterMCDTLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterORLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterUrgentLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-LocationLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientLM : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLM : 0 / 0 / 1
+ /github/workspace/input/extensions/Address : 2 / 1 / 1
+ /github/workspace/input/extensions/BirthPlace : 2 / 1 / 1
+ /github/workspace/input/extensions/Death : 2 / 1 / 1
+ /github/workspace/input/extensions/Nationality : 4 / 1 / 1
+ /github/workspace/input/extensions/NativeLanguage : 2 / 1 / 1
+ /github/workspace/input/extensions/Proficiency : 2 / 1 / 1
+ /github/workspace/input/profiles/PT_Encounter : 2 / 10 / 1
+ /github/workspace/input/profiles/PT_Location : 2 / 1 / 1
+ /github/workspace/input/profiles/PT_Organization : 3 / 1 / 1
+ /github/workspace/input/profiles/PT_Patient : 3 / 1 / 1
+ /github/workspace/input/profiles/PT_Practitioner : 2 / 1 / 1
+ /github/workspace/input/profiles/PT_PractitionerRole : 7 / 1 / 3
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 179, column 7: The link 'adt-a01.json' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 185, column 7: The link 'adt-a02.json' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 191, column 7: The link 'adt-a03.json' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 197, column 7: The link 'adt-a04_emer.json' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 203, column 7: The link 'adt-a11.json' for "JSON" cannot be resolved
+ERROR: /github/workspace/output/examples.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 209, column 7: The link 'adt-a13.json' for "JSON" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-pt-patient-visit.json ==
+ERROR: ImplementationGuide.where(url = 'http://hl7.pt/fhir/example'): Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit.json - the canonical URL (http://hl7.pt/fhir/example/ImplementationGuide/pt-patient-visit) does not match the URL (http://hl7.pt/fhir/example)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: pt-patient-visit/http://hl7.pt/fhir/example
+ERROR: /github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit: URL Mismatch http://hl7.pt/fhir/example/ImplementationGuide/pt-patient-visit vs http://hl7.pt/fhir/example
+== fsh-generated/resources/StructureDefinition-AppointmentLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterConsultationLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterDayCareLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterInpatientLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterMCDTLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterORLM.json ==
+== fsh-generated/resources/StructureDefinition-EncounterUrgentLM.json ==
+== fsh-generated/resources/StructureDefinition-LocationLM.json ==
+== fsh-generated/resources/StructureDefinition-PatientLM.json ==
+== fsh-generated/resources/StructureDefinition-PractitionerLM.json ==
+== input/extensions/Address.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Address'): Conformance resource /github/workspace/input/extensions/Address.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/b6fdd39f-616f-4d90-9de1-11eb0c029f23) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Address)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Address'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/Address: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/b6fdd39f-616f-4d90-9de1-11eb0c029f23 vs https://hl7.pt/fhir/StructureDefinition/Address
+== input/extensions/BirthPlace.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/BirthPlace'): Conformance resource /github/workspace/input/extensions/BirthPlace.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7) does not match the URL (https://hl7.pt/fhir/StructureDefinition/BirthPlace)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/BirthPlace'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/BirthPlace: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7 vs https://hl7.pt/fhir/StructureDefinition/BirthPlace
+== input/extensions/Death.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Death'): Conformance resource /github/workspace/input/extensions/Death.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/7f1e6aee-7154-48e1-902e-30eef79bf1d2) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Death)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Death'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/Death: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/7f1e6aee-7154-48e1-902e-30eef79bf1d2 vs https://hl7.pt/fhir/StructureDefinition/Death
+== input/extensions/Nationality.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Nationality'): Conformance resource /github/workspace/input/extensions/Nationality.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Nationality)
+ERROR: StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf: StructureDefinition.snapshot.element[13].example[0].value.ofType(uri): URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')
+ERROR: StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf: StructureDefinition.differential.element[10].example[0].value.ofType(uri): URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Nationality'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/Nationality: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf vs https://hl7.pt/fhir/StructureDefinition/Nationality
+== input/extensions/NativeLanguage.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/NativeLanguage'): Conformance resource /github/workspace/input/extensions/NativeLanguage.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/NativeLanguage)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/NativeLanguage'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/NativeLanguage: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c vs https://hl7.pt/fhir/StructureDefinition/NativeLanguage
+== input/extensions/Proficiency.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Proficiency'): Conformance resource /github/workspace/input/extensions/Proficiency.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Proficiency)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/Proficiency'): The Implementation Guide contains no examples for this extension
+ERROR: /github/workspace/input/extensions/Proficiency: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b vs https://hl7.pt/fhir/StructureDefinition/Proficiency
+== input/profiles/PT_Encounter.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Encounter'): Conformance resource /github/workspace/input/profiles/PT_Encounter.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Encounter)
+WARNING: StructureDefinition.differential.element[81]: Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson on Encounter.participant.individual is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[105]: Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_Condition on Encounter.reasonReference is valid constraint on the base because it is not known
+WARNING: StructureDefinition.differential.element[111]: Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_Condition on Encounter.diagnosis.condition is valid constraint on the base because it is not known
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.differential.element[81].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.differential.element[105].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.differential.element[111].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.snapshot.element[134].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.snapshot.element[167].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition
+WARNING: StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d: StructureDefinition.snapshot.element[178].type[0].targetProfile[0]: Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Encounter'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_Encounter: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d vs https://hl7.pt/fhir/StructureDefinition/PT_Encounter
+== input/profiles/PT_Location.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Location'): Conformance resource /github/workspace/input/profiles/PT_Location.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ae5389ed-ec12-4804-a181-748fce7bd23c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Location)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Location'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_Location: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/ae5389ed-ec12-4804-a181-748fce7bd23c vs https://hl7.pt/fhir/StructureDefinition/PT_Location
+== input/profiles/PT_Organization.json ==
+ERROR: StructureDefinition.differential.element[37].max: Error parsing JSON: the primitive value must be a string
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Organization'): Conformance resource /github/workspace/input/profiles/PT_Organization.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Organization)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Organization'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_Organization: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647 vs https://hl7.pt/fhir/StructureDefinition/PT_Organization
+== input/profiles/PT_Patient.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Patient'): Conformance resource /github/workspace/input/profiles/PT_Patient.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Patient)
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.snapshot.element[29].example[0].value.ofType(uri): URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Patient'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_Patient: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10 vs https://hl7.pt/fhir/StructureDefinition/PT_Patient
+== input/profiles/PT_Practitioner.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Practitioner'): Conformance resource /github/workspace/input/profiles/PT_Practitioner.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Practitioner)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_Practitioner'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_Practitioner: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d vs https://hl7.pt/fhir/StructureDefinition/PT_Practitioner
+== input/profiles/PT_PractitionerRole.json ==
+ERROR: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole'): Conformance resource /github/workspace/input/profiles/PT_PractitionerRole.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole)
+ERROR: PT_PractitionerRole.telecom.PractitionerRole.telecom.use: Binding http://terminology.hl7.org/ValueSet/v2-0201 is not a subset of binding http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1
+ERROR: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.snapshot.element[66].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve
+ERROR: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.snapshot.element[72].example[0].value.ofType(uri): URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')
+ERROR: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.differential.element[45].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve
+ERROR: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.differential.element[48].example[0].value.ofType(uri): URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')
+INFORMATION: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.differential.element[41].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+INFORMATION: StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4: StructureDefinition.snapshot.element[61].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
+WARNING: StructureDefinition.where(url = 'https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/input/profiles/PT_PractitionerRole: URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4 vs https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole

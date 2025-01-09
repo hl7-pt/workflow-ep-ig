@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"EncounterConsultationLM","EncounterConsultationLM","","","",0,*,"","","","null {[]} {[]}
+","Episódio - Consulta (modelo)","Modelo Lógico - Episódio de Consulta","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"EncounterConsultationLM.id","EncounterConsultationLM.id","","","",1,1,"","","","code {[]} {[]}
+","Identificador do episódio","Identificador do episódio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.id",1,1,"",""
+"EncounterConsultationLM.status","EncounterConsultationLM.status","","","",1,1,"","","","code {[]} {[]}
+","requested | scheduled | started | cancelled","Estado episódio. Valores possiveis:
+- requested: Pedido de agendamento
+- scheduled: O episódio foi agendado
+- started: O utented foi admitido na instituição
+- cancelled: O episódio foi cancelado antes de iniciar","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.status",1,1,"",""
+"EncounterConsultationLM.class","EncounterConsultationLM.class","","","",1,1,"","","","code {[]} {[]}
+","Classe do episódio (e.g.: AMB)","Classe do episódio (e.g.: AMB)","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.class",1,1,"",""
+"EncounterConsultationLM.type","EncounterConsultationLM.type","","","",1,1,"","","","code {[]} {[]}
+","Tipo de episódio (e.g.: 11429006 | Consultation) (SNOMED CT)","Tipo de episódio (e.g.: 11429006 | Consultation) (SNOMED CT)","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.type",1,1,"",""
+"EncounterConsultationLM.priority","EncounterConsultationLM.priority","","","",0,1,"","","","code {[]} {[]}
+","stat | urgent | routine","Nivel de prioridade do episódio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.priority",0,1,"",""
+"EncounterConsultationLM.specialty","EncounterConsultationLM.specialty","","","",0,1,"","","","code {[]} {[]}
+","Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc.","Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc.","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.specialty",0,1,"",""
+"EncounterConsultationLM.patient","EncounterConsultationLM.patient","","","",1,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PatientLM {[]} {[]}
+","Referência ao paciente associado ao episódio, agendamento ou procedimento","Referência ao paciente associado ao episódio, agendamento ou procedimento","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.patient",1,1,"",""
+"EncounterConsultationLM.doctor","EncounterConsultationLM.doctor","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/PractitionerLM {[]} {[]}
+","Médico responsável pelo episódio","Médico responsável pelo episódio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.doctor",0,1,"",""
+"EncounterConsultationLM.appointment","EncounterConsultationLM.appointment","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/AppointmentLM {[]} {[]}
+","Referência ao agendamento associado ao episódio","Referência ao agendamento associado ao episódio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.appointment",0,1,"",""
+"EncounterConsultationLM.start","EncounterConsultationLM.start","","","",1,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de inicio do episodio","Data e hora reais de inicio do episodio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.start",1,1,"",""
+"EncounterConsultationLM.end","EncounterConsultationLM.end","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e hora reais de término de episódio","Data e hora reais de término de episódio","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.end",0,1,"",""
+"EncounterConsultationLM.duration","EncounterConsultationLM.duration","","","",0,1,"","","","integer {[]} {[]}
+","Duração real do episódio em minutos","Duração real do episódio em minutos","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.duration",0,1,"",""
+"EncounterConsultationLM.location","EncounterConsultationLM.location","","","",0,1,"","","","http://hl7.pt/fhir/example/StructureDefinition/LocationLM {[]} {[]}
+","Local associado ao episódio de urgência","Local associado ao episódio de urgência","","","","","","","","","",,,,,"",,,,"EncounterConsultationLM.location",0,1,"",""

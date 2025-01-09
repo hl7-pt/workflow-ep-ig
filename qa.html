@@ -1,0 +1,769 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 6, errors = 36, warn = 25, info = 2-->
+<head>
+  <title>HL7PTIGPatientVisit : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for HL7PTIGPatientVisit</h1>
+ <p>Generated Thu Jan 09 17:46:09 UTC 2025, FHIR version 4.0.1 for pt-patient-visit#1.0.0 (canonical = <a href="http://hl7.pt/fhir/example">http://hl7.pt/fhir/example</a> (<a href="http://hl7.pt/fhir/example/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.7</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = pt-patient-visit, Canonical = http://hl7.pt/fhir/example</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>History Page 'history.html' is wrong (ig.json#paths/history) - must be 'http://hl7.pt/fhir/example/history.html' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> pt-patient-visit</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.pt/fhir/example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAMUlEQVR4Xu3LMQoAIBADwftr/v8GtdbqEAthAtMspJJUx9rYW8ftHwAA+NcRAAAAXplLq0BWj/rZigAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.1.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.affiliate.custom.template#0.0.1 -&gt; hl7.fhir.affiliate.template#current -&gt; fhir.base.template#current. Tools: 0.3.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/extension-regex.html">regex</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-common-tags.html">CommonTags</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-status.html">LocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-mode.html">LocationMode</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">OrganizationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-contactentity-type.html">ContactEntityType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">PractitionerRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (10 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools.r4#0.3.0:     <a href="http://hl7.org/fhir/tools/0.3.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (22 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.pt/fhir/example (Problem #1 with package-list.json at http://hl7.pt/fhir/example: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 36, warn = 25, info = 2, broken links = 6</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>6</b></td><td><b>4</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-pt-patient-visit"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-AppointmentLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-AppointmentLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterConsultationLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterConsultationLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterDayCareLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterDayCareLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterInpatientLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterInpatientLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterMCDTLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterMCDTLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterORLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterORLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-EncounterUrgentLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-EncounterUrgentLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-LocationLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-LocationLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PatientLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PatientLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-PractitionerLM"><b>/github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLM</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_Address"><b>/github/workspace/input/extensions/Address</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_BirthPlace"><b>/github/workspace/input/extensions/BirthPlace</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_Death"><b>/github/workspace/input/extensions/Death</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_Nationality"><b>/github/workspace/input/extensions/Nationality</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_NativeLanguage"><b>/github/workspace/input/extensions/NativeLanguage</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_extensions_Proficiency"><b>/github/workspace/input/extensions/Proficiency</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_Encounter"><b>/github/workspace/input/profiles/PT_Encounter</b></a></td><td><b>2</b></td><td><b>10</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_Location"><b>/github/workspace/input/profiles/PT_Location</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_Organization"><b>/github/workspace/input/profiles/PT_Organization</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_Patient"><b>/github/workspace/input/profiles/PT_Patient</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_Practitioner"><b>/github/workspace/input/profiles/PT_Practitioner</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_profiles_PT_PractitionerRole"><b>/github/workspace/input/profiles/PT_PractitionerRole</b></a></td><td><b>7</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l330">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 179, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a01.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l342">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 185, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a02.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l354">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 191, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a03.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l366">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 197, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a04_emer.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l378">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 203, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a11.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="examples.html#l390">output&#8203;/examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/table&#8203;/tbody&#8203;/tr&#8203;/td&#8203;/a at Line 209, column 7</a></b></td><td><b>error</b></td><td><b>The link 'adt-a13.json' for &quot;JSON&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-pt-patient-visit"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-pt-patient-visit.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/pt-patient-visit: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'http:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/example')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit.json - the canonical URL (http://hl7.pt/fhir/example/ImplementationGuide/pt-patient-visit) does not match the URL (http://hl7.pt/fhir/example)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td><b>Resource id/url mismatch: pt-patient-visit/http://hl7.pt/fhir/example</b> <span style="font-size: 8px; font-color: silver">RESOURCE_ID_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-pt-patient-visit</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/ImplementationGuide/pt-patient-visit vs http://hl7.pt/fhir/example</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-AppointmentLM"> </a>
+<h2><a href="StructureDefinition-AppointmentLM.html">fsh-generated/resources/StructureDefinition-AppointmentLM.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterConsultationLM"> </a>
+<h2><a href="StructureDefinition-EncounterConsultationLM.html">fsh-generated/resources/StructureDefinition-EncounterConsultationLM.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterDayCareLM"> </a>
+<h2><a href="StructureDefinition-EncounterDayCareLM.html">fsh-generated/resources/StructureDefinition-EncounterDayCareLM.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterInpatientLM"> </a>
+<h2><a href="StructureDefinition-EncounterInpatientLM.html">fsh-generated/resources/StructureDefinition-EncounterInpatientLM.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterMCDTLM"> </a>
+<h2><a href="StructureDefinition-EncounterMCDTLM.html">fsh-generated/resources/StructureDefinition-EncounterMCDTLM.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterORLM"> </a>
+<h2><a href="StructureDefinition-EncounterORLM.html">fsh-generated/resources/StructureDefinition-EncounterORLM.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-EncounterUrgentLM"> </a>
+<h2><a href="StructureDefinition-EncounterUrgentLM.html">fsh-generated/resources/StructureDefinition-EncounterUrgentLM.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-LocationLM"> </a>
+<h2><a href="StructureDefinition-LocationLM.html">fsh-generated/resources/StructureDefinition-LocationLM.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PatientLM"> </a>
+<h2><a href="StructureDefinition-PatientLM.html">fsh-generated/resources/StructureDefinition-PatientLM.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-PractitionerLM"> </a>
+<h2><a href="StructureDefinition-PractitionerLM.html">fsh-generated/resources/StructureDefinition-PractitionerLM.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_Address"> </a>
+<h2><a href="StructureDefinition-b6fdd39f-616f-4d90-9de1-11eb0c029f23.html">input/extensions/Address.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Address')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/Address.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/b6fdd39f-616f-4d90-9de1-11eb0c029f23) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Address)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Address')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/Address</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/b6fdd39f-616f-4d90-9de1-11eb0c029f23 vs https://hl7.pt/fhir/StructureDefinition/Address</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_BirthPlace"> </a>
+<h2><a href="StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html">input/extensions/BirthPlace.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/BirthPlace')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/BirthPlace.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7) does not match the URL (https://hl7.pt/fhir/StructureDefinition/BirthPlace)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/BirthPlace')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/BirthPlace</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7 vs https://hl7.pt/fhir/StructureDefinition/BirthPlace</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_Death"> </a>
+<h2><a href="StructureDefinition-7f1e6aee-7154-48e1-902e-30eef79bf1d2.html">input/extensions/Death.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Death')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/Death.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/7f1e6aee-7154-48e1-902e-30eef79bf1d2) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Death)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Death')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/Death</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/7f1e6aee-7154-48e1-902e-30eef79bf1d2 vs https://hl7.pt/fhir/StructureDefinition/Death</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_Nationality"> </a>
+<h2><a href="StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html">input/extensions/Nationality.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Nationality')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/Nationality.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Nationality)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c64841)</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_URI_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c85589)</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_URI_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Nationality')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/Nationality</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf vs https://hl7.pt/fhir/StructureDefinition/Nationality</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_NativeLanguage"> </a>
+<h2><a href="StructureDefinition-f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c.html">input/extensions/NativeLanguage.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/NativeLanguage')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/NativeLanguage.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/NativeLanguage)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/NativeLanguage')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/NativeLanguage</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c vs https://hl7.pt/fhir/StructureDefinition/NativeLanguage</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_extensions_Proficiency"> </a>
+<h2><a href="StructureDefinition-f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b.html">input/extensions/Proficiency.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Proficiency')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/extensions/Proficiency.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Proficiency)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/Proficiency')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/extensions/Proficiency</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b vs https://hl7.pt/fhir/StructureDefinition/Proficiency</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_Encounter"> </a>
+<h2><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Encounter')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Encounter.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Encounter)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[81]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson on Encounter.participant.individual is valid constraint on the base because it is not known</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[105]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_Condition on Encounter.reasonReference is valid constraint on the base because it is not known</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[111]</b></td><td><b>warning</b></td><td><b>Cannot check whether the target profile https://hl7.pt/fhir/StructureDefinition/PT_Condition on Encounter.diagnosis.condition is valid constraint on the base because it is not known</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[81]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[105]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[111]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[134]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[167]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[178]&#8203;.type[0]&#8203;.targetProfile[0]</b></td><td><b>warning</b></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b> <span style="font-size: 8px; font-color: silver">SD_ED_TYPE_PROFILE_UNKNOWN</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Encounter')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_Encounter</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d vs https://hl7.pt/fhir/StructureDefinition/PT_Encounter</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_Location"> </a>
+<h2><a href="StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html">input/profiles/PT_Location.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Location')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Location.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ae5389ed-ec12-4804-a181-748fce7bd23c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Location)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Location')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_Location</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/ae5389ed-ec12-4804-a181-748fce7bd23c vs https://hl7.pt/fhir/StructureDefinition/PT_Location</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_Organization"> </a>
+<h2><a href="StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html">input/profiles/PT_Organization.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[37]&#8203;.max (l294&#8203;/c25)</b></td><td><b>error</b></td><td><b>Error parsing JSON: the primitive value must be a string</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Organization')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Organization.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Organization)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Organization')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_Organization</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647 vs https://hl7.pt/fhir/StructureDefinition/PT_Organization</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_Patient"> </a>
+<h2><a href="StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html">input/profiles/PT_Patient.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Patient')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Patient.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Patient)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c329450)</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_URI_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Patient')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_Patient</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10 vs https://hl7.pt/fhir/StructureDefinition/PT_Patient</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_Practitioner"> </a>
+<h2><a href="StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html">input/profiles/PT_Practitioner.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Practitioner')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Practitioner.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Practitioner)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_Practitioner')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_Practitioner</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d vs https://hl7.pt/fhir/StructureDefinition/PT_Practitioner</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_profiles_PT_PractitionerRole"> </a>
+<h2><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_PractitionerRole')</b></td><td><b>error</b></td><td><b>Conformance resource /github/workspace/input/profiles/PT_PractitionerRole.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole)</b> <span style="font-size: 8px; font-color: silver">RESOURCE_CANONICAL_MISMATCH</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>PT_PractitionerRole&#8203;.telecom&#8203;.PractitionerRole&#8203;.telecom&#8203;.use</b></td><td><b>error</b></td><td><b>Binding http://terminology.hl7.org/ValueSet/v2-0201 is not a subset of binding http://hl7.org/fhir/ValueSet/contact-point-use|4.0.1</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[66]&#8203;.binding&#8203;.valueSet (l1&#8203;/c261563)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve</b> <span style="font-size: 8px; font-color: silver">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[72]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c268955)</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_URI_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[45]&#8203;.binding&#8203;.valueSet (l1&#8203;/c344969)</b></td><td><b>error</b></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve</b> <span style="font-size: 8px; font-color: silver">TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[48]&#8203;.example[0]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c345532)</b></td><td><b>error</b></td><td><b>URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')</b> <span style="font-size: 8px; font-color: silver">Type_Specific_Checks_DT_URI_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[41]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c344333)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[61]&#8203;.slicing&#8203;.discriminator[0] (l1&#8203;/c254198)</b></td><td><b>information</b></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b> <span style="font-size: 8px; font-color: silver">SD_PATH_SLICING_DEPRECATED</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/hl7&#8203;.pt&#8203;/fhir&#8203;/StructureDefinition&#8203;/PT_PractitionerRole')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>input/profiles/PT_PractitionerRole</b></td><td><b>error</b></td><td><b>URL Mismatch http://hl7.pt/fhir/example/StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4 vs https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole</b> <span style="font-size: 8px; font-color: silver"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-pt-patient-visit.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-pt-patient-visit.json - the canonical URL (http://hl7.pt/fhir/example/ImplementationGuide/pt-patient-visit) does not match the URL (http://hl7.pt/fhir/example)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-b6fdd39f-616f-4d90-9de1-11eb0c029f23.html">input/extensions/Address.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/Address.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/b6fdd39f-616f-4d90-9de1-11eb0c029f23) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Address)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html">input/extensions/BirthPlace.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/BirthPlace.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7) does not match the URL (https://hl7.pt/fhir/StructureDefinition/BirthPlace)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-7f1e6aee-7154-48e1-902e-30eef79bf1d2.html">input/extensions/Death.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/Death.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/7f1e6aee-7154-48e1-902e-30eef79bf1d2) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Death)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html">input/extensions/Nationality.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/Nationality.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Nationality)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c.html">input/extensions/NativeLanguage.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/NativeLanguage.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/NativeLanguage)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b.html">input/extensions/Proficiency.json</a></td><td><b>Conformance resource /github/workspace/input/extensions/Proficiency.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b) does not match the URL (https://hl7.pt/fhir/StructureDefinition/Proficiency)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Encounter.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/63fa53d8-9116-42d2-b2c9-06830c25876d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Encounter)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-ae5389ed-ec12-4804-a181-748fce7bd23c.html">input/profiles/PT_Location.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Location.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ae5389ed-ec12-4804-a181-748fce7bd23c) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Location)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html">input/profiles/PT_Organization.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Organization.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html">input/profiles/PT_Patient.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Patient.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Patient)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html">input/profiles/PT_Practitioner.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_Practitioner.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>Conformance resource /github/workspace/input/profiles/PT_PractitionerRole.json - the canonical URL (http://hl7.pt/fhir/example/StructureDefinition/c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4) does not match the URL (https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-pt-patient-visit.json</a></td><td><b>Resource id/url mismatch: pt-patient-visit/http://hl7.pt/fhir/example</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_ED_TYPE_PROFILE_UNKNOWN"> </a>
+<h2>SD_ED_TYPE_PROFILE_UNKNOWN</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-63fa53d8-9116-42d2-b2c9-06830c25876d.html">input/profiles/PT_Encounter.json</a></td><td><b>Unable to resolve profile https://hl7.pt/fhir/StructureDefinition/PT_Condition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_PATH_SLICING_DEPRECATED"> </a>
+<h2>SD_PATH_SLICING_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URI_WS"> </a>
+<h2>Type_Specific_Checks_DT_URI_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html">input/extensions/Nationality.json</a></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html">input/extensions/Nationality.json</a></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html">input/profiles/PT_Patient.json</a></td><td><b>URI values cannot have whitespace('ISO Table (ISO 3166 - urn:iso:std:iso:3166)')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4.html">input/profiles/PT_PractitionerRole.json</a></td><td><b>URI values cannot have whitespace('International Standard Classification of Occupations (ISCO)')</b></td>
+   </tr>
+</table>
+</body>
+</html>
