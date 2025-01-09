@@ -1,0 +1,54 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b",
+    "meta": {
+        "lastUpdated": "2021-12-10T12:10:09.421+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/Proficiency",
+    "version": "1.0",
+    "name": "Proficiency",
+    "status": "draft",
+    "experimental": false,
+    "date": "2021-12-10",
+    "description": "Extensão que indica o nível de proficiência de um profissional de saúde em Portugal. Pode incluir detalhes sobre competências, certificações, ou especializações relevantes para o contexto clínico.",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context":  [
+        {
+            "type": "element",
+            "expression": "Practitioner.qualification"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Extension.id",
+                "path": "Extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Proficiency"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "type":  [
+                    {
+                        "code": "string"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].id",
+                "path": "Extension.value[x].id",
+                "max": "0"
+            }
+        ]
+    }
+}

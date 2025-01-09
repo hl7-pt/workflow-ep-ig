@@ -1,0 +1,7 @@
+@startuml
+hide footbox
+actor "Médico" as Medico
+Medico -> "Sistema 1" as Sistema1 : Cancelamento da admissão
+"Sistema 1" as Sistema1 -> "Sistema 1" as Sistema1 : Atualização dos dados
+"Sistema 1" as Sistema1 -> "Sistema 2" as Sistema2 : Envio de informação
+@enduml

@@ -1,0 +1,1441 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "176c7c2b-865c-4942-9bd6-cfaa04678d10",
+    "meta": {
+        "lastUpdated": "2022-09-23T13:12:21.4069091+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+    "version": "1.2",
+    "name": "PT_Patient",
+    "status": "active",
+    "experimental": false,
+    "date": "2022-09-23T13:12:30.5461445+00:00",
+    "description": "Representa a entidade central de um sistema de saúde, referindo-se a cada pessoa que recebe ou tem potencial para receber cuidados clínicos dentro de uma instituição de saúde. Armazena as principais informações demográficas e clínicas do utente. Este registo consolidado serve como uma referência única que facilita o acesso rápido e preciso a dados importantes do utente, contribuindo para uma abordagem personalizada e centrada no indivíduo e proporcionando uma visão integrada e holística que suporta o planeamento de cuidados, decisões clínicas fundamentadas e a melhoria contínua dos serviços de saúde ao longo da vida do utente.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Patient",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Patient.meta",
+                "path": "Patient.meta"
+            },
+            {
+                "id": "Patient.meta.id",
+                "path": "Patient.meta.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.meta.versionId",
+                "path": "Patient.meta.versionId",
+                "max": "0"
+            },
+            {
+                "id": "Patient.meta.lastUpdated",
+                "path": "Patient.meta.lastUpdated",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-33"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.meta.source",
+                "path": "Patient.meta.source",
+                "max": "0"
+            },
+            {
+                "id": "Patient.meta.profile",
+                "path": "Patient.meta.profile",
+                "max": "0"
+            },
+            {
+                "id": "Patient.meta.security",
+                "path": "Patient.meta.security",
+                "max": "0"
+            },
+            {
+                "id": "Patient.meta.tag",
+                "path": "Patient.meta.tag",
+                "max": "0"
+            },
+            {
+                "id": "Patient.implicitRules",
+                "path": "Patient.implicitRules",
+                "max": "0"
+            },
+            {
+                "id": "Patient.language",
+                "path": "Patient.language",
+                "max": "0"
+            },
+            {
+                "id": "Patient.text",
+                "path": "Patient.text",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contained",
+                "path": "Patient.contained",
+                "max": "0"
+            },
+            {
+                "id": "Patient.extension",
+                "path": "Patient.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Patient.extension:Nationality",
+                "path": "Patient.extension",
+                "sliceName": "Nationality",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/Nationality"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Patient.extension:Nationality.extension",
+                "path": "Patient.extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Patient.extension:Nationality.extension:code",
+                "path": "Patient.extension.extension",
+                "sliceName": "code",
+                "min": 0,
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-26"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.extension:BirthPlace",
+                "path": "Patient.extension",
+                "sliceName": "BirthPlace",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/BirthPlace"
+                        ]
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-23"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.id",
+                "path": "Patient.identifier.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.use",
+                "path": "Patient.identifier.use",
+                "comment": "This field, in case of official, must be mapped following this order of identifiers: SNS (HC), BI/CC (CZ), Passport (PPN), NIF (TAX), NISS (SS), NS (PI)",
+                "mapping":  [
+                    {
+                        "identity": "numberOrder-official",
+                        "map": "SNS (HC), BI/CC (CZ), Passport (PPN), NIF (TAX), NISS (SS), NP (MR), NS (PI)"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.type",
+                "path": "Patient.identifier.type",
+                "binding": {
+                    "strength": "extensible",
+                    "description": "HL7-defined code system of concepts specifying type of identifier.",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+                }
+            },
+            {
+                "id": "Patient.identifier.type.id",
+                "path": "Patient.identifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.type.coding.id",
+                "path": "Patient.identifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.type.coding.system",
+                "path": "Patient.identifier.type.coding.system",
+                "code":  [
+                    {
+                        "system": "http://terminology.hl7.org/ValueSet/v2-0203"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.type.coding.version",
+                "path": "Patient.identifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.type.coding.code",
+                "path": "Patient.identifier.type.coding.code",
+                "example":  [
+                    {
+                        "label": "Code Type",
+                        "valueCode": "HC"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.5"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.type.coding.display",
+                "path": "Patient.identifier.type.coding.display",
+                "example":  [
+                    {
+                        "label": "Code Type Description",
+                        "valueString": "Health Card Number"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.type.coding.userSelected",
+                "path": "Patient.identifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.type.text",
+                "path": "Patient.identifier.type.text",
+                "example":  [
+                    {
+                        "label": "ID number code used",
+                        "valueString": "RNU"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.5"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.system",
+                "path": "Patient.identifier.system",
+                "example":  [
+                    {
+                        "label": "Coding System",
+                        "valueUri": "https://www.spms.min-saude.pt/rnu/"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.4; PID-18.4"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.value",
+                "path": "Patient.identifier.value",
+                "example":  [
+                    {
+                        "label": "Identification number",
+                        "valueString": "999999999"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.1; PID-18.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.period.id",
+                "path": "Patient.identifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.period.start",
+                "path": "Patient.identifier.period.start",
+                "example":  [
+                    {
+                        "label": "Document validity start date",
+                        "valueDateTime": "2021-01-01"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.7"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.period.end",
+                "path": "Patient.identifier.period.end",
+                "example":  [
+                    {
+                        "label": "Document expiration date",
+                        "valueDateTime": "2021-12-31"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.8"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.assigner",
+                "path": "Patient.identifier.assigner",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Patient.identifier.assigner.id",
+                "path": "Patient.identifier.assigner.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.assigner.reference",
+                "path": "Patient.identifier.assigner.reference",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.assigner.type",
+                "path": "Patient.identifier.assigner.type",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.assigner.identifier",
+                "path": "Patient.identifier.assigner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Patient.identifier.assigner.display",
+                "path": "Patient.identifier.assigner.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-3.4; PID-18.4"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.id",
+                "path": "Patient.name.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.name.use",
+                "path": "Patient.name.use",
+                "example":  [
+                    {
+                        "label": "Name Type Code",
+                        "valueCode": "official"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-5.7"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.text",
+                "path": "Patient.name.text",
+                "example":  [
+                    {
+                        "label": "Full name",
+                        "valueString": "John Anthony Doe"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-5.2 + PID-5.3 + PID-5.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.family",
+                "path": "Patient.name.family",
+                "example":  [
+                    {
+                        "label": "Last Name",
+                        "valueString": "Doe"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-5.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.given",
+                "path": "Patient.name.given",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "value"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Patient.name.given:firstName",
+                "path": "Patient.name.given",
+                "sliceName": "firstName",
+                "example":  [
+                    {
+                        "label": "First Name",
+                        "valueString": "John"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-5.2"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.given:middleName",
+                "path": "Patient.name.given",
+                "sliceName": "middleName",
+                "example":  [
+                    {
+                        "label": "Middle Name",
+                        "valueString": "Anthony"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-5.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.prefix",
+                "path": "Patient.name.prefix",
+                "max": "0"
+            },
+            {
+                "id": "Patient.name.suffix",
+                "path": "Patient.name.suffix",
+                "max": "0"
+            },
+            {
+                "id": "Patient.name.period.id",
+                "path": "Patient.name.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.name.period.start",
+                "path": "Patient.name.period.start",
+                "example":  [
+                    {
+                        "label": "Name use start date",
+                        "valueDateTime": "2021-01-01"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.name.period.end",
+                "path": "Patient.name.period.end",
+                "example":  [
+                    {
+                        "label": "End date of name usage",
+                        "valueDateTime": "2021-12-31"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.telecom.id",
+                "path": "Patient.telecom.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.telecom.system",
+                "path": "Patient.telecom.system",
+                "example":  [
+                    {
+                        "label": "Contact type",
+                        "valueCode": "phone"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-13.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.telecom.value",
+                "path": "Patient.telecom.value",
+                "min": 0
+            },
+            {
+                "id": "Patient.telecom.use",
+                "path": "Patient.telecom.use",
+                "example":  [
+                    {
+                        "label": "Contact Usage",
+                        "valueCode": "home"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-13.2"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.telecom.period",
+                "path": "Patient.telecom.period",
+                "max": "0"
+            },
+            {
+                "id": "Patient.gender",
+                "path": "Patient.gender",
+                "example":  [
+                    {
+                        "label": "Patient Gender",
+                        "valueCode": "Male"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-8"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.birthDate",
+                "path": "Patient.birthDate",
+                "example":  [
+                    {
+                        "label": "Patient's date and time of birth",
+                        "valueDate": "2021-01-01"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-7"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.deceased[x]",
+                "path": "Patient.deceased[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Patient.deceased[x]:deceasedBoolean",
+                "path": "Patient.deceased[x]",
+                "sliceName": "deceasedBoolean",
+                "type":  [
+                    {
+                        "code": "boolean"
+                    }
+                ],
+                "example":  [
+                    {
+                        "label": "Patient death indicator",
+                        "valueBoolean": false
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "Hl7v2.x",
+                        "map": "PID-30"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.deceased[x]:deceasedDateTime",
+                "path": "Patient.deceased[x]",
+                "sliceName": "deceasedDateTime",
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ],
+                "example":  [
+                    {
+                        "label": "Date and time of patient's death",
+                        "valueDateTime": "2021-12-31"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-29"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.id",
+                "path": "Patient.address.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.address.extension",
+                "path": "Patient.address.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Patient.address.extension:Parish",
+                "path": "Patient.address.extension",
+                "sliceName": "Parish",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                        ]
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.9"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.use",
+                "path": "Patient.address.use",
+                "example":  [
+                    {
+                        "label": "Type of residence",
+                        "valueCode": "home"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.type",
+                "path": "Patient.address.type",
+                "max": "0"
+            },
+            {
+                "id": "Patient.address.text",
+                "path": "Patient.address.text",
+                "max": "0"
+            },
+            {
+                "id": "Patient.address.line",
+                "path": "Patient.address.line",
+                "example":  [
+                    {
+                        "label": "General",
+                        "valueString": "RUA DA BURAQUEIRA N\\XBA\\11"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.city",
+                "path": "Patient.address.city",
+                "example":  [
+                    {
+                        "label": "City",
+                        "valueString": "ABRUNHEIRA"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.district",
+                "path": "Patient.address.district",
+                "example":  [
+                    {
+                        "label": "District/County",
+                        "valueString": "MONTEMOR O VELHO"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.8"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.state",
+                "path": "Patient.address.state",
+                "example":  [
+                    {
+                        "label": "State",
+                        "valueString": "COIMBRA"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.4"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.postalCode",
+                "path": "Patient.address.postalCode",
+                "example":  [
+                    {
+                        "label": "Postal Code",
+                        "valueString": "3140-015"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.5"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.country",
+                "path": "Patient.address.country",
+                "example":  [
+                    {
+                        "label": "Country",
+                        "valueString": "PT"
+                    }
+                ],
+                "binding": {
+                    "strength": "preferred",
+                    "description": "This value set defines the ISO 3166 Part 1 2-letter codes",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-11.6"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.period.id",
+                "path": "Patient.address.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.address.period.start",
+                "path": "Patient.address.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.4",
+                        "map": "PID-11.12.1"
+                    },
+                    {
+                        "identity": "HL7v2.5",
+                        "map": "PID-11.13"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.address.period.end",
+                "path": "Patient.address.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.4",
+                        "map": "PID-11.12.2"
+                    },
+                    {
+                        "identity": "HL7v2.5",
+                        "map": "PID-11.14"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.maritalStatus.id",
+                "path": "Patient.maritalStatus.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.maritalStatus.coding.id",
+                "path": "Patient.maritalStatus.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.maritalStatus.coding.system",
+                "path": "Patient.maritalStatus.coding.system",
+                "code":  [
+                    {
+                        "system": "http://hl7.org/fhir/ValueSet/marital-status"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.maritalStatus.coding.version",
+                "path": "Patient.maritalStatus.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Patient.maritalStatus.coding.code",
+                "path": "Patient.maritalStatus.coding.code",
+                "example":  [
+                    {
+                        "label": "Patient Marital Status Code",
+                        "valueCode": "M"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-16"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.maritalStatus.coding.display",
+                "path": "Patient.maritalStatus.coding.display",
+                "example":  [
+                    {
+                        "label": "Description of the patient's marital status",
+                        "valueString": "Married"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.maritalStatus.coding.userSelected",
+                "path": "Patient.maritalStatus.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Patient.maritalStatus.text",
+                "path": "Patient.maritalStatus.text",
+                "max": "0"
+            },
+            {
+                "id": "Patient.multipleBirth[x]",
+                "path": "Patient.multipleBirth[x]",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "type",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                }
+            },
+            {
+                "id": "Patient.multipleBirth[x]:multipleBirthBoolean",
+                "path": "Patient.multipleBirth[x]",
+                "sliceName": "multipleBirthBoolean",
+                "definition": "Indicates whether the patient is part of a multiple (boolean)",
+                "type":  [
+                    {
+                        "code": "boolean"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-24"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.multipleBirth[x]:multipleBirthInteger",
+                "path": "Patient.multipleBirth[x]",
+                "sliceName": "multipleBirthInteger",
+                "definition": "Indicates the actual birth order (integer).",
+                "type":  [
+                    {
+                        "code": "integer"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-25"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.photo",
+                "path": "Patient.photo",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.id",
+                "path": "Patient.contact.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.relationship.id",
+                "path": "Patient.contact.relationship.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.relationship.coding",
+                "path": "Patient.contact.relationship.coding",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Relationship",
+                        "map": "NK1-3"
+                    },
+                    {
+                        "identity": "HL7v2.x-ContactRole",
+                        "map": "NK1-7"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.relationship.coding.id",
+                "path": "Patient.contact.relationship.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.relationship.coding.system",
+                "path": "Patient.contact.relationship.coding.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Relationship",
+                        "map": "NK1-3.3"
+                    },
+                    {
+                        "identity": "HL7v2.x-ContactRole",
+                        "map": "NK1-7.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.relationship.coding.version",
+                "path": "Patient.contact.relationship.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.relationship.coding.code",
+                "path": "Patient.contact.relationship.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Relationship",
+                        "map": "NK1-3.1"
+                    },
+                    {
+                        "identity": "HL7v2.x-ContactRole",
+                        "map": "NK1-7.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.relationship.coding.display",
+                "path": "Patient.contact.relationship.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Relationship",
+                        "map": "NK1-3.2"
+                    },
+                    {
+                        "identity": "HL7v2.x-ContactRole",
+                        "map": "NK1-7.2"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.relationship.coding.userSelected",
+                "path": "Patient.contact.relationship.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.relationship.text",
+                "path": "Patient.contact.relationship.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Relationship",
+                        "map": "Translation to [PT] of the display field"
+                    },
+                    {
+                        "identity": "HL7v2.x-ContactRole",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.name.id",
+                "path": "Patient.contact.name.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.name.text",
+                "path": "Patient.contact.name.text",
+                "example":  [
+                    {
+                        "label": "Full Name",
+                        "valueString": "Mary Doe"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-2.2 + NK1-2.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.name.family",
+                "path": "Patient.contact.name.family",
+                "example":  [
+                    {
+                        "label": "Last Name",
+                        "valueString": "Doe"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-2.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.name.given",
+                "path": "Patient.contact.name.given",
+                "example":  [
+                    {
+                        "label": "First Name",
+                        "valueString": "Mary"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-2.2"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.name.prefix",
+                "path": "Patient.contact.name.prefix",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.name.suffix",
+                "path": "Patient.contact.name.suffix",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.name.period",
+                "path": "Patient.contact.name.period",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.telecom.id",
+                "path": "Patient.contact.telecom.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.telecom.system",
+                "path": "Patient.contact.telecom.system",
+                "example":  [
+                    {
+                        "label": "Contact Type",
+                        "valueCode": "phone"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-5.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.telecom.value",
+                "path": "Patient.contact.telecom.value",
+                "example":  [
+                    {
+                        "label": "Telephone contact",
+                        "valueString": "999999999"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.4",
+                        "map": "NK1-5.7"
+                    },
+                    {
+                        "identity": "HL7v2.5",
+                        "map": "NK1-5.12"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.telecom.use",
+                "path": "Patient.contact.telecom.use",
+                "example":  [
+                    {
+                        "label": "Contact Usage",
+                        "valueCode": "home"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-5.2"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.telecom.period",
+                "path": "Patient.contact.telecom.period",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.address.id",
+                "path": "Patient.contact.address.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.address.extension",
+                "path": "Patient.contact.address.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Patient.contact.address.extension:Parish",
+                "path": "Patient.contact.address.extension",
+                "sliceName": "Parish",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.extension:Parish.value[x]",
+                "path": "Patient.contact.address.extension.value[x]",
+                "mapping":  [
+                    {
+                        "identity": "Patient.Contact-HL7v2.x",
+                        "map": "NK1-4.9"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.type",
+                "path": "Patient.contact.address.type",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.address.text",
+                "path": "Patient.contact.address.text",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.address.line",
+                "path": "Patient.contact.address.line",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.city",
+                "path": "Patient.contact.address.city",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.3"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.district",
+                "path": "Patient.contact.address.district",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.8"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.state",
+                "path": "Patient.contact.address.state",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.4"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.postalCode",
+                "path": "Patient.contact.address.postalCode",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.5"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.country",
+                "path": "Patient.contact.address.country",
+                "binding": {
+                    "strength": "preferred",
+                    "description": "This value set defines the ISO 3166 Part 1 2-letter codes",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-4.6"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.period.id",
+                "path": "Patient.contact.address.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.address.period.start",
+                "path": "Patient.contact.address.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.4",
+                        "map": "NK1-4.12.1"
+                    },
+                    {
+                        "identity": "HL7v2.5",
+                        "map": "NK1-4.13"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.address.period.end",
+                "path": "Patient.contact.address.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.4",
+                        "map": "NK1-4.12.2"
+                    },
+                    {
+                        "identity": "HL7v2.5",
+                        "map": "NK1-4.14"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.gender",
+                "path": "Patient.contact.gender",
+                "example":  [
+                    {
+                        "label": "Gender",
+                        "valueCode": "Female"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "NK1-15"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.contact.organization",
+                "path": "Patient.contact.organization",
+                "max": "0"
+            },
+            {
+                "id": "Patient.contact.period",
+                "path": "Patient.contact.period",
+                "max": "0"
+            },
+            {
+                "id": "Patient.communication.id",
+                "path": "Patient.communication.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.communication.language",
+                "path": "Patient.communication.language",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-15"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.communication.language.id",
+                "path": "Patient.communication.language.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.communication.language.coding.id",
+                "path": "Patient.communication.language.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Patient.communication.language.coding.version",
+                "path": "Patient.communication.language.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Patient.communication.language.coding.code",
+                "path": "Patient.communication.language.coding.code",
+                "example":  [
+                    {
+                        "label": "Code Primary Language",
+                        "valueCode": "pt"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-15.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.communication.language.coding.display",
+                "path": "Patient.communication.language.coding.display",
+                "example":  [
+                    {
+                        "label": "Primary Language Display",
+                        "valueString": "Portuguese"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.communication.language.coding.userSelected",
+                "path": "Patient.communication.language.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Patient.generalPractitioner",
+                "path": "Patient.generalPractitioner",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+                            "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+                        ]
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Practitioner/ROL-4.1"
+                    }
+                ]
+            },
+            {
+                "id": "Patient.managingOrganization",
+                "path": "Patient.managingOrganization",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Organization/EVN-7; MSH-6.1"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "7f1e6aee-7154-48e1-902e-30eef79bf1d2",
+    "meta": {
+        "lastUpdated": "2021-12-10T12:06:13.906+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/Death",
+    "version": "1.0",
+    "name": "Death",
+    "status": "draft",
+    "experimental": false,
+    "date": "2021-12-10",
+    "description": "Extensão que fornece informações sobre o falecimento do utente, como a data. Essencial para registos clínicos e administrativos em Portugal, como por exemplo o registo de certidão de óbito.",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context":  [
+        {
+            "type": "element",
+            "expression": "Practitioner"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Extension.id",
+                "path": "Extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension",
+                "path": "Extension.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Extension.extension:dateTime",
+                "path": "Extension.extension",
+                "sliceName": "dateTime",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Extension.extension:dateTime.id",
+                "path": "Extension.extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:dateTime.url",
+                "path": "Extension.extension.url",
+                "fixedUri": "dateTime"
+            },
+            {
+                "id": "Extension.extension:dateTime.value[x]",
+                "path": "Extension.extension.value[x]",
+                "type":  [
+                    {
+                        "code": "dateTime"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-31"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:dateTime.value[x].id",
+                "path": "Extension.extension.value[x].id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:boolean",
+                "path": "Extension.extension",
+                "sliceName": "boolean",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Extension.extension:boolean.id",
+                "path": "Extension.extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.extension:boolean.url",
+                "path": "Extension.extension.url",
+                "fixedUri": "boolean"
+            },
+            {
+                "id": "Extension.extension:boolean.value[x]",
+                "path": "Extension.extension.value[x]",
+                "type":  [
+                    {
+                        "code": "boolean"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-32"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.extension:boolean.value[x].id",
+                "path": "Extension.extension.value[x].id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Death"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "max": "0"
+            }
+        ]
+    }
+}

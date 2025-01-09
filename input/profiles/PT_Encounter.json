@@ -1,0 +1,1596 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "63fa53d8-9116-42d2-b2c9-06830c25876d",
+    "meta": {
+        "lastUpdated": "2022-01-13T09:36:30.207+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Encounter",
+    "version": "1.0",
+    "name": "PT_Encounter",
+    "status": "active",
+    "experimental": false,
+    "date": "2022-01-13T07:42:42.8276395+00:00",
+    "description": "Representa a interação entre o utente e os cuidados de saúde, como consultas, internamentos, intervenções cirúrgicas, exames, urgências e outros eventos clínicos. Inclui informações como motivo do episódio, profissionais envolvidos, intervenções realizadas e resultados obtidos, sendo essencial para a continuidade dos cuidados. Este registo detalhado é essencial para construir um histórico completo e acessível do percurso de saúde do utente, facilitando a continuidade dos cuidados e o planeamento de futuras intervenções.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Encounter",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Encounter.meta",
+                "path": "Encounter.meta"
+            },
+            {
+                "id": "Encounter.meta.id",
+                "path": "Encounter.meta.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.meta.versionId",
+                "path": "Encounter.meta.versionId",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.meta.lastUpdated",
+                "path": "Encounter.meta.lastUpdated",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "EVN-2"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.meta.source",
+                "path": "Encounter.meta.source",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.meta.profile",
+                "path": "Encounter.meta.profile",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.meta.security",
+                "path": "Encounter.meta.security",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.meta.tag",
+                "path": "Encounter.meta.tag",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.implicitRules",
+                "path": "Encounter.implicitRules",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.language",
+                "path": "Encounter.language",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.text",
+                "path": "Encounter.text",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.contained",
+                "path": "Encounter.contained",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.id",
+                "path": "Encounter.identifier.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.use",
+                "path": "Encounter.identifier.use",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "if MRG-5.1 or MRG-6.1 = old"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.type.id",
+                "path": "Encounter.identifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.type.coding.id",
+                "path": "Encounter.identifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.type.coding.version",
+                "path": "Encounter.identifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.type.coding.code",
+                "path": "Encounter.identifier.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-19.5; PV1-50.5"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.type.coding.userSelected",
+                "path": "Encounter.identifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.type.text",
+                "path": "Encounter.identifier.type.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.value",
+                "path": "Encounter.identifier.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-19.1; PV1-50.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.period.id",
+                "path": "Encounter.identifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.period.start",
+                "path": "Encounter.identifier.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-19.7; PV1-50.7"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.period.end",
+                "path": "Encounter.identifier.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-19.8; PV1-50.8"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.identifier.assigner.id",
+                "path": "Encounter.identifier.assigner.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.assigner.reference",
+                "path": "Encounter.identifier.assigner.reference",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.assigner.type",
+                "path": "Encounter.identifier.assigner.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.assigner.identifier",
+                "path": "Encounter.identifier.assigner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.identifier.assigner.display",
+                "path": "Encounter.identifier.assigner.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-19.4; PV1-50.4"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.status",
+                "path": "Encounter.status",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ADT^A01, ADT^A04 = 'arrived'; ADT^A02 = 'in-progress'; ADT^A03 = 'finished'; ADT^A08 (if PV1-2 = URG) = 'triaged'; ADT^A11, ADT^A13 = 'canceled'; ADT^A12 = 'entered-in-error';"
+                    },
+                    {
+                        "identity": "HL7v2.x-Discharge",
+                        "map": "It is possible to use the PV1-41 field to indicate whether it is a clinical or administrative discharge. The ValueSet is user defined"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.statusHistory",
+                "path": "Encounter.statusHistory",
+                "comment": "The current status is always found in the current version of the resource, not the status history.\n\n*Note: this field will be filled in case of episode search"
+            },
+            {
+                "id": "Encounter.statusHistory.id",
+                "path": "Encounter.statusHistory.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.class",
+                "path": "Encounter.class",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-2"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.class.id",
+                "path": "Encounter.class.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.class.version",
+                "path": "Encounter.class.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.class.code",
+                "path": "Encounter.class.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-2"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.class.userSelected",
+                "path": "Encounter.class.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.classHistory",
+                "path": "Encounter.classHistory",
+                "comment": "*Note: this field will be filled in case of episode search"
+            },
+            {
+                "id": "Encounter.classHistory.id",
+                "path": "Encounter.classHistory.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.type",
+                "path": "Encounter.type",
+                "binding": {
+                    "strength": "example",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0007"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-4"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.type.id",
+                "path": "Encounter.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.type.coding.id",
+                "path": "Encounter.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.type.coding.version",
+                "path": "Encounter.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.type.coding.code",
+                "path": "Encounter.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-4"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.type.coding.userSelected",
+                "path": "Encounter.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.type.text",
+                "path": "Encounter.type.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.serviceType",
+                "path": "Encounter.serviceType",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-10"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.serviceType.id",
+                "path": "Encounter.serviceType.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceType.coding.id",
+                "path": "Encounter.serviceType.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceType.coding.version",
+                "path": "Encounter.serviceType.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceType.coding.code",
+                "path": "Encounter.serviceType.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-10"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.serviceType.coding.userSelected",
+                "path": "Encounter.serviceType.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceType.text",
+                "path": "Encounter.serviceType.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.priority",
+                "path": "Encounter.priority",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV2-25"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.priority.id",
+                "path": "Encounter.priority.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.priority.coding.id",
+                "path": "Encounter.priority.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.priority.coding.version",
+                "path": "Encounter.priority.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.priority.coding.code",
+                "path": "Encounter.priority.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV2-25"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.priority.coding.userSelected",
+                "path": "Encounter.priority.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.priority.text",
+                "path": "Encounter.priority.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.subject",
+                "path": "Encounter.subject",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.subject.id",
+                "path": "Encounter.subject.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.subject.reference",
+                "path": "Encounter.subject.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.subject.type",
+                "path": "Encounter.subject.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.subject.identifier",
+                "path": "Encounter.subject.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.subject.display",
+                "path": "Encounter.subject.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.episodeOfCare",
+                "path": "Encounter.episodeOfCare",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant",
+                "path": "Encounter.participant",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1; ROL; ORC"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.id",
+                "path": "Encounter.participant.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.type",
+                "path": "Encounter.participant.type",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-7; PV1-8; PV1-9; PV1-17; PV1-52, PV2-13, ROL-3, ORC-12"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.type.id",
+                "path": "Encounter.participant.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.type.coding.id",
+                "path": "Encounter.participant.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.type.coding.version",
+                "path": "Encounter.participant.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.type.coding.code",
+                "path": "Encounter.participant.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-7 (code=ATND); PV1-8, PV2-13 (code=REF); PV1-9 (code=CON); PV1-17 (code=ADM); PV1-52, ORC-12 (code=PART); ROL-3"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.type.coding.display",
+                "path": "Encounter.participant.type.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-7 (display=attender); PV1-8, PV2-13 (display=referrer); PV1-9 (display=consultant); PV1-17 (display=admitter);  PV1-52, ORC-12 (display=Participation); ROL-3"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.type.coding.userSelected",
+                "path": "Encounter.participant.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.type.text",
+                "path": "Encounter.participant.type.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.period.id",
+                "path": "Encounter.participant.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.period.start",
+                "path": "Encounter.participant.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-5"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.period.end",
+                "path": "Encounter.participant.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-6"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.individual",
+                "path": "Encounter.participant.individual",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+                            "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+                            "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.individual.id",
+                "path": "Encounter.participant.individual.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.individual.reference",
+                "path": "Encounter.participant.individual.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Practitioner",
+                        "map": "EVN-5.1; PV1-7.1; PV1-8.1; PV1-9.1; PV1-17.1; PV1-52.1; PV2-13.1; ROL-4.1; ORC-12.1"
+                    },
+                    {
+                        "identity": "HL7v2.x-PractitionerRole",
+                        "map": "ROL-1; PRD-7.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.participant.individual.type",
+                "path": "Encounter.participant.individual.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.individual.identifier",
+                "path": "Encounter.participant.individual.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.participant.individual.display",
+                "path": "Encounter.participant.individual.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.period.id",
+                "path": "Encounter.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.period.start",
+                "path": "Encounter.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-44"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.period.end",
+                "path": "Encounter.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-45"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.length.id",
+                "path": "Encounter.length.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.length.value",
+                "path": "Encounter.length.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Calculation performed through the PV1-44 and PV1-45 field; PV2-11"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.length.comparator",
+                "path": "Encounter.length.comparator",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.length.unit",
+                "path": "Encounter.length.unit",
+                "example":  [
+                    {
+                        "label": "Unit",
+                        "valueString": "days"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.length.system",
+                "path": "Encounter.length.system",
+                "binding": {
+                    "strength": "preferred",
+                    "description": "Unified Code for Units of Measure (UCUM)",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/duration-units"
+                }
+            },
+            {
+                "id": "Encounter.length.code",
+                "path": "Encounter.length.code",
+                "example":  [
+                    {
+                        "label": "Code",
+                        "valueCode": "d"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonCode",
+                "path": "Encounter.reasonCode",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "EVN-4; PV2-3"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonCode.id",
+                "path": "Encounter.reasonCode.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonCode.coding.id",
+                "path": "Encounter.reasonCode.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonCode.coding.system",
+                "path": "Encounter.reasonCode.coding.system",
+                "example":  [
+                    {
+                        "label": "System",
+                        "valueUri": "http://snomed.info/sct"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV2-3.3"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonCode.coding.version",
+                "path": "Encounter.reasonCode.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonCode.coding.code",
+                "path": "Encounter.reasonCode.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV2-3.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonCode.coding.display",
+                "path": "Encounter.reasonCode.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV2-3.2"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonCode.coding.userSelected",
+                "path": "Encounter.reasonCode.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonCode.text",
+                "path": "Encounter.reasonCode.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonReference",
+                "path": "Encounter.reasonReference",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.reasonReference.id",
+                "path": "Encounter.reasonReference.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonReference.type",
+                "path": "Encounter.reasonReference.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonReference.identifier",
+                "path": "Encounter.reasonReference.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.reasonReference.display",
+                "path": "Encounter.reasonReference.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.id",
+                "path": "Encounter.diagnosis.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.condition",
+                "path": "Encounter.diagnosis.condition",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.diagnosis.condition.id",
+                "path": "Encounter.diagnosis.condition.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.condition.reference",
+                "path": "Encounter.diagnosis.condition.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Condition/DG1-3.1; DG1-20.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.diagnosis.condition.type",
+                "path": "Encounter.diagnosis.condition.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.condition.identifier",
+                "path": "Encounter.diagnosis.condition.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.condition.display",
+                "path": "Encounter.diagnosis.condition.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.use",
+                "path": "Encounter.diagnosis.use",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "DG1-6"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.diagnosis.use.id",
+                "path": "Encounter.diagnosis.use.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.use.coding.id",
+                "path": "Encounter.diagnosis.use.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.use.coding.version",
+                "path": "Encounter.diagnosis.use.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.use.coding.code",
+                "path": "Encounter.diagnosis.use.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "DG1-6"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.diagnosis.use.coding.userSelected",
+                "path": "Encounter.diagnosis.use.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.diagnosis.use.text",
+                "path": "Encounter.diagnosis.use.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.diagnosis.rank",
+                "path": "Encounter.diagnosis.rank",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "DG1-15"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.account",
+                "path": "Encounter.account",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.id",
+                "path": "Encounter.hospitalization.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.id",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.5"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.id",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.id",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.version",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.code",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.5"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.userSelected",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.type.text",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.type.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.value",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.period.id",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.period.start",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.7"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.period.end",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.8"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.assigner.id",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.assigner.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.assigner.reference",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.assigner.reference",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.assigner.type",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.assigner.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.assigner.identifier",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.assigner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.preAdmissionIdentifier.assigner.display",
+                "path": "Encounter.hospitalization.preAdmissionIdentifier.assigner.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-5.4"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.origin",
+                "path": "Encounter.hospitalization.origin",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Location",
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.origin.id",
+                "path": "Encounter.hospitalization.origin.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.origin.type",
+                "path": "Encounter.hospitalization.origin.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.origin.identifier",
+                "path": "Encounter.hospitalization.origin.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.origin.display",
+                "path": "Encounter.hospitalization.origin.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource",
+                "path": "Encounter.hospitalization.admitSource",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-14"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.id",
+                "path": "Encounter.hospitalization.admitSource.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.coding.id",
+                "path": "Encounter.hospitalization.admitSource.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.coding.version",
+                "path": "Encounter.hospitalization.admitSource.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.coding.code",
+                "path": "Encounter.hospitalization.admitSource.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-14"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.coding.userSelected",
+                "path": "Encounter.hospitalization.admitSource.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.admitSource.text",
+                "path": "Encounter.hospitalization.admitSource.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission",
+                "path": "Encounter.hospitalization.reAdmission",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-13"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.id",
+                "path": "Encounter.hospitalization.reAdmission.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.coding.id",
+                "path": "Encounter.hospitalization.reAdmission.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.coding.version",
+                "path": "Encounter.hospitalization.reAdmission.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.coding.code",
+                "path": "Encounter.hospitalization.reAdmission.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-13"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.coding.userSelected",
+                "path": "Encounter.hospitalization.reAdmission.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.reAdmission.text",
+                "path": "Encounter.hospitalization.reAdmission.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference",
+                "path": "Encounter.hospitalization.dietPreference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-38"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.id",
+                "path": "Encounter.hospitalization.dietPreference.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.id",
+                "path": "Encounter.hospitalization.dietPreference.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.system",
+                "path": "Encounter.hospitalization.dietPreference.coding.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-38.3"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.version",
+                "path": "Encounter.hospitalization.dietPreference.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.code",
+                "path": "Encounter.hospitalization.dietPreference.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-38.1"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.display",
+                "path": "Encounter.hospitalization.dietPreference.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-38.2"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.coding.userSelected",
+                "path": "Encounter.hospitalization.dietPreference.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dietPreference.text",
+                "path": "Encounter.hospitalization.dietPreference.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy",
+                "path": "Encounter.hospitalization.specialCourtesy",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-16"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.id",
+                "path": "Encounter.hospitalization.specialCourtesy.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.coding.id",
+                "path": "Encounter.hospitalization.specialCourtesy.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.coding.version",
+                "path": "Encounter.hospitalization.specialCourtesy.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.coding.code",
+                "path": "Encounter.hospitalization.specialCourtesy.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-16"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.coding.userSelected",
+                "path": "Encounter.hospitalization.specialCourtesy.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialCourtesy.text",
+                "path": "Encounter.hospitalization.specialCourtesy.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.id",
+                "path": "Encounter.hospitalization.specialArrangement.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.coding.id",
+                "path": "Encounter.hospitalization.specialArrangement.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.coding.version",
+                "path": "Encounter.hospitalization.specialArrangement.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.coding.code",
+                "path": "Encounter.hospitalization.specialArrangement.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-15 (if information about wheelchair)"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.coding.userSelected",
+                "path": "Encounter.hospitalization.specialArrangement.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.specialArrangement.text",
+                "path": "Encounter.hospitalization.specialArrangement.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.destination",
+                "path": "Encounter.hospitalization.destination",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.destination.id",
+                "path": "Encounter.hospitalization.destination.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.destination.reference",
+                "path": "Encounter.hospitalization.destination.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Location",
+                        "map": "Location/PV1-37"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.destination.type",
+                "path": "Encounter.hospitalization.destination.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.destination.identifier",
+                "path": "Encounter.hospitalization.destination.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.destination.display",
+                "path": "Encounter.hospitalization.destination.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition",
+                "path": "Encounter.hospitalization.dischargeDisposition",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-36"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.id",
+                "path": "Encounter.hospitalization.dischargeDisposition.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.coding.id",
+                "path": "Encounter.hospitalization.dischargeDisposition.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.coding.version",
+                "path": "Encounter.hospitalization.dischargeDisposition.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.coding.code",
+                "path": "Encounter.hospitalization.dischargeDisposition.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-36"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.coding.userSelected",
+                "path": "Encounter.hospitalization.dischargeDisposition.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.hospitalization.dischargeDisposition.text",
+                "path": "Encounter.hospitalization.dischargeDisposition.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.id",
+                "path": "Encounter.location.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.location",
+                "path": "Encounter.location.location",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                        ]
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-3, PV1-6, PV1-11, PV1-42, PV1-43"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.location.id",
+                "path": "Encounter.location.location.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.location.reference",
+                "path": "Encounter.location.location.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Location/PV1-3.(1, 2, 3, 4, 7, 8, 10), PV1-6.(1, 2, 3, 4, 7, 8, 10), PV1-11.(1, 2, 3, 4, 7, 8, 10), PV1-42.(1, 2, 3, 4, 7, 8, 10), PV1-43.(1, 2, 3, 4, 7, 8, 10)"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.location.type",
+                "path": "Encounter.location.location.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.location.identifier",
+                "path": "Encounter.location.location.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.location.display",
+                "path": "Encounter.location.location.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.status",
+                "path": "Encounter.location.status",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "default = active"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.physicalType.id",
+                "path": "Encounter.location.physicalType.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.physicalType.coding.id",
+                "path": "Encounter.location.physicalType.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.physicalType.coding.version",
+                "path": "Encounter.location.physicalType.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.physicalType.coding.code",
+                "path": "Encounter.location.physicalType.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PV1-3.(1, 2, 3, 4, 7, 8, 10); PV1-6.(1, 2, 3, 4, 7, 8, 10); PV1-11.(1, 2, 3, 4, 7, 8, 10); PV1-42.(1, 2, 3, 4, 7, 8, 10); PV1-43.(1, 2, 3, 4, 7, 8, 10)"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.physicalType.coding.userSelected",
+                "path": "Encounter.location.physicalType.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.location.physicalType.text",
+                "path": "Encounter.location.physicalType.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Translation to [PT] of the display field"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location.period",
+                "path": "Encounter.location.period",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceProvider",
+                "path": "Encounter.serviceProvider",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.serviceProvider.id",
+                "path": "Encounter.serviceProvider.id",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceProvider.reference",
+                "path": "Encounter.serviceProvider.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Organization/EVN-7, MSH-6, ORG-2.1, XON-3 or XON-10 (HL7v2.5); ORC-17.1; ORC-21.3 or ORC-21.10 (HL7v2.5)"
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.serviceProvider.type",
+                "path": "Encounter.serviceProvider.type",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceProvider.identifier",
+                "path": "Encounter.serviceProvider.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.serviceProvider.display",
+                "path": "Encounter.serviceProvider.display",
+                "max": "0"
+            },
+            {
+                "id": "Encounter.partOf",
+                "path": "Encounter.partOf",
+                "max": "0"
+            }
+        ]
+    }
+}

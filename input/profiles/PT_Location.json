@@ -1,0 +1,682 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "ae5389ed-ec12-4804-a181-748fce7bd23c",
+    "meta": {
+        "lastUpdated": "2021-12-20T11:59:51.992+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Location",
+    "version": "1.0",
+    "name": "PT_Location",
+    "status": "active",
+    "experimental": false,
+    "date": "2021-12-20T10:44:18.165219+00:00",
+    "description": "Define uma localização genérica para a organização em causa. Representa qualquer local relevante no contexto de saúde, que pode ir desde a cama do utente até ao edifício onde o mesmo se encontra. O objetivo deste recurso é identificar e descrever locais de forma única e interoperável, garantindo que todas as referências a localizações dentro do sistema sejam consistentes e fáceis de rastrear.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Location",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Location.meta",
+                "path": "Location.meta"
+            },
+            {
+                "id": "Location.meta.id",
+                "path": "Location.meta.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.meta.versionId",
+                "path": "Location.meta.versionId",
+                "max": "0"
+            },
+            {
+                "id": "Location.meta.lastUpdated",
+                "path": "Location.meta.lastUpdated",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "MFI-4.1"
+                    }
+                ]
+            },
+            {
+                "id": "Location.meta.source",
+                "path": "Location.meta.source",
+                "max": "0"
+            },
+            {
+                "id": "Location.meta.profile",
+                "path": "Location.meta.profile",
+                "max": "0"
+            },
+            {
+                "id": "Location.meta.security",
+                "path": "Location.meta.security",
+                "max": "0"
+            },
+            {
+                "id": "Location.meta.tag",
+                "path": "Location.meta.tag",
+                "max": "0"
+            },
+            {
+                "id": "Location.implicitRules",
+                "path": "Location.implicitRules",
+                "max": "0"
+            },
+            {
+                "id": "Location.language",
+                "path": "Location.language",
+                "max": "0"
+            },
+            {
+                "id": "Location.text",
+                "path": "Location.text",
+                "max": "0"
+            },
+            {
+                "id": "Location.contained",
+                "path": "Location.contained",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.id",
+                "path": "Location.identifier.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.use",
+                "path": "Location.identifier.use",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-Ordem",
+                        "map": "x.3, x.2, x.1, x.8, x.7, x.4 (quando versão HL7 v2.4), x.10 (quando versão HL7 v2.5+)"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.type.id",
+                "path": "Location.identifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.type.coding.id",
+                "path": "Location.identifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.type.coding.system",
+                "path": "Location.identifier.type.coding.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "MFI-1.3"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.type.coding.version",
+                "path": "Location.identifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.type.coding.code",
+                "path": "Location.identifier.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "MFI-1.1"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.type.coding.display",
+                "path": "Location.identifier.type.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "MFI-1.2"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.type.coding.userSelected",
+                "path": "Location.identifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.type.text",
+                "path": "Location.identifier.type.text",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.system",
+                "path": "Location.identifier.system",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.value",
+                "path": "Location.identifier.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-1",
+                        "map": "MFE-2; MFE-4.1"
+                    },
+                    {
+                        "identity": "HL7v2.x-2",
+                        "map": "LOC / LDP / LCC / LCH-1.1, 1.2, 1.3, 1.4, 1.7, 1.8, 1.10"
+                    },
+                    {
+                        "identity": "HL7v2.x-3",
+                        "map": "AIL/PV1-3.1, 3.2, 3.3, 3.4, 3.7, 3.8, 3.10"
+                    },
+                    {
+                        "identity": "HL7v2.x-4",
+                        "map": "PV1-6/11/42/43.1, 6/11/42/43.2, 6/11/42/43.3, 6/11/42/43.4, 6/11/42/43.7, 6/11/42/43.8, 6/11/42/43.10"
+                    },
+                    {
+                        "identity": "HL7v2.x-5",
+                        "map": "ORC-13.1, 13.2, 13.3, 13.4, 13.7, 13.8, 13.10"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.period.id",
+                "path": "Location.identifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.period.start",
+                "path": "Location.identifier.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LDP-7"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.period.end",
+                "path": "Location.identifier.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LDP-8"
+                    }
+                ]
+            },
+            {
+                "id": "Location.identifier.assigner.id",
+                "path": "Location.identifier.assigner.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.assigner.reference",
+                "path": "Location.identifier.assigner.reference",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.assigner.type",
+                "path": "Location.identifier.assigner.type",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.assigner.identifier",
+                "path": "Location.identifier.assigner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Location.identifier.assigner.display",
+                "path": "Location.identifier.assigner.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Organization/LOC-1.11; LDP-1.11; LCC-1.11; LCH-1.11; AIL-3.11; PV1-3.11; PV1-6.11; PV1-11.11; PV1-42.11; PV1-43.11; ORC-13.11"
+                    }
+                ]
+            },
+            {
+                "id": "Location.status",
+                "path": "Location.status",
+                "comment": "*The mapping for this field is being updated.",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "default - active (*in update)"
+                    }
+                ]
+            },
+            {
+                "id": "Location.operationalStatus",
+                "path": "Location.operationalStatus",
+                "max": "0"
+            },
+            {
+                "id": "Location.name",
+                "path": "Location.name",
+                "comment": "*The mapping for this field is being updated.",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-1",
+                        "map": "LOC / LDP / LCC / LCH -1.6, 1.9, 1.10/1.4 (*in update)"
+                    },
+                    {
+                        "identity": "HL7v2.x-2",
+                        "map": "AIL / PV1-3.6, 3.9, 3.10/3.4 (*in update)"
+                    },
+                    {
+                        "identity": "HL7v2.x-3",
+                        "map": "PV1-6/11/42/43.6, 6/11/42/43.9, 6/11/42/43.10, 6/11/42/43.4 (*in update)"
+                    }
+                ]
+            },
+            {
+                "id": "Location.alias",
+                "path": "Location.alias",
+                "max": "0"
+            },
+            {
+                "id": "Location.description",
+                "path": "Location.description",
+                "comment": "*The mapping for this field is being updated.",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-2 (*in update)"
+                    }
+                ]
+            },
+            {
+                "id": "Location.mode",
+                "path": "Location.mode",
+                "max": "0"
+            },
+            {
+                "id": "Location.type",
+                "path": "Location.type",
+                "comment": "*The mapping for this field is being updated.",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Still no mappings (*in update)"
+                    }
+                ]
+            },
+            {
+                "id": "Location.type.id",
+                "path": "Location.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.telecom.id",
+                "path": "Location.telecom.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.telecom.system",
+                "path": "Location.telecom.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-6.3; LDP-11.3"
+                    }
+                ]
+            },
+            {
+                "id": "Location.telecom.value",
+                "path": "Location.telecom.value"
+            },
+            {
+                "id": "Location.telecom.use",
+                "path": "Location.telecom.use",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-6.2; LDP-11.2"
+                    }
+                ]
+            },
+            {
+                "id": "Location.telecom.period",
+                "path": "Location.telecom.period",
+                "max": "0"
+            },
+            {
+                "id": "Location.address.id",
+                "path": "Location.address.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.address.extension",
+                "path": "Location.address.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Location.address.extension:Parish",
+                "path": "Location.address.extension",
+                "sliceName": "Parish",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.type",
+                "path": "Location.address.type",
+                "max": "0"
+            },
+            {
+                "id": "Location.address.text",
+                "path": "Location.address.text",
+                "max": "0"
+            },
+            {
+                "id": "Location.address.line",
+                "path": "Location.address.line",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.1"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.city",
+                "path": "Location.address.city",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.3"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.district",
+                "path": "Location.address.district",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.8"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.state",
+                "path": "Location.address.state",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.4"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.postalCode",
+                "path": "Location.address.postalCode",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.5"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.country",
+                "path": "Location.address.country",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.6"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.period.id",
+                "path": "Location.address.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.address.period.start",
+                "path": "Location.address.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.13"
+                    }
+                ]
+            },
+            {
+                "id": "Location.address.period.end",
+                "path": "Location.address.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LOC-5.14"
+                    }
+                ]
+            },
+            {
+                "id": "Location.physicalType.id",
+                "path": "Location.physicalType.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.physicalType.coding.id",
+                "path": "Location.physicalType.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.physicalType.coding.version",
+                "path": "Location.physicalType.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Location.physicalType.coding.code",
+                "path": "Location.physicalType.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-WARD",
+                        "map": "LOC-1.1; LDP-1.1; LCC-1.1; LCH-1.1; AIL-3.1; PV1-3.1; PV1-6.1; PV1-11.1; PV1-42.1; PV1-43.1"
+                    },
+                    {
+                        "identity": "HL7v2.x-ROOM",
+                        "map": "LOC-1.2; LDP-1.2; LCC-1.2; LCH-1.2; AIL-3.2; PV1-3.2; PV1-6.2; PV1-11.2; PV1-42.2; PV1-43.2"
+                    },
+                    {
+                        "identity": "HL7v2.x-BED",
+                        "map": "LOC-1.3; LDP-1.3; LCC-1.3; LCH-1.3; AIL-3.3; PV1-3.3; PV1-6.3; PV1-11.3; PV1-42.3; PV1-43.3"
+                    },
+                    {
+                        "identity": "HL7v2.x-SITE",
+                        "map": "LOC-1.4; LDP-1.4; LCC-1.4; LCH-1.4; AIL-3.4; PV1-3.4; PV1-6.4; PV1-11.4; PV1-42.4; PV1-43.4"
+                    },
+                    {
+                        "identity": "HL7v2.x-BUILDING",
+                        "map": "LOC-1.7; LDP-1.7; LCC-1.7; LCH-1.7; AIL-3.7; PV1-3.7; PV1-6.7; PV1-11.7; PV1-42.7; PV1-43.7"
+                    },
+                    {
+                        "identity": "HL7v2.x-LEVEL",
+                        "map": "LOC-1.8; LDP-1.8; LCC-1.8; LCH-1.8; AIL-3.8; PV1-3.8; PV1-6.8; PV1-11.8; PV1-42.8; PV1-43.8"
+                    }
+                ]
+            },
+            {
+                "id": "Location.physicalType.coding.userSelected",
+                "path": "Location.physicalType.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Location.physicalType.text",
+                "path": "Location.physicalType.text",
+                "max": "0"
+            },
+            {
+                "id": "Location.position.id",
+                "path": "Location.position.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.position.altitude",
+                "path": "Location.position.altitude",
+                "max": "0"
+            },
+            {
+                "id": "Location.managingOrganization.id",
+                "path": "Location.managingOrganization.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.managingOrganization.reference",
+                "path": "Location.managingOrganization.reference",
+                "max": "0"
+            },
+            {
+                "id": "Location.managingOrganization.type",
+                "path": "Location.managingOrganization.type",
+                "max": "0"
+            },
+            {
+                "id": "Location.managingOrganization.identifier",
+                "path": "Location.managingOrganization.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Location.managingOrganization.display",
+                "path": "Location.managingOrganization.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Organization/EVN-7; MSH-6"
+                    }
+                ]
+            },
+            {
+                "id": "Location.partOf",
+                "path": "Location.partOf",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Location.partOf.id",
+                "path": "Location.partOf.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.partOf.reference",
+                "path": "Location.partOf.reference",
+                "max": "0"
+            },
+            {
+                "id": "Location.partOf.type",
+                "path": "Location.partOf.type",
+                "max": "0"
+            },
+            {
+                "id": "Location.partOf.identifier",
+                "path": "Location.partOf.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Location.partOf.display",
+                "path": "Location.partOf.display",
+                "comment": "Field mapped according to the code that is in the Location.PhysicalType",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x-WARD",
+                        "map": "LOC-1.1; LDP-1.1; LCC-1.1; LCH-1.1; AIL-3.1; PV1-3.1; PV1-6.1; PV1-11.1; PV1-42.1; PV1-43.1"
+                    },
+                    {
+                        "identity": "HL7v2.x-ROOM",
+                        "map": "LOC-1.2; LDP-1.2; LCC-1.2; LCH-1.2; AIL-3.2; PV1-3.2; PV1-6.2; PV1-11.2; PV1-42.2; PV1-43.2"
+                    },
+                    {
+                        "identity": "HL7v2.x-BED",
+                        "map": "LOC-1.3; LDP-1.3; LCC-1.3; LCH-1.3; AIL-3.3; PV1-3.3; PV1-6.3; PV1-11.3; PV1-42.3; PV1-43.3"
+                    },
+                    {
+                        "identity": "HL7v2.x-SITE",
+                        "map": "LOC-1.4; LDP-1.4; LCC-1.4; LCH-1.4; AIL-3.4; PV1-3.4; PV1-6.4; PV1-11.4; PV1-42.4; PV1-43.4"
+                    },
+                    {
+                        "identity": "HL7v2.x-BUILDING",
+                        "map": "LOC-1.7; LDP-1.7; LCC-1.7; LCH-1.7; AIL-3.7; PV1-3.7; PV1-6.7; PV1-11.7; PV1-42.7; PV1-43.7"
+                    },
+                    {
+                        "identity": "HL7v2.x-LEVEL",
+                        "map": "LOC-1.8; LDP-1.8; LCC-1.8; LCH-1.8; AIL-3.8; PV1-3.8; PV1-6.8; PV1-11.8; PV1-42.8; PV1-43.8"
+                    }
+                ]
+            },
+            {
+                "id": "Location.hoursOfOperation.id",
+                "path": "Location.hoursOfOperation.id",
+                "max": "0"
+            },
+            {
+                "id": "Location.hoursOfOperation.daysOfWeek",
+                "path": "Location.hoursOfOperation.daysOfWeek",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LDP-10.1 & LDP-10.2"
+                    }
+                ]
+            },
+            {
+                "id": "Location.hoursOfOperation.openingTime",
+                "path": "Location.hoursOfOperation.openingTime",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LDP-10.3"
+                    }
+                ]
+            },
+            {
+                "id": "Location.hoursOfOperation.closingTime",
+                "path": "Location.hoursOfOperation.closingTime",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "LDP-10.4"
+                    }
+                ]
+            },
+            {
+                "id": "Location.availabilityExceptions",
+                "path": "Location.availabilityExceptions",
+                "max": "0"
+            },
+            {
+                "id": "Location.endpoint",
+                "path": "Location.endpoint",
+                "max": "0"
+            }
+        ]
+    }
+}
