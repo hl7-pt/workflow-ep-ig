@@ -7,15 +7,15 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1"
+id: pt-patient-visit
+canonical: http://hl7.pt/fhir/example
+url: http://hl7.pt/fhir/example
+name: HL7PTIGPatientVisit
+title: "HL7 PT FHIR Implementation Guide: Visita do Utente"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
+date: 2024-12-01
 version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
@@ -164,22 +164,35 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 
 pages:
   index.md:
-    title: Home Page   
+    title: Inicio  
   background.md:
     title: Background
-  spec.md:
-    title: Specification
-  downloads.html:
-    title: Downloads
+  fun_spec.md:
+    title: Especificação Funcional
+  tech_spec.md:
+    title: Especificação Técnica
+  usage.md:
+    title: Usar este IG
+  examples.html:
+    title: Exemplos
   changes.html:
-    title: IG Change History
-		
-menu:
-  IG Home: index.html
-  Background: background.html
-  Specification: spec.html
-  Artifact Index: artifacts.html			
-  Downloads: downloads.html
+    title: Histórico de Alterações
+  configurations.md:
+    title: Configurações
+  error_handling.md:
+    title: Erros
+  glossary.md:
+    title: Glossário
+
+#menu:
+#  IG Home: index.html
+#  Índice: toc.html
+#  Especificação: spec.html
+#  Usar este IG: usage.html
+#  Artefactos: artifacts.html
+#  Glossário: glossary.html
+#  Downloads: downloads.html
+
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
 # resource), the code is the YAML key. If a parameter allows repeating
