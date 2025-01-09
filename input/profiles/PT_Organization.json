@@ -1,0 +1,510 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "6e9480b2-6dc1-4fff-a828-6aa231411647",
+    "meta": {
+        "lastUpdated": "2021-12-27T17:28:42.548+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+    "version": "1.0",
+    "name": "PT_Organization",
+    "status": "active",
+    "experimental": false,
+    "date": "2021-12-27T17:15:26.4961614Z",
+    "description": "O objetivo é assegurar que a identificação de organizações seja única e padronizada, permitindo a interoperabilidade entre sistemas e promovendo a rastreabilidade de dados relacionados a entidades responsáveis por fornecer ou gerir cuidados de saúde.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Organization",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Organization.meta",
+                "path": "Organization.meta",
+                "max": "0"
+            },
+            {
+                "id": "Organization.implicitRules",
+                "path": "Organization.implicitRules",
+                "max": "0"
+            },
+            {
+                "id": "Organization.language",
+                "path": "Organization.language",
+                "max": "0"
+            },
+            {
+                "id": "Organization.text",
+                "path": "Organization.text",
+                "max": "0"
+            },
+            {
+                "id": "Organization.contained",
+                "path": "Organization.contained",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.id",
+                "path": "Organization.identifier.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.type",
+                "path": "Organization.identifier.type",
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "XON-7; IN1-3.5; ORC-21.7"
+                    },
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ORG-2 -> depends on the ORG-2.1 value in identifier.value"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.type.id",
+                "path": "Organization.identifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.type.coding.id",
+                "path": "Organization.identifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.type.coding.version",
+                "path": "Organization.identifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.type.coding.code",
+                "path": "Organization.identifier.type.coding.code",
+                "example":  [
+                    {
+                        "label": "Code",
+                        "valueCode": "FI"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.type.coding.display",
+                "path": "Organization.identifier.type.coding.display",
+                "example":  [
+                    {
+                        "label": "Display",
+                        "valueString": "Facility ID"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.type.coding.userSelected",
+                "path": "Organization.identifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.type.text",
+                "path": "Organization.identifier.type.text",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.value",
+                "path": "Organization.identifier.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "XON-3 / XON-10; IN1-3.1; ORG-2.1; MSH-6; ORC-17.1; ORC-21.3 / ORC-21.10"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.period.id",
+                "path": "Organization.identifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.period.start",
+                "path": "Organization.identifier.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-3.7"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.period.end",
+                "path": "Organization.identifier.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-3.8"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.identifier.assigner.id",
+                "path": "Organization.identifier.assigner.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.assigner.reference",
+                "path": "Organization.identifier.assigner.reference",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.assigner.type",
+                "path": "Organization.identifier.assigner.type",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.assigner.identifier",
+                "path": "Organization.identifier.assigner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Organization.identifier.assigner.display",
+                "path": "Organization.identifier.assigner.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "XON-6; IN1-3.4; ORC-21.6"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.active",
+                "path": "Organization.active",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Mapping depending on period.start and period.end"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.type",
+                "path": "Organization.type",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ORG-3; ROL-10"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.type.id",
+                "path": "Organization.type.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.type.coding.id",
+                "path": "Organization.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.type.coding.system",
+                "path": "Organization.type.coding.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ORG-3.3; ROL-10.3"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.type.coding.version",
+                "path": "Organization.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Organization.type.coding.code",
+                "path": "Organization.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ORG-3.1; ROL-10.1"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.type.coding.display",
+                "path": "Organization.type.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ORG-3.2; ROL-10.2"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.type.coding.userSelected",
+                "path": "Organization.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Organization.type.text",
+                "path": "Organization.type.text",
+                "max": "0"
+            },
+            {
+                "id": "Organization.name",
+                "path": "Organization.name",
+                "min": 1,
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "XON-1; IN1-4; ORG-2.2; ORC-17.2; ORC-21.1"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.telecom",
+                "path": "Organization.telecom",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-7; ORC-23"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.telecom.id",
+                "path": "Organization.telecom.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.telecom.system",
+                "path": "Organization.telecom.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-7.3; ORC-23.3"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.telecom.value",
+                "path": "Organization.telecom.value",
+                "max": 1
+            },
+            {
+                "id": "Organization.telecom.use",
+                "path": "Organization.telecom.use",
+                "short": "work | temp | old | mobile - purpose of this contact point",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-7.2; ORC-23.2"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.telecom.rank",
+                "path": "Organization.telecom.rank",
+                "max": "0"
+            },
+            {
+                "id": "Organization.telecom.period",
+                "path": "Organization.telecom.period",
+                "max": "0"
+            },
+            {
+                "id": "Organization.address",
+                "path": "Organization.address",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5; ORC-22"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.id",
+                "path": "Organization.address.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.address.extension",
+                "path": "Organization.address.extension",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "value",
+                            "path": "url"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "min": 0
+            },
+            {
+                "id": "Organization.address.extension:Parish",
+                "path": "Organization.address.extension",
+                "sliceName": "Parish",
+                "min": 0,
+                "max": "1",
+                "type":  [
+                    {
+                        "code": "Extension",
+                        "profile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.use",
+                "path": "Organization.address.use",
+                "short": "work | temp | old | billing - purpose of this address"
+            },
+            {
+                "id": "Organization.address.type",
+                "path": "Organization.address.type",
+                "max": "0"
+            },
+            {
+                "id": "Organization.address.text",
+                "path": "Organization.address.text",
+                "max": "0"
+            },
+            {
+                "id": "Organization.address.line",
+                "path": "Organization.address.line",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.1; ORC-22.1"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.city",
+                "path": "Organization.address.city",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.3; ORC-22.3"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.district",
+                "path": "Organization.address.district",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.8; ORC-22.8"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.state",
+                "path": "Organization.address.state",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.4; ORC-22.4"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.postalCode",
+                "path": "Organization.address.postalCode",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.5; ORC-22.5"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.country",
+                "path": "Organization.address.country",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.6; ORC-22.6"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.period.id",
+                "path": "Organization.address.period.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.address.period.start",
+                "path": "Organization.address.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.12.1 / IN1-5.13.1; ORC-22.12.1 / ORC-22.13.1"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.address.period.end",
+                "path": "Organization.address.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "IN1-5.12.2 / IN1-5.14.1; ORC-22.12.2 / ORC-22.14.1"
+                    }
+                ]
+            },
+            {
+                "id": "Organization.partOf",
+                "path": "Organization.partOf",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Organization.partOf.id",
+                "path": "Organization.partOf.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.partOf.reference",
+                "path": "Organization.partOf.reference",
+                "max": "0"
+            },
+            {
+                "id": "Organization.partOf.type",
+                "path": "Organization.partOf.type",
+                "max": "0"
+            },
+            {
+                "id": "Organization.partOf.identifier",
+                "path": "Organization.partOf.identifier",
+                "max": "0"
+            },
+            {
+                "id": "Organization.contact",
+                "path": "Organization.contact",
+                "max": "0"
+            },
+            {
+                "id": "Organization.contact.id",
+                "path": "Organization.contact.id",
+                "max": "0"
+            },
+            {
+                "id": "Organization.endpoint",
+                "path": "Organization.endpoint",
+                "max": "0"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li><a href="index.html">Inicio IG</a></li>
+    <li><a href="toc.html">Índice</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="fun_spec.html">Funcional</a>
+            </li>
+            <li>
+                <a href="tech_spec.html">Técnica</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="artifacts.html">Artefactos</a></li>
+    <li><a href="glossary.html">Glossário</a></li>
+    <li><a href="usage.html">Usar este IG</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informações<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="configurations.html">Configurações</a>
+            </li>
+            <li>
+                <a href="changes.html">Histórico de Alterações</a>
+            </li>
+            <li>
+                <a href="error_handling.html">Erros</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="examples.html">Exemplos</a></li>
+</ul>

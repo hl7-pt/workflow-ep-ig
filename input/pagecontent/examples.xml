@@ -1,0 +1,48 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+	{% assign excludexml = site.data.info.excludexml | downcase | slice: 0 %}
+	{% assign excludejson = site.data.info.excludejson | downcase | slice: 0 %}
+	{% assign excludettl = site.data.info.excludettl | downcase | slice: 0 %}
+	<p>
+		<!--Descarregar todos os exemplos <a href="full-ig.zip">aqui</a>-->
+	</p>
+	<table>
+		<tbody>
+			<tr>
+				<th>Admissão do Utente</th>
+				<td>
+					<a href="adt-a01.json">JSON</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Transferência do Utente</th>
+				<td>
+					<a href="adt-a02.json">JSON</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Alta do Utente</th>
+				<td>
+					<a href="adt-a03.json">JSON</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Efetivação do Utente em Urgência</th>
+				<td>
+					<a href="adt-a04_emer.json">JSON</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Cancelamento da Admissão do Utente</th>
+				<td>
+					<a href="adt-a11.json">JSON</a>
+				</td>
+			</tr>
+			<tr>
+				<th>Cancelamento da Alta do Utente</th>
+				<td>
+					<a href="adt-a13.json">JSON</a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

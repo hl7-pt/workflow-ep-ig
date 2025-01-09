@@ -1,0 +1,136 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "63310252-7722-4031-8f01-a2c642d0f2a7",
+    "meta": {
+        "lastUpdated": "2022-01-08T13:41:49.635+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/BirthPlace",
+    "version": "1.0",
+    "name": "BirthPlace",
+    "status": "draft",
+    "experimental": false,
+    "date": "2021-10-28T16:28:03.5050045+00:00",
+    "description": "Extensão que adiciona o local de nascimento do utente ao recurso relevante uma vez que o mesmo é registado no momento de realização do Cartão de Cidadão e é útil para alguns estudos. Permite registar detalhes específicos, como freguesia, concelho, e distrito de nascimento, respeitando as estruturas administrativas de Portugal.",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context":  [
+        {
+            "type": "element",
+            "expression": "Patient"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Extension.id",
+                "path": "Extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/BirthPlace"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "type":  [
+                    {
+                        "code": "Address"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PID-23"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].id",
+                "path": "Extension.value[x].id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].use",
+                "path": "Extension.value[x].use",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].type",
+                "path": "Extension.value[x].type",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].text",
+                "path": "Extension.value[x].text",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].line",
+                "path": "Extension.value[x].line",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].city",
+                "path": "Extension.value[x].city",
+                "fixedString": "http://ine.pt",
+                "example":  [
+                    {
+                        "label": "Place of birth of the patient - Parish of Place of Birth",
+                        "valueString": "MAIA"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].district",
+                "path": "Extension.value[x].district",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].state",
+                "path": "Extension.value[x].state",
+                "code":  [
+                    {
+                        "system": "http://ine.pt"
+                    }
+                ],
+                "example":  [
+                    {
+                        "label": "Place of birth of the patient - State",
+                        "valueString": "PORTO"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].postalCode",
+                "path": "Extension.value[x].postalCode",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].country",
+                "path": "Extension.value[x].country",
+                "example":  [
+                    {
+                        "label": "Place of birth of the patient - Country",
+                        "valueString": "PT"
+                    }
+                ],
+                "binding": {
+                    "strength": "extensible",
+                    "description": "This value set defines the ISO 3166 Part 1 2-letter codes",
+                    "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+                }
+            },
+            {
+                "id": "Extension.value[x].period",
+                "path": "Extension.value[x].period",
+                "max": "0"
+            }
+        ]
+    }
+}

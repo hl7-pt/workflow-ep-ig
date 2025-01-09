@@ -1,0 +1,173 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "b6fdd39f-616f-4d90-9de1-11eb0c029f23",
+    "meta": {
+        "lastUpdated": "2022-07-05T08:01:08.9476149+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/Address",
+    "version": "1.4",
+    "name": "Address",
+    "status": "draft",
+    "experimental": false,
+    "date": "2022-07-05T08:01:17.9432835+00:00",
+    "description": "Extensão criada para complementar o recurso Address com o campo de freguesia, específico para Portugal. Este campo permite um nível mais detalhado de identificação de moradas, facilitando a localização precisa e o alinhamento com padrões administrativos locais.",
+    "fhirVersion": "4.0.1",
+    "kind": "complex-type",
+    "abstract": false,
+    "context":  [
+        {
+            "type": "element",
+            "expression": "Patient.address"
+        },
+        {
+            "type": "element",
+            "expression": "Practitioner.address"
+        },
+        {
+            "type": "element",
+            "expression": "Location.address"
+        },
+        {
+            "type": "element",
+            "expression": "Organization.address"
+        },
+        {
+            "type": "element",
+            "expression": "RelatedPerson.address"
+        },
+        {
+            "type": "element",
+            "expression": "Patient.contact.address"
+        }
+    ],
+    "type": "Extension",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "Extension.id",
+                "path": "Extension.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.url",
+                "path": "Extension.url",
+                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Address"
+            },
+            {
+                "id": "Extension.value[x]",
+                "path": "Extension.value[x]",
+                "type":  [
+                    {
+                        "code": "CodeableConcept"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "Patient.HL7v2.x",
+                        "map": "PID-11.9"
+                    },
+                    {
+                        "identity": "Practitioner.HL7v2.x",
+                        "map": "ROL-11.9; STF-11.9"
+                    },
+                    {
+                        "identity": "Location.HL7v2.x",
+                        "map": "LOC-5.9"
+                    },
+                    {
+                        "identity": "Organization.HL7v2.x",
+                        "map": "IN1-5.9; ORC-22.9"
+                    },
+                    {
+                        "identity": "RelatedPerson.HL7v2.x",
+                        "map": "NK1-4.9"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].id",
+                "path": "Extension.value[x].id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].coding.id",
+                "path": "Extension.value[x].coding.id",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].coding.system",
+                "path": "Extension.value[x].coding.system",
+                "code":  [
+                    {
+                        "system": "http://ine.pt"
+                    }
+                ],
+                "example":  [
+                    {
+                        "label": "Coding System",
+                        "valueUri": "http://ine.pt"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].coding.version",
+                "path": "Extension.value[x].coding.version",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].coding.code",
+                "path": "Extension.value[x].coding.code",
+                "example":  [
+                    {
+                        "label": "Parish code",
+                        "valueCode": "061015"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "Patient.HL7v2.x",
+                        "map": "PID-11.9"
+                    },
+                    {
+                        "identity": "Practitioner.HL7v2.x",
+                        "map": "ROL-11.9; STF-11.9"
+                    },
+                    {
+                        "identity": "Location.HL7v2.x",
+                        "map": "LOC-5.9"
+                    },
+                    {
+                        "identity": "Organization.HL7v2.x",
+                        "map": "IN1-5.9; ORC-22.9"
+                    },
+                    {
+                        "identity": "RelatedPerson.HL7v2.x",
+                        "map": "NK1-4.9"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].coding.display",
+                "path": "Extension.value[x].coding.display",
+                "example":  [
+                    {
+                        "label": "Description of the parish",
+                        "valueString": "União das Freguesias de Abrunheira, Verride e Vila Nova da Barca"
+                    }
+                ]
+            },
+            {
+                "id": "Extension.value[x].coding.userSelected",
+                "path": "Extension.value[x].coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "Extension.value[x].text",
+                "path": "Extension.value[x].text",
+                "max": "0"
+            }
+        ]
+    }
+}

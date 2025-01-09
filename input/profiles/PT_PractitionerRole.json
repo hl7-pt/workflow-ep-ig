@@ -1,0 +1,628 @@
+{
+    "resourceType": "StructureDefinition",
+    "id": "c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4",
+    "meta": {
+        "lastUpdated": "2021-12-20T11:47:58.198+00:00"
+    },
+    "url": "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+    "version": "1.0",
+    "name": "PT_PractitionerRole",
+    "status": "active",
+    "experimental": false,
+    "date": "2021-12-20",
+    "description": "Este recurso é fundamental para mapear com precisão os papéis desempenhados por profissionais em diferentes contextos, garantindo uma atribuição clara de responsabilidades e rastreabilidade em sistemas clínicos e administrativos.",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "PractitionerRole",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+    "derivation": "constraint",
+    "differential": {
+        "element":  [
+            {
+                "id": "PractitionerRole.meta",
+                "path": "PractitionerRole.meta"
+            },
+            {
+                "id": "PractitionerRole.meta.id",
+                "path": "PractitionerRole.meta.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.meta.versionId",
+                "path": "PractitionerRole.meta.versionId",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.meta.source",
+                "path": "PractitionerRole.meta.source",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.meta.profile",
+                "path": "PractitionerRole.meta.profile",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.meta.security",
+                "path": "PractitionerRole.meta.security",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.meta.tag",
+                "path": "PractitionerRole.meta.tag",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.implicitRules",
+                "path": "PractitionerRole.implicitRules",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.language",
+                "path": "PractitionerRole.language",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.text",
+                "path": "PractitionerRole.text",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.contained",
+                "path": "PractitionerRole.contained",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier",
+                "path": "PractitionerRole.identifier",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-7; ROL-1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.identifier.id",
+                "path": "PractitionerRole.identifier.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.type",
+                "path": "PractitionerRole.identifier.type",
+                "binding": {
+                    "strength": "extensible",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+                }
+            },
+            {
+                "id": "PractitionerRole.identifier.type.id",
+                "path": "PractitionerRole.identifier.type.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.type.coding.id",
+                "path": "PractitionerRole.identifier.type.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.type.coding.version",
+                "path": "PractitionerRole.identifier.type.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.type.coding.code",
+                "path": "PractitionerRole.identifier.type.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-7.2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.identifier.type.coding.userSelected",
+                "path": "PractitionerRole.identifier.type.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.type.text",
+                "path": "PractitionerRole.identifier.type.text",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.system",
+                "path": "PractitionerRole.identifier.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-1.2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.identifier.value",
+                "path": "PractitionerRole.identifier.value",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-7.1; ROL-1.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.identifier.period.id",
+                "path": "PractitionerRole.identifier.period.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.identifier.period.end",
+                "path": "PractitionerRole.identifier.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-7.4"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.identifier.assigner",
+                "path": "PractitionerRole.identifier.assigner",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.active",
+                "path": "PractitionerRole.active",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-7"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.period",
+                "path": "PractitionerRole.period",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRA-5.4; PRD-8/9; STF-12/13; ORG-9; ROL-5.1/6.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.period.id",
+                "path": "PractitionerRole.period.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.period.start",
+                "path": "PractitionerRole.period.start",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-8; STF-12; ORG-9.1; ROL-5.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.period.end",
+                "path": "PractitionerRole.period.end",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-9; STF-13; ORG-9.2; ROL-6.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.practitioner",
+                "path": "PractitionerRole.practitioner",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.practitioner.id",
+                "path": "PractitionerRole.practitioner.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.practitioner.reference",
+                "path": "PractitionerRole.practitioner.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Practitioner/STF-2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.practitioner.type",
+                "path": "PractitionerRole.practitioner.type",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.practitioner.identifier",
+                "path": "PractitionerRole.practitioner.identifier",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.practitioner.display",
+                "path": "PractitionerRole.practitioner.display",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.organization.id",
+                "path": "PractitionerRole.organization.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.organization.reference",
+                "path": "PractitionerRole.organization.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Organization/ORG-2.1; PRA-9; ROL-10"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.organization.type",
+                "path": "PractitionerRole.organization.type",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.organization.identifier",
+                "path": "PractitionerRole.organization.identifier",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.organization.display",
+                "path": "PractitionerRole.organization.display",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code",
+                "path": "PractitionerRole.code",
+                "slicing": {
+                    "discriminator":  [
+                        {
+                            "type": "pattern",
+                            "path": "$this"
+                        }
+                    ],
+                    "rules": "open"
+                },
+                "example":  [
+                    {
+                        "label": "System",
+                        "valueCodeableConcept": {
+                            "text": "SNOMED"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.code.id",
+                "path": "PractitionerRole.code.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code.coding",
+                "path": "PractitionerRole.code.coding",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code.text",
+                "path": "PractitionerRole.code.text",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles",
+                "path": "PractitionerRole.code",
+                "sliceName": "healthcareProfessionalRoles",
+                "binding": {
+                    "strength": "required",
+                    "description": "IPS Healthcare Professional Roles",
+                    "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-3; PRD-1; STF-19; PRA-3; ORC-12; OBR-16; PV1-7; PV1-8; PV1-9; PV1-17"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.id",
+                "path": "PractitionerRole.code.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.id",
+                "path": "PractitionerRole.code.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.system",
+                "path": "PractitionerRole.code.coding.system",
+                "example":  [
+                    {
+                        "label": "System",
+                        "valueUri": "International Standard Classification of Occupations (ISCO)"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-3.3; PRD-1.3; PRA-3.3"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.version",
+                "path": "PractitionerRole.code.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.code",
+                "path": "PractitionerRole.code.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-3.1; PRD-1.1; STF-19.1; PRA-3.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.display",
+                "path": "PractitionerRole.code.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "ROL-3.2; PRD-1.2; PRA-3.2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.coding.userSelected",
+                "path": "PractitionerRole.code.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.code:healthcareProfessionalRoles.text",
+                "path": "PractitionerRole.code.text",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-18"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.specialty",
+                "path": "PractitionerRole.specialty",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-9; STF-19; PRA-5; ORG-8"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.specialty.id",
+                "path": "PractitionerRole.specialty.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.id",
+                "path": "PractitionerRole.specialty.coding.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.system",
+                "path": "PractitionerRole.specialty.coding.system",
+                "example":  [
+                    {
+                        "label": "System",
+                        "valueUri": "SNOMED"
+                    }
+                ],
+                "mapping":  [
+                    {
+                        "identity": "HL7v.2x",
+                        "map": "STF-9.3; ORG-8.3"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.version",
+                "path": "PractitionerRole.specialty.coding.version",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.code",
+                "path": "PractitionerRole.specialty.coding.code",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-9.1; STF-19.1; PRA-5.1; ORG-8.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.display",
+                "path": "PractitionerRole.specialty.coding.display",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-9.2; ORG-8.2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.specialty.coding.userSelected",
+                "path": "PractitionerRole.specialty.coding.userSelected",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.specialty.text",
+                "path": "PractitionerRole.specialty.text",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.location",
+                "path": "PractitionerRole.location",
+                "type":  [
+                    {
+                        "code": "Reference",
+                        "targetProfile":  [
+                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.location.id",
+                "path": "PractitionerRole.location.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.location.reference",
+                "path": "PractitionerRole.location.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "Location/PRD-4.1; STF-8.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.location.type",
+                "path": "PractitionerRole.location.type",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.location.identifier",
+                "path": "PractitionerRole.location.identifier",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.location.display",
+                "path": "PractitionerRole.location.display",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.healthcareService.id",
+                "path": "PractitionerRole.healthcareService.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.healthcareService.reference",
+                "path": "PractitionerRole.healthcareService.reference",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "STF-9.1"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.healthcareService.type",
+                "path": "PractitionerRole.healthcareService.type",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.healthcareService.identifier",
+                "path": "PractitionerRole.healthcareService.identifier",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.healthcareService.display",
+                "path": "PractitionerRole.healthcareService.display",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.telecom",
+                "path": "PractitionerRole.telecom",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-5"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.telecom.id",
+                "path": "PractitionerRole.telecom.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.telecom.system",
+                "path": "PractitionerRole.telecom.system",
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-5.3"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.telecom.value",
+                "path": "PractitionerRole.telecom.value"
+            },
+            {
+                "id": "PractitionerRole.telecom.use",
+                "path": "PractitionerRole.telecom.use",
+                "short": "ASN | WPN - purpose of this contact point",
+                "binding": {
+                    "strength": "required",
+                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0201"
+                },
+                "mapping":  [
+                    {
+                        "identity": "HL7v2.x",
+                        "map": "PRD-5.2"
+                    }
+                ]
+            },
+            {
+                "id": "PractitionerRole.telecom.rank",
+                "path": "PractitionerRole.telecom.rank",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.telecom.period",
+                "path": "PractitionerRole.telecom.period",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.availableTime.id",
+                "path": "PractitionerRole.availableTime.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.notAvailable.id",
+                "path": "PractitionerRole.notAvailable.id",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.availabilityExceptions",
+                "path": "PractitionerRole.availabilityExceptions",
+                "max": "0"
+            },
+            {
+                "id": "PractitionerRole.endpoint",
+                "path": "PractitionerRole.endpoint",
+                "max": "0"
+            }
+        ]
+    }
+}

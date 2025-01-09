@@ -1,0 +1,6 @@
+@startuml
+hide footbox
+actor "Profissional de saúde" as Profissional
+Profissional -> "Sistema 1" as Sistema1 : Novo registo de urgência
+"Sistema 1" as Sistema1 <-> "Sistema 2" as Sistema2 : Envio de informação
+@enduml

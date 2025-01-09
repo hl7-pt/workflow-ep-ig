@@ -1,0 +1,202 @@
+Logical: PatientLM
+Title: "Utente (modelo)"
+Description: "Modelo Lógico - Utente"
+Characteristics: #can-be-target
+
+* identifiers 1..* BackboneElement "Identificadores únicos do utente, como Número Nacional de Utente (NNU), Número Cartão de Cidadão (CC) ou outros IDs"
+  * value 1..1 string "Valor do identificador"
+  * type 1..1 code "Tipo de identificador (e.g.: HC, CZ)"
+* name 1..1 string "Nome completo do utente"
+* email 0..1 string "Endereço de e-mail do utente, para contacto direto"
+* phone 0..* string "Número(s) de telefone do utente, incluindo telemóvel e telefone fixo"
+* gender 0..1 code "Género do utente (e.g.: male, female, other)"
+* birthdate 0..1 dateTime "Data de nascimento do utente"
+* address 0..1 BackboneElement "Morada do utente"
+  * street 0..1 string "Endereço principal onde o utente reside"
+  * city 0..1 string "Cidade onde o utente reside"
+  * district 0..1 string "Distrito onde o utente reside"
+  * parish 0..1 string "Freguesia onde o utente reside"
+  * country 0..1 string "País de residência do utente"
+  * postalCode 0..1 string "Código postal da morada do utente"
+* maritalStatus 0..1 code "Código do Estado civil do utente (e.g.: casado,  solteiro)"
+* deceased 0..1 boolean "Indica se o utente está falecido (true/false)"
+* active 1..1 boolean "Indica se o registo do utente está ativo no sistema (true/false)"
+
+Logical: PractitionerLM
+Title: "Profissional (modelo)"
+Description: "Modelo Lógico - Profissional"
+Characteristics: #can-be-target
+
+* identifiers 1..* BackboneElement "Identificadores únicos do profissional, como Número Cédula Profissional ou identificações internas"
+  * value 1..1 string "Valor do identificador"
+  * type 1..1 code "Tipo de identificador (e.g.: MD, EI)"
+* name 1..1 string "Nome completo do profissional"
+* email 0..1 string "Endereço de e-mail do profissional, para contacto direto"
+* phone 0..* string "Número(s) de telefone do profissional, incluindo telemóvel e telefone fixo"
+* address 0..1 BackboneElement "Morada do profissional"
+  * use 0..1 code "Indica o propósito da morada (e.g: residencial ou profissional)"
+  * street 0..1 string "Endereço principal onde o profissional reside"
+  * city 0..1 string "Cidade onde o profissional reside"
+  * district 0..1 string "Distrito onde o profissional reside"
+  * parish 0..1 string "Freguesia onde o profissional reside"
+  * country 0..1 string "País de residência do profissional"
+  * postalCode 0..1 string "Código postal da morada do profissional"
+* active 1..1 boolean "Indica se o registo do profissional está ativo no sistema (true/false)"
+
+Logical: EncounterUrgentLM
+Title: "Episódio - Urgência (modelo)"
+Description: "Modelo Lógico - Episódio de Urgência"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* class 1..1 code "Classe do episódio (e.g.: EMR)"
+* type 1..1 code "Tipo de episódio da urgência (e.g.: 183452005 | Emergency hospital admission) (SNOMED CT)"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio"
+* location 0..1 LocationLM "Local associado ao episódio de urgência"
+* doctor 0..1 PractitionerLM "Referência ao Profissional reponsável pelo episódio identificado por PPRF"
+* nurse 0..1 PractitionerLM "Enfermeiro responsável pelo episódio identificado por ATND"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* status 1..1 code "arrived | in-progress | finished | cancelled" "Estado episódio. Valores possiveis:\n- arrived: O paciente foi admitido na instituição\n- in-progress: O episódio está em progresso\n- finished: O paciente teve alta\n- cancelled: O episódio foi cancelado antes de iniciar"
+
+Logical: EncounterDayCareLM
+Title: "Episódio - Hospital de Dia (modelo)"
+Description: "Modelo Lógico - Episódio do Hospital de Dia"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* class 1..1 code "Classe do episódio (e.g.: AMB)"
+* type 1..1 code "Tipo de episódio da urgência (e.g.: 183484003 | Day hospital care) (SNOMED CT)"
+* priority 0..1 code "stat | urgent | routine" "Nivel de prioridade do episódio"
+* specialty 0..1 code "Especialidade médica responsável pelo episódio"
+* category 0..1 code "Categoria específica do ato realizado durante o episódio"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio, agendamento ou procedimento"
+* location 0..1 LocationLM "Local associado ao episódio de urgência"
+* doctor 0..1 PractitionerLM "Referência ao Profissional reponsável pelo episódio identificado por PPRF"
+* nurse 0..1 PractitionerLM "Enfermeiro responsável pelo episódio identificado por ATND"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* duration 0..1 integer "Duração real do episódio em minutos"
+* status 1..1 code "planned | arrived | in-progress | finished | cancelled" "Estado episódio. Valores possiveis:\n- planned: Episódio planeado ou agendado\n- arrived: O paciente foi admitido na instituição\n- in-progress: O episódio está em progresso\n- finished: O paciente teve alta\n- cancelled: O episódio foi cancelado antes de iniciar"
+
+Logical: EncounterMCDTLM
+Title: "Episódio - MCDT (modelo)"
+Description: "Modelo Lógico - Episódio de MCDT"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* class 1..1 code "Classe do episódio (e.g.: AMB)"
+* type 1..1 code "Tipo de episódio da urgência (e.g.: 371931008 | Combined diagnostic and therapeutic procedure) (SNOMED CT)"
+* priority 0..1 code "stat | urgent | routine" "Nivel de prioridade do episódio"
+* category 0..1 code "Categoria do serviço (e.g.: 11429006 | execution episode) (SNOMED CT)"
+* specialty 0..1 code "Especialidade médica associada ao episódio como radiologia ou patologia clínica"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio, agendamento ou procedimento"
+* location 0..1 LocationLM "Local associado ao episódio de urgência"
+* doctor 0..1 PractitionerLM "Referência ao Profissional reponsável pelo episódio identificado por PPRF"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* duration 0..1 integer "Duração real do episódio em minutos"
+* status 1..1 code "planned | arrived | in-progress | finished | cancelled" "Estado episódio. Valores possiveis:\n- planned: Episódio planeado ou agendado\n- arrived: O paciente foi admitido na instituição\n- in-progress: O episódio está em progresso\n- finished: O paciente teve alta\n- cancelled: O episódio foi cancelado antes de iniciar"
+
+Logical: EncounterORLM
+Title: "Episódio - Bloco Operatório (modelo)"
+Description: "Modelo Lógico - Episódio de Bloco Operatório"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* class 1..1 code "Classe do episódio (e.g.: IMP)"
+* category 0..1 code "Categoria do serviço" "Appointment.serviceCategory= 387713003 | Surgical procedure | SNOMED (central operating theatre)\nAppointment.serviceCategory= 110468005 | Ambulatory surgery | SNOMED (ambulatory operating theatre)"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio, agendamento ou procedimento"
+* location 0..1 LocationLM "Local associado ao episódio de urgência"
+* surgeon 0..1 PractitionerLM "Profissional que atuou como cirurgião principal"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* status 1..1 code "planned | arrived | in-progress | finished | cancelled" "Estado episódio. Valores possiveis:\n- planned: Episódio planeado ou agendado\n- arrived: O paciente foi admitido na instituição\n- in-progress: O episódio está em progresso\n- finished: O paciente teve alta\n- cancelled: O episódio foi cancelado antes de iniciar"
+
+Logical: EncounterConsultationLM
+Title: "Episódio - Consulta (modelo)"
+Description: "Modelo Lógico - Episódio de Consulta"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* status 1..1 code "requested | scheduled | started | cancelled" "Estado episódio. Valores possiveis:\n- requested: Pedido de agendamento\n- scheduled: O episódio foi agendado\n- started: O utented foi admitido na instituição\n- cancelled: O episódio foi cancelado antes de iniciar"
+* class 1..1 code "Classe do episódio (e.g.: AMB)"
+* type 1..1 code "Tipo de episódio (e.g.: 11429006 | Consultation) (SNOMED CT)"
+* priority 0..1 code "stat | urgent | routine" "Nivel de prioridade do episódio"
+* specialty 0..1 code "Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc."
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio, agendamento ou procedimento"
+* doctor 0..1 PractitionerLM "Médico responsável pelo episódio"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* duration 0..1 integer "Duração real do episódio em minutos"
+* location 0..1 LocationLM "Local associado ao episódio de urgência"
+
+Logical: EncounterInpatientLM
+Title: "Episódio - Internamento (modelo)"
+Description: "Modelo Lógico - Episódio de Internamento"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do episódio"
+* identifiers 1..* BackboneElement "Lista de identificadores únicos do local associado ao episódio, como identificações internas ou códigos específicos."
+  * value 1..1 string "Valor do identificador"
+  * type 1..1 code "Tipo de identificador (e.g.: MD, EI)"
+* status 1..1 code "planned | arrived | in-progress | finished | cancelled" "Estado episódio. Valores possiveis:\n- planned: Episódio planeado ou agendado\n- arrived: O paciente foi admitido na instituição\n- in-progress: O episódio está em progresso\n- finished: O paciente teve alta\n- cancelled: O episódio foi cancelado antes de iniciar"
+* statusHistory 0..* BackboneElement "Histórico de alterações do estado do local durante o episódio"
+  * status 1..1 code "Estado do local num período específico"
+  * start 1..1 dateTime "Data e hora de início de alteração do estado"
+  * end 0..1 dateTime "Data e hora de término do período de alteração do estado"
+* class 1..1 code "Classe do episódio (e.g.: IMP)"
+* services 0..* code "Serviços realizados durante o episódio, como consultas, cirurgias, etc."
+* specialty 0..1 code "Especialidade médica associada ao episódio, como Cardiologia, Pediatria, etc"
+* priority 0..1 code "stat | urgent | routine" "Nivel de prioridade do episódio"
+* patient 1..1 PatientLM "Referência ao paciente associado ao episódio"
+* doctor 0..1 PractitionerLM "Médico responsável pelo episódio, onde o tipo = PPRF"
+* nurse 0..1 PractitionerLM "Enfermeiro responsável pelo episódio identificado por ATND"
+* start 1..1 dateTime "Data e hora reais de inicio do episodio"
+* end 0..1 dateTime "Data e hora reais de término de episódio"
+* duration 0..1 integer "Duração real do episódio em minutos"
+* appointment 0..1 AppointmentLM "Referência ao agendamento associado ao episódio"
+* locations 0..* BackboneElement "Lista de locais associados ao episódio"
+  * location 0..1 LocationLM "Local associado ao episódio de urgência"
+  * status 0..1 code "Estado do local durante o episódio (e.g.: available, occupied)"
+  * type 0..1 code "Tipo físico do local (e.g.: bd (Cama), wa (Enfermaria), ro (quarto))"
+
+Logical: AppointmentLM
+Title: "Agendamento (modelo)"
+Description: "Modelo Lógico - Agendamento"
+Characteristics: #can-be-target
+
+* id 1..1 code "Identificador do agendamento"
+* status 1..1 code "proposed | booked | arrived" "Estado do agendamento. Valores possiveis:\n- proposed: Pedido de agendamento\n- booked: Agendamento efetuado\n- arrived: Chegou para o agendamento efetuado\n- cancelled: Angendamento cancelado"
+* canceled 0..1 string "Motivo do cancelamento do agendamento"
+* category 1..1 code "Categoria do Serviço (e.g: 11429006 | Consultation, , 11429006 | day care episode, 11429006 | mcdt execution episode) (SNOMED)"
+* type 1..1 code "Tipo de agendamento"
+* specialty 0..1 code "Especialidade médica associada ao episódio como radiologia ou patologia clínica"
+* motive 0..* code "Motivo clínico do agendamento"
+* priority 0..1 code "stat | urgent | routine" "Nivel de prioridade do agendamento"
+* start 1..1 dateTime "Data e hora agendadas para o início do evento"
+* end 0..1 dateTime "Data e hora agendadas para o término do evento"
+* duration 0..1 integer "Duração estimada do episódio, em minutos"
+* doctor 0..1 PractitionerLM "Referência ao Profissional reponsável"
+* patient 1..1 PatientLM "Referência ao paciente associado agendamento"
+* location 0..1 LocationLM "Referência à localização do agendamento"
+* observations 0..1 string "Observações gerais registadas durante o agendamento"
+
+Logical: LocationLM
+Title: "Localização (modelo)"
+Description: "Modelo Lógico - Localização"
+Characteristics: #can-be-target
+
+* identifiers 1..* code "Lista de identificadores únicos associados ao local"
+* statusHistory 0..* BackboneElement "Histórico de alterações do estado do local"
+  * status 1..1 code "Estado do local num período específico"
+  * start 1..1 dateTime "Data e hora de início de alteração do estado do local"
+  * end 1..1 dateTime "Data e hora de término do período de alteração do estado do local"
+* status 0..1 code "Estado do local (e.g.: available, occupied)"
+* physicalType 0..1 code "Tipo físico do local (e.g.: bd (Cama), wa (Enfermaria), ro (quarto))"
+* locations 0..* LocationLM "Referência à localização"
