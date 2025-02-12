@@ -1,10 +1,9 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "ae5389ed-ec12-4804-a181-748fce7bd23c",
+    "id": "PTLocation",
     "meta": {
         "lastUpdated": "2021-12-20T11:59:51.992+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Location",
     "version": "1.0",
     "name": "PT_Location",
     "status": "active",
@@ -374,7 +373,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address"
                         ]
                     }
                 ]
@@ -576,7 +575,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTLocation"
                         ]
                     }
                 ]

@@ -1,10 +1,10 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3c",
+    "id": "NativeLanguage",
     "meta": {
         "lastUpdated": "2021-12-10T12:11:13.184+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/NativeLanguage",
+    "url": "https://hl7.pt/fhir/patient-visit/StructureDefinition/NativeLanguage",
     "version": "1.0",
     "name": "NativeLanguage",
     "status": "draft",
@@ -33,7 +33,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/NativeLanguage"
+                "fixedUri": "https://hl7.pt/fhir/patient-visit/StructureDefinition/NativeLanguage"
             },
             {
                 "id": "Extension.value[x]",

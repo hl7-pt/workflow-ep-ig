@@ -7,9 +7,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: pt-patient-visit
-canonical: http://hl7.pt/fhir/example
-url: http://hl7.pt/fhir/example
+id: hl7.fhir.pt.patientvisit
+canonical: https://hl7.pt/fhir/patient-visit
+#url: http://hl7.pt/fhir/patient-visit
 name: HL7PTIGPatientVisit
 title: "HL7 PT FHIR Implementation Guide: Visita do Utente"
 description: Example IG exercises many of the fields in a SUSHI configuration.
@@ -32,7 +32,7 @@ parameters:
 # camelcase, but if authors use the formal parameter names, SUSHI
 # will recognize them as well. In either case, they'll be copied
 # to the IG JSON using the formal names.
-copyrightYear: 2024+
+copyrightYear: 2025+
 releaseLabel: STU1
 
 # The publisher can be a single item or a list, each with a name and
@@ -46,24 +46,24 @@ publisher:
 
 # ContactDetail is required by the template.
 contact:
-  - name: HL7 Portugal
+  - name: HLTSYS
     telecom:
       - system: email
-        value: geral@hl7.pt
+        value: integracoes@hltsys.pt
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
 #jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#PT "Portugal"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for `uri` and `version`.
-#dependencies:
-#  hl7.fhir.us.core: 3.1.0
+dependencies:
+  hl7.fhir.uv.ips: current
 #  hl7.fhir.us.mcode:
 #    id: mcode
 #    uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode

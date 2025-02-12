@@ -1,10 +1,11 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "a4126b30-e00e-451a-830c-4db050c60cdf",
+    "id": "Nationality",
     "meta": {
         "lastUpdated": "2022-01-11T14:47:16.045+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/Nationality",
+    "url": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Nationality",
+
     "version": "1.1",
     "name": "Nationality",
     "status": "draft",
@@ -104,7 +105,7 @@
                 "example":  [
                     {
                         "label": "Patient Nationality - Coding System",
-                        "valueUri": "ISO Table (ISO 3166 - urn:iso:std:iso:3166)"
+                        "valueUri": "urn:iso:std:iso:3166"
                     }
                 ],
                 "mapping":  [
@@ -219,7 +220,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Nationality"
+                "fixedUri": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Nationality"
             },
             {
                 "id": "Extension.value[x]",

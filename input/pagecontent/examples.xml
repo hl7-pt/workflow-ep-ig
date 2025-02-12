@@ -10,37 +10,37 @@
 			<tr>
 				<th>Admissão do Utente</th>
 				<td>
-					<a href="adt-a01.json">JSON</a>
+					<a href="Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html">JSON</a>
 				</td>
 			</tr>
 			<tr>
 				<th>Transferência do Utente</th>
 				<td>
-					<a href="adt-a02.json">JSON</a>
+					<a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html">JSON</a>
 				</td>
 			</tr>
 			<tr>
 				<th>Alta do Utente</th>
 				<td>
-					<a href="adt-a03.json">JSON</a>
+					<a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e5.html">JSON</a>
 				</td>
 			</tr>
 			<tr>
 				<th>Efetivação do Utente em Urgência</th>
 				<td>
-					<a href="adt-a04_emer.json">JSON</a>
+					<a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html">JSON</a>
 				</td>
 			</tr>
 			<tr>
 				<th>Cancelamento da Admissão do Utente</th>
 				<td>
-					<a href="adt-a11.json">JSON</a>
+					<a href="Bundle-1f5700c1-c342-4695-842e-74de2eb7c25a.html">JSON</a>
 				</td>
 			</tr>
 			<tr>
 				<th>Cancelamento da Alta do Utente</th>
 				<td>
-					<a href="adt-a13.json">JSON</a>
+					<a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e4.html">JSON</a>
 				</td>
 			</tr>
 		</tbody>

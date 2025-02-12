@@ -1,10 +1,10 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "63fa53d8-9116-42d2-b2c9-06830c25876d",
+    "id": "PTEncounter",
     "meta": {
         "lastUpdated": "2022-01-13T09:36:30.207+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Encounter",
+
     "version": "1.0",
     "name": "PT_Encounter",
     "status": "active",
@@ -433,7 +433,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPatient"
                         ]
                     }
                 ]
@@ -580,9 +580,9 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
-                            "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
-                            "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPractitioner",
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPractitionerRole",
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTRelatedPerson"
                         ]
                     }
                 ]
@@ -778,7 +778,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTCondition"
                         ]
                     }
                 ]
@@ -815,7 +815,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTCondition"
                         ]
                     }
                 ]
@@ -1057,8 +1057,8 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Location",
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTLocation",
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTOrganization"
                         ]
                     }
                 ]
@@ -1350,8 +1350,8 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTOrganization",
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTLocation"
                         ]
                     }
                 ]
@@ -1448,7 +1448,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTLocation"
                         ]
                     }
                 ],
@@ -1551,7 +1551,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTOrganization"
                         ]
                     }
                 ]

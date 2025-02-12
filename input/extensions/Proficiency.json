@@ -1,10 +1,10 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "f1b3b3b4-1b3b-4b3b-8b3b-1b3b3b3b3b3b",
+    "id": "Proficiency",
     "meta": {
         "lastUpdated": "2021-12-10T12:10:09.421+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/Proficiency",
+    "url": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Proficiency",
     "version": "1.0",
     "name": "Proficiency",
     "status": "draft",
@@ -33,7 +33,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Proficiency"
+                "fixedUri": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Proficiency"
             },
             {
                 "id": "Extension.value[x]",

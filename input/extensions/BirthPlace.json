@@ -1,10 +1,11 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "63310252-7722-4031-8f01-a2c642d0f2a7",
+    "id": "BirthPlace",
     "meta": {
         "lastUpdated": "2022-01-08T13:41:49.635+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/BirthPlace",
+    "url": "https://hl7.pt/fhir/patient-visit/StructureDefinition/BirthPlace",
+
     "version": "1.0",
     "name": "BirthPlace",
     "status": "draft",
@@ -33,7 +34,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/BirthPlace"
+                "fixedUri": "https://hl7.pt/fhir/patient-visit/StructureDefinition/BirthPlace"
             },
             {
                 "id": "Extension.value[x]",

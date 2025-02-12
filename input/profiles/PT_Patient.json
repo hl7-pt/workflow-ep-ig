@@ -1,10 +1,9 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "176c7c2b-865c-4942-9bd6-cfaa04678d10",
+    "id": "PTPatient",
     "meta": {
         "lastUpdated": "2022-09-23T13:12:21.4069091+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
     "version": "1.2",
     "name": "PT_Patient",
     "status": "active",
@@ -107,7 +106,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Nationality"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Nationality"
                         ]
                     }
                 ]
@@ -148,7 +147,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/BirthPlace"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/BirthPlace"
                         ]
                     }
                 ],
@@ -331,7 +330,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTOrganization"
                         ]
                     }
                 ]
@@ -666,7 +665,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address"
                         ]
                     }
                 ],
@@ -1197,7 +1196,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address"
                         ]
                     }
                 ]
@@ -1414,8 +1413,8 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
-                            "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPractitioner",
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPractitionerRole"
                         ]
                     }
                 ],

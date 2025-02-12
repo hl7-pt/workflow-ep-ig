@@ -1,10 +1,10 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "b6fdd39f-616f-4d90-9de1-11eb0c029f23",
+    "id": "Address",
     "meta": {
         "lastUpdated": "2022-07-05T08:01:08.9476149+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/Address",
+    "url": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address",
     "version": "1.4",
     "name": "Address",
     "status": "draft",
@@ -53,7 +53,7 @@
             {
                 "id": "Extension.url",
                 "path": "Extension.url",
-                "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Address"
+                "fixedUri": "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address"
             },
             {
                 "id": "Extension.value[x]",

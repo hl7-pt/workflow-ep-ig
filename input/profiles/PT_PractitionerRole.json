@@ -1,10 +1,9 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "c8cc7eb5-a0a2-4325-9a2e-8a40b8320fc4",
+    "id": "PTPractitionerRole",
     "meta": {
         "lastUpdated": "2021-12-20T11:47:58.198+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
     "version": "1.0",
     "name": "PT_PractitionerRole",
     "status": "active",
@@ -223,7 +222,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTPractitioner"
                         ]
                     }
                 ]
@@ -356,7 +355,7 @@
                 "example":  [
                     {
                         "label": "System",
-                        "valueUri": "International Standard Classification of Occupations (ISCO)"
+                        "valueUri": "http://data.europa.eu/isco/isco-08"
                     }
                 ],
                 "mapping":  [
@@ -484,7 +483,7 @@
                     {
                         "code": "Reference",
                         "targetProfile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/PTLocation"
                         ]
                     }
                 ]
@@ -582,10 +581,7 @@
                 "id": "PractitionerRole.telecom.use",
                 "path": "PractitionerRole.telecom.use",
                 "short": "ASN | WPN - purpose of this contact point",
-                "binding": {
-                    "strength": "required",
-                    "valueSet": "http://terminology.hl7.org/ValueSet/v2-0201"
-                },
+
                 "mapping":  [
                     {
                         "identity": "HL7v2.x",

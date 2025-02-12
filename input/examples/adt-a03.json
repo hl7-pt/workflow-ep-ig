@@ -6,10 +6,10 @@
         "resourceType" : "MessageHeader",
         "id" : "47f29d91-8c83-421f-8600-dcb8e1b3807d",
         "meta" : {
-          "lastUpdated" : "2024-11-15T13:00:27+00:00"
+          "lastUpdated" : "2024-11-15T12:00:27+00:00"
         },
         "eventCoding" : {
-          "display" : "ADT^A13"
+          "display" : "ADT^A03"
         },
         "destination" : [
           {
@@ -105,10 +105,69 @@
         "deceasedBoolean" : false,
         "generalPractitioner" : [
           {
-            "reference" : "Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd",
+            "reference" : "Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other",
             "type" : "Practitioner"
           }
         ]
+      }
+    },
+    {
+      "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd",
+      "resource" : {
+        "resourceType" : "Practitioner",
+        "active" : true,
+        "id": "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd",
+        "identifier" : [
+          {
+            "use" : "official",
+            "system" : "http://E2E-TESTS-SYSTEM.com",
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MD"
+                }
+              ],
+              "text" : "Cartão de Cidadão"
+            },
+            "value" : "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd",
+            "assigner" : {
+              "display" : "E2E_TESTS_SYSTEM"
+            }
+          },
+          {
+            "use" : "usual",
+            "system" : "http://E2E-TESTS-SYSTEM.com",
+            "type" : {
+              "coding" : [
+                {
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MD"
+                }
+              ],
+              "text" : "Cartão de Cidadão"
+            },
+            "value" : "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd",
+            "assigner" : {
+              "display" : "E2E_TESTS_SYSTEM"
+            }
+          },
+          {
+            "assigner" : {
+              "display" : "E2E_TESTS_SYSTEM"
+            },
+            "system" : "https://glintt.com/viewer",
+            "use" : "official",
+            "value" : "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd"
+          }
+        ],
+        "name" : [
+          {
+            "use" : "official",
+            "text" : "doctor viewer test"
+          }
+        ],
+        "gender" : "male"
       }
     },
     {
@@ -142,7 +201,7 @@
             "value" : "4900f155-a658-42de-ad81-62948300b785"
           }
         ],
-        "status" : "in-progress",
+        "status" : "finished",
         "class" : {
           "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
           "code" : "IMP",
@@ -152,7 +211,8 @@
           "reference" : "Patient/cf473b01-b702-47b3-9f97-4fac38b492d9"
         },
         "period" : {
-          "start" : "2024-11-11T11:00:27+00:00"
+          "start" : "2024-11-11T11:00:27+00:00",
+          "end" : "2024-11-15T11:00:27+00:00"
         },
         "location" : [
           {
@@ -729,11 +789,11 @@
       }
     }
   ],
-  "id": "c9dcf369-1fae-4ad5-acb2-fb48d9b237e4",
+  "id": "c9dcf369-1fae-4ad5-acb2-fb48d9b237e5",
   "identifier" : {
-    "value" : "c9dcf369-1fae-4ad5-acb2-fb48d9b237e4"
+    "value" : "c9dcf369-1fae-4ad5-acb2-fb48d9b237e5"
   },
   "resourceType" : "Bundle",
-  "timestamp" : "2024-11-15T13:00:27+00:00",
+  "timestamp" : "2024-11-15T12:00:27+00:00",
   "type" : "message"
 }

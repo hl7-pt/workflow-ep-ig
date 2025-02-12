@@ -1,10 +1,9 @@
 {
     "resourceType": "StructureDefinition",
-    "id": "ac7bcb60-c472-44c2-8a98-d412e8645c6d",
+    "id": "PTPractitioner",
     "meta": {
         "lastUpdated": "2021-12-10T12:15:37.389+00:00"
     },
-    "url": "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
     "version": "1.0",
     "name": "PT_Practitioner",
     "status": "active",
@@ -107,7 +106,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Nationality"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Nationality"
                         ]
                     }
                 ]
@@ -122,7 +121,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Death"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Death"
                         ]
                     }
                 ]
@@ -420,7 +419,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Address"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Address"
                         ]
                     }
                 ]
@@ -589,7 +588,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/Proficiency"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/Proficiency"
                         ]
                     }
                 ]
@@ -693,7 +692,7 @@
                     {
                         "code": "Extension",
                         "profile":  [
-                            "https://hl7.pt/fhir/StructureDefinition/NativeLanguage"
+                            "https://hl7.pt/fhir/patient-visit/StructureDefinition/NativeLanguage"
                         ]
                     }
                 ]
