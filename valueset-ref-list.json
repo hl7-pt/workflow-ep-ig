@@ -1,0 +1,75 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CommonUCUMCodesForDuration",
+      "title" : "Common UCUM Codes for Duration",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.61"],
+      "sources" : ["2.16.840.1.113883.4.642.3.61"],
+      "uses" : {
+      },
+      "StructureDefinition-PTEncounter.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-PTPractitioner.html" : "PT_Practitioner",
+      "StructureDefinition-BirthPlace.html" : "BirthPlace",
+      "StructureDefinition-PTPatient.html" : "PT_Patient",
+      "StructureDefinition-Nationality.html" : "Nationality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "HealthcareProfessionalRolesUvIps",
+      "title" : "Healthcare Professional Roles - IPS",
+      "description" : "IPS Healthcare Professional Roles",
+      "systems" : ["urn:oid:2.16.840.1.113883.2.9.6.2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-PTPractitionerRole.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdmissionType",
+      "title" : "hl7VS-admissionType",
+      "description" : "Value Set of codes that specify the circumstances under which the patient was or will be admitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0007"],
+      "oids" : ["2.16.840.1.113883.21.10"],
+      "sources" : ["2.16.840.1.113883.21.10"],
+      "uses" : {
+      },
+      "StructureDefinition-PTEncounter.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-PTPractitionerRole.html" : "PT_PractitionerRole",
+      "StructureDefinition-PTOrganization.html" : "PT_Organization",
+      "StructureDefinition-PTPatient.html" : "PT_Patient"
+    }
+  ]
+}

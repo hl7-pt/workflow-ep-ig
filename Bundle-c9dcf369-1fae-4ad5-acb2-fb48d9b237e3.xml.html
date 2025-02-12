@@ -1,0 +1,1072 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>c9dcf369-1fae-4ad5-acb2-fb48d9b237e3 - XML Representation - HL7 PT FHIR Implementation Guide: Visita do Utente v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.4"}
+    h3,h4,h5,h6{--heading-prefix:"11.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Visita do Utente</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li><a href="index.html">Inicio IG</a></li>
+    <li><a href="toc.html">Índice</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="fun_spec.html">Funcional</a>
+            </li>
+            <li>
+                <a href="tech_spec.html">Técnica</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="artifacts.html">Artefactos</a></li>
+    <li><a href="glossary.html">Glossário</a></li>
+    <li><a href="usage.html">Usar este IG</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informações<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="configurations.html">Configurações</a>
+            </li>
+            <li>
+                <a href="changes.html">Histórico de Alterações</a>
+            </li>
+            <li>
+                <a href="error_handling.html">Erros</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="examples.html">Exemplos</a></li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>c9dcf369-1fae-4ad5-acb2-fb48d9b237e3</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Visita do Utente, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/workflow-ep-ig/tree/master">https://github.com/hl7-pt/workflow-ep-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/patient-visit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: c9dcf369-1fae-4ad5-acb2-fb48d9b237e3 - XML Representation</h2>
+
+
+<p><a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.xml" no-download="true">Raw xml</a> | <a href="Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle">Bundle</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;c9dcf369-1fae-4ad5-acb2-fb48d9b237e3&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;c9dcf369-1fae-4ad5-acb2-fb48d9b237e3&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;message&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">timestamp</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2024-11-11T11:00:27+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/47f29d91-8c83-421f-8600-dcb8e1b3807d&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">MessageHeader</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;47f29d91-8c83-421f-8600-dcb8e1b3807d&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/R4/datatypes.html#instant">value</a>=&quot;2024-11-11T11:00:27+00:00&quot;/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;MessageHeader_47f29d91-8c83-421f-8600-dcb8e1b3807d&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: MessageHeader 47f29d91-8c83-421f-8600-dcb8e1b3807d&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;47f29d91-8c83-421f-8600-dcb8e1b3807d&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc47f29d91-8c83-421f-8600-dcb8e1b3807d&quot;&gt; &lt;/a&gt;&lt;a name=&quot;47f29d91-8c83-421f-8600-dcb8e1b3807d-pt-PT&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Last updated: 2024-11-11 11:00:27+0000&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: [not stated] : ADT^A02&lt;/p&gt;&lt;h3&gt;Destinations&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;viewer&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4&quot;&gt;https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;sender&lt;/b&gt;: E2E_TESTS_SENDER&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;tests&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;https://cockpit-ci.glinttlab.com/fhir-server&quot;&gt;https://cockpit-ci.glinttlab.com/fhir-server&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.event[x]">eventCoding</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ADT^A02&quot;/&gt;
+        &lt;/eventCoding&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.destination">destination</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.destination.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.destination.endpoint">endpoint</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4&quot;/&gt;
+        &lt;/destination&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.sender">sender</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SENDER&quot;/&gt;
+        &lt;/sender&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source">source</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;tests&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source.endpoint">endpoint</a> <a href="http://hl7.org/fhir/R4/datatypes.html#url">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server&quot;/&gt;
+        &lt;/source&gt;
+      &lt;/MessageHeader&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Patient/cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient">Patient</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Patient_cf473b01-b702-47b3-9f97-4fac38b492d9&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Patient cf473b01-b702-47b3-9f97-4fac38b492d9&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccf473b01-b702-47b3-9f97-4fac38b492d9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9-pt-PT&quot;&gt; &lt;/a&gt;&lt;p style=&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;&quot;&gt;Miss Freda Kuphal(official) Female, DoB: 1966-02-19 ( Patient internal identifier (use: usual, ))&lt;/p&gt;&lt;hr/&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Known status of Patient&quot;&gt;Deceased:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Other Ids (see the one above)&quot;&gt;Other Ids:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;Patient internal identifier/cf473b01-b702-47b3-9f97-4fac38b492d9 (use: official, )&lt;/li&gt;&lt;li&gt;&lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/cf473b01-b702-47b3-9f97-4fac38b492d9 (use: official, )&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Ways to contact the Patient&quot;&gt;Contact Detail&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;mailto:Shanel.Treutel65@gmail.com&quot;&gt;Shanel.Treutel65@gmail.com&lt;/a&gt;&lt;/li&gt;&lt;li&gt;ph: 860.769.3898 x527(Home)&lt;/li&gt;&lt;li&gt;730 Adele Prairie(home)&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;background-color: #f3f5da&quot; title=&quot;Patient Links&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=&quot;3&quot;&gt;&lt;ul&gt;&lt;li&gt;General Practitioner: &lt;a href=&quot;Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;&gt;Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PI&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.com/System_Test&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PI&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://example.com/System_Test&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Miss Freda Kuphal&quot;/&gt;
+        &lt;/name&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Shanel.Treutel65@gmail.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
+        &lt;/telecom&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;phone&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;860.769.3898 x527&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
+        &lt;/telecom&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;female&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>=&quot;1966-02-19&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;home&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;both&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;730 Adele Prairie&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;North Las Vegas&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;94406-4195&quot;/&gt;
+        &lt;/address&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/patient.html#Patient.generalPractitioner">generalPractitioner</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                     <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;Practitioner&quot;/&gt;
+        &lt;/generalPractitioner&gt;
+      &lt;/Patient&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">Practitioner</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner 1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;&gt; &lt;/a&gt;&lt;a name=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: official, ), Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: doctor viewer test(Official)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Male&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MD&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cartão de Cidadão&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MD&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cartão de Cidadão&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;doctor viewer test&quot;/&gt;
+        &lt;/name&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
+      &lt;/Practitioner&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Encounter/4900f155-a658-42de-ad81-62948300b785&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">Encounter</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;4900f155-a658-42de-ad81-62948300b785&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Encounter_4900f155-a658-42de-ad81-62948300b785&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Encounter 4900f155-a658-42de-ad81-62948300b785&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;4900f155-a658-42de-ad81-62948300b785&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc4900f155-a658-42de-ad81-62948300b785&quot;&gt; &lt;/a&gt;&lt;a name=&quot;4900f155-a658-42de-ad81-62948300b785-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/4900f155-a658-42de-ad81-62948300b785 (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/4900f155-a658-42de-ad81-62948300b785 (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/4900f155-a658-42de-ad81-62948300b785 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: In Progress&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: &lt;a href=&quot;http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP&quot;&gt;ActCode IMP&lt;/a&gt;: inpatient encounter&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Patient_cf473b01-b702-47b3-9f97-4fac38b492d9&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Participants&lt;/h3&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Individual&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;display: none&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;span title=&quot;Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ATND}&quot;&gt;attender&lt;/span&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2024-11-11 11:00:27+0000 --&amp;gt; (ongoing)&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}&quot;&gt;bd&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}&quot;&gt;ro&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_ce9f9650-be26-4565-b180-320b4447e4a3&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}&quot;&gt;co&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}&quot;&gt;lvl&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;&gt;Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}&quot;&gt;wa&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}&quot;&gt;wi&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}&quot;&gt;si&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;location&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_e2440c57-bffa-42f2-968e-f5797c80f231&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}&quot;&gt;bu&lt;/span&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4900f155-a658-42de-ad81-62948300b785&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4900f155-a658-42de-ad81-62948300b785&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;4900f155-a658-42de-ad81-62948300b785&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in-progress&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">class</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;IMP&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;inpatient encounter&quot;/&gt;
+        &lt;/class&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/cf473b01-b702-47b3-9f97-4fac38b492d9&quot;/&gt;
+        &lt;/subject&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant">participant</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-ParticipationType&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ATND&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;attender&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.participant.individual">individual</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>
+                       <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+          &lt;/individual&gt;
+        &lt;/participant&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-11-11T11:00:27+00:00&quot;/&gt;
+        &lt;/period&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bd&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ro&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;co&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lvl&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wa&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wi&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;si&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location">location</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.location">location</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+          &lt;/location&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.location.physicalType">physicalType</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                      <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bu&quot;/&gt;
+            &lt;/coding&gt;
+          &lt;/physicalType&gt;
+        &lt;/location&gt;
+      &lt;/Encounter&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">Practitioner</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner 1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;&gt; &lt;/a&gt;&lt;a name=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: official, ), Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: doctor viewer test(Official)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: Male&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MD&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cartão de Cidadão&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;/&gt;
+              &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;MD&quot;/&gt;
+            &lt;/coding&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cartão de Cidadão&quot;/&gt;
+          &lt;/type&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.active">active</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">name</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;doctor viewer test&quot;/&gt;
+        &lt;/name&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.gender">gender</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;male&quot;/&gt;
+      &lt;/Practitioner&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location 5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;&gt; &lt;/a&gt;&lt;a name=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: molestias&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}&quot;&gt;Bed&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;5e6c6cf5-2027-46c7-8efc-d9b54ee322fa&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;molestias&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bd&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Bed&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location cac021b0-d81c-419a-8b9e-120c559a9bfb&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hccac021b0-d81c-419a-8b9e-120c559a9bfb&quot;&gt; &lt;/a&gt;&lt;a name=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: sequi&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}&quot;&gt;Room&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_ce9f9650-be26-4565-b180-320b4447e4a3&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;cac021b0-d81c-419a-8b9e-120c559a9bfb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;sequi&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ro&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Room&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_ce9f9650-be26-4565-b180-320b4447e4a3&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location ce9f9650-be26-4565-b180-320b4447e4a3&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ce9f9650-be26-4565-b180-320b4447e4a3&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcce9f9650-be26-4565-b180-320b4447e4a3&quot;&gt; &lt;/a&gt;&lt;a name=&quot;ce9f9650-be26-4565-b180-320b4447e4a3-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/ce9f9650-be26-4565-b180-320b4447e4a3 (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/ce9f9650-be26-4565-b180-320b4447e4a3 (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/ce9f9650-be26-4565-b180-320b4447e4a3 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: eos&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}&quot;&gt;Corridor&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ce9f9650-be26-4565-b180-320b4447e4a3&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;eos&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;co&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Corridor&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location 85b91ac4-3ad0-4866-ad5c-457b74edd35b&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;&gt; &lt;/a&gt;&lt;a name=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: libero&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}&quot;&gt;Level&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;&gt;Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;85b91ac4-3ad0-4866-ad5c-457b74edd35b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;libero&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;lvl&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Level&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location 52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;&gt; &lt;/a&gt;&lt;a name=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: My Awsome Test Location&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}&quot;&gt;Ward&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;My Awsome Test Location&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wa&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ward&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location 3a514777-dd2f-4f66-bd97-181a6374cdd9&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;&gt; &lt;/a&gt;&lt;a name=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: dolor&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}&quot;&gt;Wing&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;3a514777-dd2f-4f66-bd97-181a6374cdd9&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dolor&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;wi&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Wing&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location 7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hc7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;&gt; &lt;/a&gt;&lt;a name=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: provident&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}&quot;&gt;Site&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;partOf&lt;/b&gt;: &lt;a href=&quot;Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_e2440c57-bffa-42f2-968e-f5797c80f231&quot;&gt;Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;provident&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;si&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Site&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.partOf">partOf</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Location/e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+        &lt;/partOf&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://cockpit-ci.glinttlab.com/fhir-server/Location/e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/location.html#Location">Location</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+          &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;a name=&quot;Location_e2440c57-bffa-42f2-968e-f5797c80f231&quot;&gt; &lt;/a&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Location e2440c57-bffa-42f2-968e-f5797c80f231&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;e2440c57-bffa-42f2-968e-f5797c80f231&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hce2440c57-bffa-42f2-968e-f5797c80f231&quot;&gt; &lt;/a&gt;&lt;a name=&quot;e2440c57-bffa-42f2-968e-f5797c80f231-pt-PT&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/e2440c57-bffa-42f2-968e-f5797c80f231 (use: official, ), &lt;code&gt;http://E2E-TESTS-SYSTEM.com&lt;/code&gt;/e2440c57-bffa-42f2-968e-f5797c80f231 (use: usual, ), &lt;code&gt;https://glintt.com/viewer&lt;/code&gt;/e2440c57-bffa-42f2-968e-f5797c80f231 (use: official, )&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Active&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: ratione&lt;/p&gt;&lt;p&gt;&lt;b&gt;mode&lt;/b&gt;: Instance&lt;/p&gt;&lt;p&gt;&lt;b&gt;physicalType&lt;/b&gt;: &lt;span title=&quot;Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}&quot;&gt;Building&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://E2E-TESTS-SYSTEM.com&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://glintt.com/viewer&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;e2440c57-bffa-42f2-968e-f5797c80f231&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.assigner">assigner</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;E2E_TESTS_SYSTEM&quot;/&gt;
+          &lt;/assigner&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ratione&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.mode">mode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;instance&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/location.html#Location.physicalType">physicalType</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;bu&quot;/&gt;
+            &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Building&quot;/&gt;
+          &lt;/coding&gt;
+        &lt;/physicalType&gt;
+      &lt;/Location&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+&lt;/Bundle&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.patientvisit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 12, 2025 12:44+0000">2025-02-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

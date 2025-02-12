@@ -1,0 +1,703 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "11aaff57-acb7-48b3-9cda-58e5f2e4aa9e",
+  "identifier" : {
+    "value" : "11aaff57-acb7-48b3-9cda-58e5f2e4aa9e"
+  },
+  "type" : "message",
+  "timestamp" : "2024-11-12T15:26:51+00:00",
+  "entry" : [{
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/e383c383-820c-41cf-b9f0-78cdcb7d8329",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "e383c383-820c-41cf-b9f0-78cdcb7d8329",
+      "meta" : {
+        "lastUpdated" : "2024-11-12T15:26:51+00:00"
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_e383c383-820c-41cf-b9f0-78cdcb7d8329\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader e383c383-820c-41cf-b9f0-78cdcb7d8329</b></p><a name=\"e383c383-820c-41cf-b9f0-78cdcb7d8329\"> </a><a name=\"hce383c383-820c-41cf-b9f0-78cdcb7d8329\"> </a><a name=\"e383c383-820c-41cf-b9f0-78cdcb7d8329-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-11-12 15:26:51+0000</p></div><p><b>event</b>: [not stated] : ADT^A04</p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>viewer</td><td><a href=\"https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4\">https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4</a></td></tr></table><p><b>sender</b>: E2E_TESTS_SENDER</p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>tests</td><td><a href=\"https://cockpit-ci.glinttlab.com/fhir-server\">https://cockpit-ci.glinttlab.com/fhir-server</a></td></tr></table></div>"
+      },
+      "eventCoding" : {
+        "display" : "ADT^A04"
+      },
+      "destination" : [{
+        "name" : "viewer",
+        "endpoint" : "https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4"
+      }],
+      "sender" : {
+        "display" : "E2E_TESTS_SENDER"
+      },
+      "source" : {
+        "name" : "tests",
+        "endpoint" : "https://cockpit-ci.glinttlab.com/fhir-server"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Patient/97224932-5016-46fe-a09b-92f41254298d",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "97224932-5016-46fe-a09b-92f41254298d",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_97224932-5016-46fe-a09b-92f41254298d\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 97224932-5016-46fe-a09b-92f41254298d</b></p><a name=\"97224932-5016-46fe-a09b-92f41254298d\"> </a><a name=\"hc97224932-5016-46fe-a09b-92f41254298d\"> </a><a name=\"97224932-5016-46fe-a09b-92f41254298d-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Ismael Rempel(official) Female, DoB: 1970-03-14 ( Patient internal identifier\u00a0(use:\u00a0usual,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>Patient internal identifier/97224932-5016-46fe-a09b-92f41254298d\u00a0(use:\u00a0official,\u00a0)</li><li><code>https://glintt.com/viewer</code>/97224932-5016-46fe-a09b-92f41254298d\u00a0(use:\u00a0official,\u00a0)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"mailto:Susana46@gmail.com\">Susana46@gmail.com</a></li><li>ph: 274.404.8375 x2421(Home)</li><li>0933 Jeff Rue(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Practitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></li></ul></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
+        "system" : "http://example.com/System_Test",
+        "value" : "97224932-5016-46fe-a09b-92f41254298d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
+        "system" : "http://example.com/System_Test",
+        "value" : "97224932-5016-46fe-a09b-92f41254298d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "97224932-5016-46fe-a09b-92f41254298d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "name" : [{
+        "use" : "official",
+        "text" : "Ismael Rempel"
+      }],
+      "telecom" : [{
+        "system" : "email",
+        "value" : "Susana46@gmail.com",
+        "use" : "home"
+      },
+      {
+        "system" : "phone",
+        "value" : "274.404.8375 x2421",
+        "use" : "home"
+      }],
+      "gender" : "female",
+      "birthDate" : "1970-03-14",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "use" : "home",
+        "type" : "both",
+        "text" : "0933 Jeff Rue",
+        "district" : "Whittier",
+        "postalCode" : "40824"
+      }],
+      "generalPractitioner" : [{
+        "reference" : "Practitioner/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "type" : "Practitioner"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Encounter/a2c66149-3c15-41de-9950-c14001a93c91",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "a2c66149-3c15-41de-9950-c14001a93c91",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_a2c66149-3c15-41de-9950-c14001a93c91\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter a2c66149-3c15-41de-9950-c14001a93c91</b></p><a name=\"a2c66149-3c15-41de-9950-c14001a93c91\"> </a><a name=\"hca2c66149-3c15-41de-9950-c14001a93c91\"> </a><a name=\"a2c66149-3c15-41de-9950-c14001a93c91-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/a2c66149-3c15-41de-9950-c14001a93c91\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/a2c66149-3c15-41de-9950-c14001a93c91\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/a2c66149-3c15-41de-9950-c14001a93c91\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER\">ActCode EMER</a>: emergency</p><p><b>subject</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Patient_97224932-5016-46fe-a09b-92f41254298d\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ATND}\">attender</span></td><td><a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Practitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></td></tr></table><p><b>period</b>: 2024-11-12 15:26:51+0000 --&gt; (ongoing)</p><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_34f12e96-982a-4b3d-bff4-e7228b71d27f\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}\">bd</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}\">ro</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_0927bdcf-fd8b-4ba6-860a-199c339f7262\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}\">co</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_6222160a-18eb-45bd-b240-8acc608f15a0\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}\">lvl</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_dc3adc82-90ae-4593-acce-9db81f6f090c\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}\">wa</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_c9783cbf-9b8b-46fe-b91f-f511bd296975\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}\">wi</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}\">si</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_a10c96c9-d781-456a-93e9-543036c8b00e\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}\">bu</span></p></blockquote></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "a2c66149-3c15-41de-9950-c14001a93c91",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "a2c66149-3c15-41de-9950-c14001a93c91",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "a2c66149-3c15-41de-9950-c14001a93c91",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "in-progress",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "EMER",
+        "display" : "emergency"
+      },
+      "subject" : {
+        "reference" : "Patient/97224932-5016-46fe-a09b-92f41254298d"
+      },
+      "participant" : [{
+        "type" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+            "code" : "ATND",
+            "display" : "attender"
+          }]
+        }],
+        "individual" : {
+          "reference" : "Practitioner/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
+        }
+      }],
+      "period" : {
+        "start" : "2024-11-12T15:26:51+00:00"
+      },
+      "location" : [{
+        "location" : {
+          "reference" : "Location/34f12e96-982a-4b3d-bff4-e7228b71d27f"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "bd"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/aa2a08d2-395d-4a03-b262-ca7a1da939d0"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "ro"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/0927bdcf-fd8b-4ba6-860a-199c339f7262"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "co"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/6222160a-18eb-45bd-b240-8acc608f15a0"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "lvl"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/dc3adc82-90ae-4593-acce-9db81f6f090c"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "wa"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/c9783cbf-9b8b-46fe-b91f-f511bd296975"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "wi"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/49fe9063-eb62-4a04-b165-ea9fd2e9a217"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "si"
+          }]
+        }
+      },
+      {
+        "location" : {
+          "reference" : "Location/a10c96c9-d781-456a-93e9-543036c8b00e"
+        },
+        "status" : "active",
+        "physicalType" : {
+          "coding" : [{
+            "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+            "code" : "bu"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</b></p><a name=\"1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\"> </a><a name=\"hc1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\"> </a><a name=\"1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-pt-PT\"> </a><p><b>identifier</b>: Cartão de Cidadão/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\u00a0(use:\u00a0official,\u00a0), Cartão de Cidadão/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d\u00a0(use:\u00a0official,\u00a0)</p><p><b>active</b>: true</p><p><b>name</b>: doctor viewer test(Official)</p><p><b>gender</b>: Male</p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MD"
+          }],
+          "text" : "Cartão de Cidadão"
+        },
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MD"
+          }],
+          "text" : "Cartão de Cidadão"
+        },
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "active" : true,
+      "name" : [{
+        "use" : "official",
+        "text" : "doctor viewer test"
+      }],
+      "gender" : "male"
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/34f12e96-982a-4b3d-bff4-e7228b71d27f",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "34f12e96-982a-4b3d-bff4-e7228b71d27f",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_34f12e96-982a-4b3d-bff4-e7228b71d27f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 34f12e96-982a-4b3d-bff4-e7228b71d27f</b></p><a name=\"34f12e96-982a-4b3d-bff4-e7228b71d27f\"> </a><a name=\"hc34f12e96-982a-4b3d-bff4-e7228b71d27f\"> </a><a name=\"34f12e96-982a-4b3d-bff4-e7228b71d27f-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: ab</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}\">Bed</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "34f12e96-982a-4b3d-bff4-e7228b71d27f",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "34f12e96-982a-4b3d-bff4-e7228b71d27f",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "34f12e96-982a-4b3d-bff4-e7228b71d27f",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "ab",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "bd",
+          "display" : "Bed"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/aa2a08d2-395d-4a03-b262-ca7a1da939d0"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/aa2a08d2-395d-4a03-b262-ca7a1da939d0",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "aa2a08d2-395d-4a03-b262-ca7a1da939d0",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location aa2a08d2-395d-4a03-b262-ca7a1da939d0</b></p><a name=\"aa2a08d2-395d-4a03-b262-ca7a1da939d0\"> </a><a name=\"hcaa2a08d2-395d-4a03-b262-ca7a1da939d0\"> </a><a name=\"aa2a08d2-395d-4a03-b262-ca7a1da939d0-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: ab</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}\">Room</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_0927bdcf-fd8b-4ba6-860a-199c339f7262\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "aa2a08d2-395d-4a03-b262-ca7a1da939d0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "aa2a08d2-395d-4a03-b262-ca7a1da939d0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "aa2a08d2-395d-4a03-b262-ca7a1da939d0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "ab",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "ro",
+          "display" : "Room"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/0927bdcf-fd8b-4ba6-860a-199c339f7262"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/0927bdcf-fd8b-4ba6-860a-199c339f7262",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "0927bdcf-fd8b-4ba6-860a-199c339f7262",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_0927bdcf-fd8b-4ba6-860a-199c339f7262\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 0927bdcf-fd8b-4ba6-860a-199c339f7262</b></p><a name=\"0927bdcf-fd8b-4ba6-860a-199c339f7262\"> </a><a name=\"hc0927bdcf-fd8b-4ba6-860a-199c339f7262\"> </a><a name=\"0927bdcf-fd8b-4ba6-860a-199c339f7262-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: quisquam</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}\">Corridor</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_6222160a-18eb-45bd-b240-8acc608f15a0\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "0927bdcf-fd8b-4ba6-860a-199c339f7262",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "0927bdcf-fd8b-4ba6-860a-199c339f7262",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "0927bdcf-fd8b-4ba6-860a-199c339f7262",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "quisquam",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "co",
+          "display" : "Corridor"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/6222160a-18eb-45bd-b240-8acc608f15a0"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/6222160a-18eb-45bd-b240-8acc608f15a0",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "6222160a-18eb-45bd-b240-8acc608f15a0",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_6222160a-18eb-45bd-b240-8acc608f15a0\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 6222160a-18eb-45bd-b240-8acc608f15a0</b></p><a name=\"6222160a-18eb-45bd-b240-8acc608f15a0\"> </a><a name=\"hc6222160a-18eb-45bd-b240-8acc608f15a0\"> </a><a name=\"6222160a-18eb-45bd-b240-8acc608f15a0-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/6222160a-18eb-45bd-b240-8acc608f15a0\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/6222160a-18eb-45bd-b240-8acc608f15a0\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/6222160a-18eb-45bd-b240-8acc608f15a0\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: praesentium</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}\">Level</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_dc3adc82-90ae-4593-acce-9db81f6f090c\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "6222160a-18eb-45bd-b240-8acc608f15a0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "6222160a-18eb-45bd-b240-8acc608f15a0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "6222160a-18eb-45bd-b240-8acc608f15a0",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "praesentium",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "lvl",
+          "display" : "Level"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/dc3adc82-90ae-4593-acce-9db81f6f090c"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/dc3adc82-90ae-4593-acce-9db81f6f090c",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "dc3adc82-90ae-4593-acce-9db81f6f090c",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_dc3adc82-90ae-4593-acce-9db81f6f090c\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location dc3adc82-90ae-4593-acce-9db81f6f090c</b></p><a name=\"dc3adc82-90ae-4593-acce-9db81f6f090c\"> </a><a name=\"hcdc3adc82-90ae-4593-acce-9db81f6f090c\"> </a><a name=\"dc3adc82-90ae-4593-acce-9db81f6f090c-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/dc3adc82-90ae-4593-acce-9db81f6f090c\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/dc3adc82-90ae-4593-acce-9db81f6f090c\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/dc3adc82-90ae-4593-acce-9db81f6f090c\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: My Awsome Test Location</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}\">Ward</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_c9783cbf-9b8b-46fe-b91f-f511bd296975\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "dc3adc82-90ae-4593-acce-9db81f6f090c",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "dc3adc82-90ae-4593-acce-9db81f6f090c",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "dc3adc82-90ae-4593-acce-9db81f6f090c",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "My Awsome Test Location",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "wa",
+          "display" : "Ward"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/c9783cbf-9b8b-46fe-b91f-f511bd296975"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/c9783cbf-9b8b-46fe-b91f-f511bd296975",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "c9783cbf-9b8b-46fe-b91f-f511bd296975",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_c9783cbf-9b8b-46fe-b91f-f511bd296975\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location c9783cbf-9b8b-46fe-b91f-f511bd296975</b></p><a name=\"c9783cbf-9b8b-46fe-b91f-f511bd296975\"> </a><a name=\"hcc9783cbf-9b8b-46fe-b91f-f511bd296975\"> </a><a name=\"c9783cbf-9b8b-46fe-b91f-f511bd296975-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: sint</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}\">Wing</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "c9783cbf-9b8b-46fe-b91f-f511bd296975",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "c9783cbf-9b8b-46fe-b91f-f511bd296975",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "c9783cbf-9b8b-46fe-b91f-f511bd296975",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "sint",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "wi",
+          "display" : "Wing"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/49fe9063-eb62-4a04-b165-ea9fd2e9a217"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/49fe9063-eb62-4a04-b165-ea9fd2e9a217",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "49fe9063-eb62-4a04-b165-ea9fd2e9a217",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 49fe9063-eb62-4a04-b165-ea9fd2e9a217</b></p><a name=\"49fe9063-eb62-4a04-b165-ea9fd2e9a217\"> </a><a name=\"hc49fe9063-eb62-4a04-b165-ea9fd2e9a217\"> </a><a name=\"49fe9063-eb62-4a04-b165-ea9fd2e9a217-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: suscipit</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}\">Site</span></p><p><b>partOf</b>: <a href=\"Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_a10c96c9-d781-456a-93e9-543036c8b00e\">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "49fe9063-eb62-4a04-b165-ea9fd2e9a217",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "49fe9063-eb62-4a04-b165-ea9fd2e9a217",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "49fe9063-eb62-4a04-b165-ea9fd2e9a217",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "suscipit",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "si",
+          "display" : "Site"
+        }]
+      },
+      "partOf" : {
+        "reference" : "Location/a10c96c9-d781-456a-93e9-543036c8b00e"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://cockpit-ci.glinttlab.com/fhir-server/Location/a10c96c9-d781-456a-93e9-543036c8b00e",
+    "resource" : {
+      "resourceType" : "Location",
+      "id" : "a10c96c9-d781-456a-93e9-543036c8b00e",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_a10c96c9-d781-456a-93e9-543036c8b00e\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location a10c96c9-d781-456a-93e9-543036c8b00e</b></p><a name=\"a10c96c9-d781-456a-93e9-543036c8b00e\"> </a><a name=\"hca10c96c9-d781-456a-93e9-543036c8b00e\"> </a><a name=\"a10c96c9-d781-456a-93e9-543036c8b00e-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/a10c96c9-d781-456a-93e9-543036c8b00e\u00a0(use:\u00a0official,\u00a0), <code>http://E2E-TESTS-SYSTEM.com</code>/a10c96c9-d781-456a-93e9-543036c8b00e\u00a0(use:\u00a0usual,\u00a0), <code>https://glintt.com/viewer</code>/a10c96c9-d781-456a-93e9-543036c8b00e\u00a0(use:\u00a0official,\u00a0)</p><p><b>status</b>: Active</p><p><b>name</b>: eum</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}\">Building</span></p></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "a10c96c9-d781-456a-93e9-543036c8b00e",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "usual",
+        "system" : "http://E2E-TESTS-SYSTEM.com",
+        "value" : "a10c96c9-d781-456a-93e9-543036c8b00e",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      },
+      {
+        "use" : "official",
+        "system" : "https://glintt.com/viewer",
+        "value" : "a10c96c9-d781-456a-93e9-543036c8b00e",
+        "assigner" : {
+          "display" : "E2E_TESTS_SYSTEM"
+        }
+      }],
+      "status" : "active",
+      "name" : "eum",
+      "mode" : "instance",
+      "physicalType" : {
+        "coding" : [{
+          "system" : "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html",
+          "code" : "bu",
+          "display" : "Building"
+        }]
+      }
+    }
+  }]
+}

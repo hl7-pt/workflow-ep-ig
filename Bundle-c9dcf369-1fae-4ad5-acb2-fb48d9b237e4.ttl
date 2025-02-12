@@ -1,0 +1,746 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.pt/fhir/patient-visit/Bundle/c9dcf369-1fae-4ad5-acb2-fb48d9b237e4> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "c9dcf369-1fae-4ad5-acb2-fb48d9b237e4"] ; # 
+  fhir:identifier [
+     fhir:value [ fhir:v "c9dcf369-1fae-4ad5-acb2-fb48d9b237e4" ]
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2024-11-15T13:00:27+00:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/47f29d91-8c83-421f-8600-dcb8e1b3807d"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/47f29d91-8c83-421f-8600-dcb8e1b3807d> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Patient/cf473b01-b702-47b3-9f97-4fac38b492d9"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Patient/cf473b01-b702-47b3-9f97-4fac38b492d9> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Encounter/4900f155-a658-42de-ad81-62948300b785"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Encounter/4900f155-a658-42de-ad81-62948300b785> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/ce9f9650-be26-4565-b180-320b4447e4a3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/ce9f9650-be26-4565-b180-320b4447e4a3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server/Location/e2440c57-bffa-42f2-968e-f5797c80f231"^^xsd:anyURI ] ;
+     fhir:resource ( <https://cockpit-ci.glinttlab.com/fhir-server/Location/e2440c57-bffa-42f2-968e-f5797c80f231> )
+  ] ) . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/47f29d91-8c83-421f-8600-dcb8e1b3807d> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "47f29d91-8c83-421f-8600-dcb8e1b3807d"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2024-11-15T13:00:27+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_47f29d91-8c83-421f-8600-dcb8e1b3807d\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader 47f29d91-8c83-421f-8600-dcb8e1b3807d</b></p><a name=\"47f29d91-8c83-421f-8600-dcb8e1b3807d\"> </a><a name=\"hc47f29d91-8c83-421f-8600-dcb8e1b3807d\"> </a><a name=\"47f29d91-8c83-421f-8600-dcb8e1b3807d-pt-PT\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2024-11-15 13:00:27+0000</p></div><p><b>event</b>: [not stated] : ADT^A13</p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>viewer</td><td><a href=\"https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4\">https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4</a></td></tr></table><p><b>sender</b>: E2E_TESTS_SENDER</p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>tests</td><td><a href=\"https://cockpit-ci.glinttlab.com/fhir-server\">https://cockpit-ci.glinttlab.com/fhir-server</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:display [ fhir:v "ADT^A13" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "viewer" ] ;
+     fhir:endpoint [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-api/fhir-R4"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:display [ fhir:v "E2E_TESTS_SENDER" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "tests" ] ;
+     fhir:endpoint [ fhir:v "https://cockpit-ci.glinttlab.com/fhir-server"^^xsd:anyURI ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Patient/cf473b01-b702-47b3-9f97-4fac38b492d9> a fhir:Patient ;
+  fhir:id [ fhir:v "cf473b01-b702-47b3-9f97-4fac38b492d9"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_cf473b01-b702-47b3-9f97-4fac38b492d9\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient cf473b01-b702-47b3-9f97-4fac38b492d9</b></p><a name=\"cf473b01-b702-47b3-9f97-4fac38b492d9\"> </a><a name=\"hccf473b01-b702-47b3-9f97-4fac38b492d9\"> </a><a name=\"cf473b01-b702-47b3-9f97-4fac38b492d9-pt-PT\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Miss Freda Kuphal(official) Female, DoB: 1966-02-19 ( Patient internal identifier (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li>Patient internal identifier/cf473b01-b702-47b3-9f97-4fac38b492d9 (use: official, )</li><li><code>https://glintt.com/viewer</code>/cf473b01-b702-47b3-9f97-4fac38b492d9 (use: official, )</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"mailto:Shanel.Treutel65@gmail.com\">Shanel.Treutel65@gmail.com</a></li><li>ph: 860.769.3898 x527(Home)</li><li>730 Adele Prairie(home)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd\">Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000</a></li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PI" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://example.com/System_Test"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cf473b01-b702-47b3-9f97-4fac38b492d9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PI" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://example.com/System_Test"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cf473b01-b702-47b3-9f97-4fac38b492d9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cf473b01-b702-47b3-9f97-4fac38b492d9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Miss Freda Kuphal" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "Shanel.Treutel65@gmail.com" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "860.769.3898 x527" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1966-02-19"^^xsd:date] ; # 
+  fhir:deceased [
+     a fhir:boolean ;
+     fhir:v "false"^^xsd:boolean
+  ] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "both" ] ;
+     fhir:text [ fhir:v "730 Adele Prairie" ] ;
+     fhir:district [ fhir:v "North Las Vegas" ] ;
+     fhir:postalCode [ fhir:v "94406-4195" ]
+  ] ) ; # 
+  fhir:generalPractitioner ( [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd> ;
+     fhir:reference [ fhir:v "Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd" ] ;
+     fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Encounter/4900f155-a658-42de-ad81-62948300b785> a fhir:Encounter ;
+  fhir:id [ fhir:v "4900f155-a658-42de-ad81-62948300b785"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_4900f155-a658-42de-ad81-62948300b785\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter 4900f155-a658-42de-ad81-62948300b785</b></p><a name=\"4900f155-a658-42de-ad81-62948300b785\"> </a><a name=\"hc4900f155-a658-42de-ad81-62948300b785\"> </a><a name=\"4900f155-a658-42de-ad81-62948300b785-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/4900f155-a658-42de-ad81-62948300b785 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/4900f155-a658-42de-ad81-62948300b785 (use: usual, ), <code>https://glintt.com/viewer</code>/4900f155-a658-42de-ad81-62948300b785 (use: official, )</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode IMP</a>: inpatient encounter</p><p><b>subject</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Patient_cf473b01-b702-47b3-9f97-4fac38b492d9\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ATND}\">attender</span></td><td><a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></td></tr></table><p><b>period</b>: 2024-11-11 11:00:27+0000 --&gt; (ongoing)</p><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_5e6c6cf5-2027-46c7-8efc-d9b54ee322fa\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}\">bd</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_cac021b0-d81c-419a-8b9e-120c559a9bfb\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}\">ro</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_ce9f9650-be26-4565-b180-320b4447e4a3\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}\">co</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}\">lvl</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b\">Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}\">wa</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_3a514777-dd2f-4f66-bd97-181a6374cdd9\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}\">wi</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}\">si</span></p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_e2440c57-bffa-42f2-968e-f5797c80f231\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p><p><b>status</b>: Active</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}\">bu</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4900f155-a658-42de-ad81-62948300b785" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4900f155-a658-42de-ad81-62948300b785" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4900f155-a658-42de-ad81-62948300b785" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Patient/cf473b01-b702-47b3-9f97-4fac38b492d9> ;
+     fhir:reference [ fhir:v "Patient/cf473b01-b702-47b3-9f97-4fac38b492d9" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ATND" ] ;
+         fhir:display [ fhir:v "attender" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other> ;
+       fhir:reference [ fhir:v "Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2024-11-11T11:00:27+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa> ;
+       fhir:reference [ fhir:v "Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "bd" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb> ;
+       fhir:reference [ fhir:v "Location/cac021b0-d81c-419a-8b9e-120c559a9bfb" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ro" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/ce9f9650-be26-4565-b180-320b4447e4a3> ;
+       fhir:reference [ fhir:v "Location/ce9f9650-be26-4565-b180-320b4447e4a3" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "co" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b> ;
+       fhir:reference [ fhir:v "Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "lvl" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b> ;
+       fhir:reference [ fhir:v "Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "wa" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9> ;
+       fhir:reference [ fhir:v "Location/3a514777-dd2f-4f66-bd97-181a6374cdd9" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "wi" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb> ;
+       fhir:reference [ fhir:v "Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "si" ]
+       ] )
+     ]
+  ] [
+     fhir:location [
+       fhir:link <https://hl7.pt/fhir/patient-visit/Location/e2440c57-bffa-42f2-968e-f5797c80f231> ;
+       fhir:reference [ fhir:v "Location/e2440c57-bffa-42f2-968e-f5797c80f231" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:physicalType [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "bu" ]
+       ] )
+     ]
+  ] ) . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd> a fhir:Practitioner ;
+  fhir:id [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd</b></p><a name=\"1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd\"> </a><a name=\"hc1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd\"> </a><a name=\"1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-pt-PT\"> </a><p><b>identifier</b>: Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: official, ), Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: usual, ), <code>https://glintt.com/viewer</code>/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: doctor viewer test(Official)</p><p><b>gender</b>: Male</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cartão de Cidadão" ]
+     ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cartão de Cidadão" ]
+     ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "doctor viewer test" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other> a fhir:Practitioner ;
+  fhir:id [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other</b></p><a name=\"1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other\"> </a><a name=\"hc1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other\"> </a><a name=\"1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other-pt-PT\"> </a><p><b>identifier</b>: Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: official, ), Cartão de Cidadão/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: usual, ), <code>https://glintt.com/viewer</code>/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: doctor viewer test(Official)</p><p><b>gender</b>: Male</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cartão de Cidadão" ]
+     ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cartão de Cidadão" ]
+     ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4cdd-other" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "doctor viewer test" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa> a fhir:Location ;
+  fhir:id [ fhir:v "5e6c6cf5-2027-46c7-8efc-d9b54ee322fa"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_5e6c6cf5-2027-46c7-8efc-d9b54ee322fa\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 5e6c6cf5-2027-46c7-8efc-d9b54ee322fa</b></p><a name=\"5e6c6cf5-2027-46c7-8efc-d9b54ee322fa\"> </a><a name=\"hc5e6c6cf5-2027-46c7-8efc-d9b54ee322fa\"> </a><a name=\"5e6c6cf5-2027-46c7-8efc-d9b54ee322fa-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: usual, ), <code>https://glintt.com/viewer</code>/5e6c6cf5-2027-46c7-8efc-d9b54ee322fa (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: molestias</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bd}\">Bed</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_cac021b0-d81c-419a-8b9e-120c559a9bfb\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5e6c6cf5-2027-46c7-8efc-d9b54ee322fa" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5e6c6cf5-2027-46c7-8efc-d9b54ee322fa" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5e6c6cf5-2027-46c7-8efc-d9b54ee322fa" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "molestias"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "bd" ] ;
+       fhir:display [ fhir:v "Bed" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb> ;
+     fhir:reference [ fhir:v "Location/cac021b0-d81c-419a-8b9e-120c559a9bfb" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/cac021b0-d81c-419a-8b9e-120c559a9bfb> a fhir:Location ;
+  fhir:id [ fhir:v "cac021b0-d81c-419a-8b9e-120c559a9bfb"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_cac021b0-d81c-419a-8b9e-120c559a9bfb\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location cac021b0-d81c-419a-8b9e-120c559a9bfb</b></p><a name=\"cac021b0-d81c-419a-8b9e-120c559a9bfb\"> </a><a name=\"hccac021b0-d81c-419a-8b9e-120c559a9bfb\"> </a><a name=\"cac021b0-d81c-419a-8b9e-120c559a9bfb-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: usual, ), <code>https://glintt.com/viewer</code>/cac021b0-d81c-419a-8b9e-120c559a9bfb (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: sequi</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html ro}\">Room</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_ce9f9650-be26-4565-b180-320b4447e4a3\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cac021b0-d81c-419a-8b9e-120c559a9bfb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cac021b0-d81c-419a-8b9e-120c559a9bfb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cac021b0-d81c-419a-8b9e-120c559a9bfb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "sequi"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ro" ] ;
+       fhir:display [ fhir:v "Room" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/ce9f9650-be26-4565-b180-320b4447e4a3> ;
+     fhir:reference [ fhir:v "Location/ce9f9650-be26-4565-b180-320b4447e4a3" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/ce9f9650-be26-4565-b180-320b4447e4a3> a fhir:Location ;
+  fhir:id [ fhir:v "ce9f9650-be26-4565-b180-320b4447e4a3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_ce9f9650-be26-4565-b180-320b4447e4a3\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location ce9f9650-be26-4565-b180-320b4447e4a3</b></p><a name=\"ce9f9650-be26-4565-b180-320b4447e4a3\"> </a><a name=\"hcce9f9650-be26-4565-b180-320b4447e4a3\"> </a><a name=\"ce9f9650-be26-4565-b180-320b4447e4a3-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/ce9f9650-be26-4565-b180-320b4447e4a3 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/ce9f9650-be26-4565-b180-320b4447e4a3 (use: usual, ), <code>https://glintt.com/viewer</code>/ce9f9650-be26-4565-b180-320b4447e4a3 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: eos</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html co}\">Corridor</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ce9f9650-be26-4565-b180-320b4447e4a3" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ce9f9650-be26-4565-b180-320b4447e4a3" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ce9f9650-be26-4565-b180-320b4447e4a3" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "eos"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "co" ] ;
+       fhir:display [ fhir:v "Corridor" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b> ;
+     fhir:reference [ fhir:v "Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/85b91ac4-3ad0-4866-ad5c-457b74edd35b> a fhir:Location ;
+  fhir:id [ fhir:v "85b91ac4-3ad0-4866-ad5c-457b74edd35b"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_85b91ac4-3ad0-4866-ad5c-457b74edd35b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 85b91ac4-3ad0-4866-ad5c-457b74edd35b</b></p><a name=\"85b91ac4-3ad0-4866-ad5c-457b74edd35b\"> </a><a name=\"hc85b91ac4-3ad0-4866-ad5c-457b74edd35b\"> </a><a name=\"85b91ac4-3ad0-4866-ad5c-457b74edd35b-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: usual, ), <code>https://glintt.com/viewer</code>/85b91ac4-3ad0-4866-ad5c-457b74edd35b (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: libero</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html lvl}\">Level</span></p><p><b>partOf</b>: <a href=\"Bundle-a23fdb5b-bcb3-465a-be6d-aba81100669d.html#Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b\">Bundle: identifier = a23fdb5b-bcb3-465a-be6d-aba81100669d; type = message; timestamp = 2024-11-11 10:47:12+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "85b91ac4-3ad0-4866-ad5c-457b74edd35b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "85b91ac4-3ad0-4866-ad5c-457b74edd35b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "85b91ac4-3ad0-4866-ad5c-457b74edd35b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "libero"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "lvl" ] ;
+       fhir:display [ fhir:v "Level" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b> ;
+     fhir:reference [ fhir:v "Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b> a fhir:Location ;
+  fhir:id [ fhir:v "52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b</b></p><a name=\"52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b\"> </a><a name=\"hc52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b\"> </a><a name=\"52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: usual, ), <code>https://glintt.com/viewer</code>/52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: My Awsome Test Location</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wa}\">Ward</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_3a514777-dd2f-4f66-bd97-181a6374cdd9\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "52a1b3b4-1b3b-4b3b-1b3b-1b3b1b3b1b3b" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "My Awsome Test Location"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "wa" ] ;
+       fhir:display [ fhir:v "Ward" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9> ;
+     fhir:reference [ fhir:v "Location/3a514777-dd2f-4f66-bd97-181a6374cdd9" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/3a514777-dd2f-4f66-bd97-181a6374cdd9> a fhir:Location ;
+  fhir:id [ fhir:v "3a514777-dd2f-4f66-bd97-181a6374cdd9"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_3a514777-dd2f-4f66-bd97-181a6374cdd9\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 3a514777-dd2f-4f66-bd97-181a6374cdd9</b></p><a name=\"3a514777-dd2f-4f66-bd97-181a6374cdd9\"> </a><a name=\"hc3a514777-dd2f-4f66-bd97-181a6374cdd9\"> </a><a name=\"3a514777-dd2f-4f66-bd97-181a6374cdd9-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: usual, ), <code>https://glintt.com/viewer</code>/3a514777-dd2f-4f66-bd97-181a6374cdd9 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: dolor</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html wi}\">Wing</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3a514777-dd2f-4f66-bd97-181a6374cdd9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3a514777-dd2f-4f66-bd97-181a6374cdd9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3a514777-dd2f-4f66-bd97-181a6374cdd9" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "dolor"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "wi" ] ;
+       fhir:display [ fhir:v "Wing" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb> ;
+     fhir:reference [ fhir:v "Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb> a fhir:Location ;
+  fhir:id [ fhir:v "7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location 7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb</b></p><a name=\"7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb\"> </a><a name=\"hc7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb\"> </a><a name=\"7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: usual, ), <code>https://glintt.com/viewer</code>/7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: provident</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html si}\">Site</span></p><p><b>partOf</b>: <a href=\"Bundle-c9dcf369-1fae-4ad5-acb2-fb48d9b237e3.html#Location_e2440c57-bffa-42f2-968e-f5797c80f231\">Bundle: identifier = c9dcf369-1fae-4ad5-acb2-fb48d9b237e3; type = message; timestamp = 2024-11-11 11:00:27+0000</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7c50ee7f-de5c-4975-86e8-0eb2ceab1fcb" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "provident"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "si" ] ;
+       fhir:display [ fhir:v "Site" ]
+     ] )
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.pt/fhir/patient-visit/Location/e2440c57-bffa-42f2-968e-f5797c80f231> ;
+     fhir:reference [ fhir:v "Location/e2440c57-bffa-42f2-968e-f5797c80f231" ]
+  ] . # 
+
+<https://cockpit-ci.glinttlab.com/fhir-server/Location/e2440c57-bffa-42f2-968e-f5797c80f231> a fhir:Location ;
+  fhir:id [ fhir:v "e2440c57-bffa-42f2-968e-f5797c80f231"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Location_e2440c57-bffa-42f2-968e-f5797c80f231\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Location e2440c57-bffa-42f2-968e-f5797c80f231</b></p><a name=\"e2440c57-bffa-42f2-968e-f5797c80f231\"> </a><a name=\"hce2440c57-bffa-42f2-968e-f5797c80f231\"> </a><a name=\"e2440c57-bffa-42f2-968e-f5797c80f231-pt-PT\"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/e2440c57-bffa-42f2-968e-f5797c80f231 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/e2440c57-bffa-42f2-968e-f5797c80f231 (use: usual, ), <code>https://glintt.com/viewer</code>/e2440c57-bffa-42f2-968e-f5797c80f231 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: ratione</p><p><b>mode</b>: Instance</p><p><b>physicalType</b>: <span title=\"Codes:{https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html bu}\">Building</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "e2440c57-bffa-42f2-968e-f5797c80f231" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://E2E-TESTS-SYSTEM.com"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "e2440c57-bffa-42f2-968e-f5797c80f231" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "https://glintt.com/viewer"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "e2440c57-bffa-42f2-968e-f5797c80f231" ] ;
+     fhir:assigner [
+       fhir:display [ fhir:v "E2E_TESTS_SYSTEM" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "ratione"] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://terminology.hl7.org/2.0.0/CodeSystem-location-physical-type.html"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "bu" ] ;
+       fhir:display [ fhir:v "Building" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>11aaff57-acb7-48b3-9cda-58e5f2e4aa9e - HL7 PT FHIR Implementation Guide: Visita do Utente v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11.1"}
+    h3,h4,h5,h6{--heading-prefix:"11.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Visita do Utente</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="Portugal flag" src="assets/images/prt.svg" height="16" title="Portugal"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+    <li><a href="index.html">Inicio IG</a></li>
+    <li><a href="toc.html">Índice</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificação<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="fun_spec.html">Funcional</a>
+            </li>
+            <li>
+                <a href="tech_spec.html">Técnica</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="artifacts.html">Artefactos</a></li>
+    <li><a href="glossary.html">Glossário</a></li>
+    <li><a href="usage.html">Usar este IG</a></li>
+    <li class="dropdown">
+        <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informações<b class="caret">
+            </b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="configurations.html">Configurações</a>
+            </li>
+            <li>
+                <a href="changes.html">Histórico de Alterações</a>
+            </li>
+            <li>
+                <a href="error_handling.html">Erros</a>
+            </li>
+        </ul>
+    </li>
+    <li><a href="examples.html">Exemplos</a></li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>11aaff57-acb7-48b3-9cda-58e5f2e4aa9e</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Visita do Utente, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 1.0.0 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/workflow-ep-ig/tree/master">https://github.com/hl7-pt/workflow-ep-ig/tree/master</a> and changes regularly. See the <a href="https://hl7.pt/fhir/patient-visit/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p class="res-header-id"><b>Generated Narrative: Bundle 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e-pt-PT"> </a><p>Bundle 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e of type message</p><a name="https-//cockpit-ci.glinttlab.com/fhir-server/MessageHeader/e383c383-820c-41cf-b9f0-78cdcb7d8329"> </a><a name="MessageHeader_e383c383-820c-41cf-b9f0-78cdcb7d8329"> </a><a name="hcMessageHeader_e383c383-820c-41cf-b9f0-78cdcb7d8329"> </a><hr/><p>Entry 1 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/MessageHeader/e383c383-820c-41cf-b9f0-78cdcb7d8329</p><p>Resource MessageHeader:</p><blockquote><p class="res-header-id"><b>Generated Narrative: MessageHeader e383c383-820c-41cf-b9f0-78cdcb7d8329</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/e383c383-820c-41cf-b9f0-78cdcb7d8329"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/e383c383-820c-41cf-b9f0-78cdcb7d8329"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/e383c383-820c-41cf-b9f0-78cdcb7d8329-pt-PT"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2024-11-12 15:26:51+0000</p></div><p><b>event</b>: [not stated] : ADT^A04</p><h3>Destinations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>viewer</td></tr></table><p><b>sender</b>: E2E_TESTS_SENDER</p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>tests</td></tr></table></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Patient/97224932-5016-46fe-a09b-92f41254298d"> </a><a name="Patient_97224932-5016-46fe-a09b-92f41254298d"> </a><a name="hcPatient_97224932-5016-46fe-a09b-92f41254298d"> </a><hr/><p>Entry 2 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Patient/97224932-5016-46fe-a09b-92f41254298d</p><p>Resource Patient:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient 97224932-5016-46fe-a09b-92f41254298d</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/97224932-5016-46fe-a09b-92f41254298d"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/97224932-5016-46fe-a09b-92f41254298d"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/97224932-5016-46fe-a09b-92f41254298d-pt-PT"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Ismael Rempel(official) Female, DoB: 1970-03-14 ( Patient internal identifier (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">false</td></tr><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li>Patient internal identifier/97224932-5016-46fe-a09b-92f41254298d (use: official, )</li><li><code>https://glintt.com/viewer</code>/97224932-5016-46fe-a09b-92f41254298d (use: official, )</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="mailto:Susana46@gmail.com">Susana46@gmail.com</a></li><li>ph: 274.404.8375 x2421(Home)</li><li>0933 Jeff Rue(home)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Practitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></li></ul></td></tr></table></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Encounter/a2c66149-3c15-41de-9950-c14001a93c91"> </a><a name="Encounter_a2c66149-3c15-41de-9950-c14001a93c91"> </a><a name="hcEncounter_a2c66149-3c15-41de-9950-c14001a93c91"> </a><hr/><p>Entry 3 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Encounter/a2c66149-3c15-41de-9950-c14001a93c91</p><p>Resource Encounter:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Encounter a2c66149-3c15-41de-9950-c14001a93c91</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a2c66149-3c15-41de-9950-c14001a93c91"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a2c66149-3c15-41de-9950-c14001a93c91"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a2c66149-3c15-41de-9950-c14001a93c91-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/a2c66149-3c15-41de-9950-c14001a93c91 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/a2c66149-3c15-41de-9950-c14001a93c91 (use: usual, ), <code>https://glintt.com/viewer</code>/a2c66149-3c15-41de-9950-c14001a93c91 (use: official, )</p><p><b>status</b>: In Progress</p><p><b>class</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode EMER}">emergency</span></p><p><b>subject</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Patient_97224932-5016-46fe-a09b-92f41254298d">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType ATND}">attender</span></td></tr></table><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_34f12e96-982a-4b3d-bff4-e7228b71d27f">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_0927bdcf-fd8b-4ba6-860a-199c339f7262">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_6222160a-18eb-45bd-b240-8acc608f15a0">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_dc3adc82-90ae-4593-acce-9db81f6f090c">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_c9783cbf-9b8b-46fe-b91f-f511bd296975">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote><blockquote><p><b>location</b></p><p><b>location</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_a10c96c9-d781-456a-93e9-543036c8b00e">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p><p><b>status</b>: Active</p></blockquote></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Practitioner/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"> </a><a name="Practitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"> </a><a name="hcPractitioner_1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"> </a><hr/><p>Entry 4 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Practitioner/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</p><p>Resource Practitioner:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Practitioner 1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-pt-PT"> </a><p><b>identifier</b>: Cartão de Cidadão/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d (use: official, ), Cartão de Cidadão/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d (use: usual, ), <code>https://glintt.com/viewer</code>/1ab23c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: doctor viewer test(Official)</p><p><b>gender</b>: Male</p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/34f12e96-982a-4b3d-bff4-e7228b71d27f"> </a><a name="Location_34f12e96-982a-4b3d-bff4-e7228b71d27f"> </a><a name="hcLocation_34f12e96-982a-4b3d-bff4-e7228b71d27f"> </a><hr/><p>Entry 5 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/34f12e96-982a-4b3d-bff4-e7228b71d27f</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location 34f12e96-982a-4b3d-bff4-e7228b71d27f</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/34f12e96-982a-4b3d-bff4-e7228b71d27f"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/34f12e96-982a-4b3d-bff4-e7228b71d27f"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/34f12e96-982a-4b3d-bff4-e7228b71d27f-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f (use: usual, ), <code>https://glintt.com/viewer</code>/34f12e96-982a-4b3d-bff4-e7228b71d27f (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: ab</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/aa2a08d2-395d-4a03-b262-ca7a1da939d0"> </a><a name="Location_aa2a08d2-395d-4a03-b262-ca7a1da939d0"> </a><a name="hcLocation_aa2a08d2-395d-4a03-b262-ca7a1da939d0"> </a><hr/><p>Entry 6 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/aa2a08d2-395d-4a03-b262-ca7a1da939d0</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location aa2a08d2-395d-4a03-b262-ca7a1da939d0</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/aa2a08d2-395d-4a03-b262-ca7a1da939d0"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/aa2a08d2-395d-4a03-b262-ca7a1da939d0"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/aa2a08d2-395d-4a03-b262-ca7a1da939d0-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0 (use: usual, ), <code>https://glintt.com/viewer</code>/aa2a08d2-395d-4a03-b262-ca7a1da939d0 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: ab</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_0927bdcf-fd8b-4ba6-860a-199c339f7262">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/0927bdcf-fd8b-4ba6-860a-199c339f7262"> </a><a name="Location_0927bdcf-fd8b-4ba6-860a-199c339f7262"> </a><a name="hcLocation_0927bdcf-fd8b-4ba6-860a-199c339f7262"> </a><hr/><p>Entry 7 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/0927bdcf-fd8b-4ba6-860a-199c339f7262</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location 0927bdcf-fd8b-4ba6-860a-199c339f7262</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/0927bdcf-fd8b-4ba6-860a-199c339f7262"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/0927bdcf-fd8b-4ba6-860a-199c339f7262"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/0927bdcf-fd8b-4ba6-860a-199c339f7262-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262 (use: usual, ), <code>https://glintt.com/viewer</code>/0927bdcf-fd8b-4ba6-860a-199c339f7262 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: quisquam</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_6222160a-18eb-45bd-b240-8acc608f15a0">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/6222160a-18eb-45bd-b240-8acc608f15a0"> </a><a name="Location_6222160a-18eb-45bd-b240-8acc608f15a0"> </a><a name="hcLocation_6222160a-18eb-45bd-b240-8acc608f15a0"> </a><hr/><p>Entry 8 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/6222160a-18eb-45bd-b240-8acc608f15a0</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location 6222160a-18eb-45bd-b240-8acc608f15a0</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/6222160a-18eb-45bd-b240-8acc608f15a0"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/6222160a-18eb-45bd-b240-8acc608f15a0"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/6222160a-18eb-45bd-b240-8acc608f15a0-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/6222160a-18eb-45bd-b240-8acc608f15a0 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/6222160a-18eb-45bd-b240-8acc608f15a0 (use: usual, ), <code>https://glintt.com/viewer</code>/6222160a-18eb-45bd-b240-8acc608f15a0 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: praesentium</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_dc3adc82-90ae-4593-acce-9db81f6f090c">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/dc3adc82-90ae-4593-acce-9db81f6f090c"> </a><a name="Location_dc3adc82-90ae-4593-acce-9db81f6f090c"> </a><a name="hcLocation_dc3adc82-90ae-4593-acce-9db81f6f090c"> </a><hr/><p>Entry 9 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/dc3adc82-90ae-4593-acce-9db81f6f090c</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location dc3adc82-90ae-4593-acce-9db81f6f090c</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/dc3adc82-90ae-4593-acce-9db81f6f090c"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/dc3adc82-90ae-4593-acce-9db81f6f090c"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/dc3adc82-90ae-4593-acce-9db81f6f090c-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/dc3adc82-90ae-4593-acce-9db81f6f090c (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/dc3adc82-90ae-4593-acce-9db81f6f090c (use: usual, ), <code>https://glintt.com/viewer</code>/dc3adc82-90ae-4593-acce-9db81f6f090c (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: My Awsome Test Location</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_c9783cbf-9b8b-46fe-b91f-f511bd296975">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/c9783cbf-9b8b-46fe-b91f-f511bd296975"> </a><a name="Location_c9783cbf-9b8b-46fe-b91f-f511bd296975"> </a><a name="hcLocation_c9783cbf-9b8b-46fe-b91f-f511bd296975"> </a><hr/><p>Entry 10 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/c9783cbf-9b8b-46fe-b91f-f511bd296975</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location c9783cbf-9b8b-46fe-b91f-f511bd296975</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/c9783cbf-9b8b-46fe-b91f-f511bd296975"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/c9783cbf-9b8b-46fe-b91f-f511bd296975"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/c9783cbf-9b8b-46fe-b91f-f511bd296975-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975 (use: usual, ), <code>https://glintt.com/viewer</code>/c9783cbf-9b8b-46fe-b91f-f511bd296975 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: sint</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/49fe9063-eb62-4a04-b165-ea9fd2e9a217"> </a><a name="Location_49fe9063-eb62-4a04-b165-ea9fd2e9a217"> </a><a name="hcLocation_49fe9063-eb62-4a04-b165-ea9fd2e9a217"> </a><hr/><p>Entry 11 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/49fe9063-eb62-4a04-b165-ea9fd2e9a217</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location 49fe9063-eb62-4a04-b165-ea9fd2e9a217</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/49fe9063-eb62-4a04-b165-ea9fd2e9a217"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/49fe9063-eb62-4a04-b165-ea9fd2e9a217"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/49fe9063-eb62-4a04-b165-ea9fd2e9a217-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217 (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217 (use: usual, ), <code>https://glintt.com/viewer</code>/49fe9063-eb62-4a04-b165-ea9fd2e9a217 (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: suscipit</p><p><b>mode</b>: Instance</p><p><b>partOf</b>: <a href="Bundle-11aaff57-acb7-48b3-9cda-58e5f2e4aa9e.html#Location_a10c96c9-d781-456a-93e9-543036c8b00e">Bundle: identifier = 11aaff57-acb7-48b3-9cda-58e5f2e4aa9e; type = message; timestamp = 2024-11-12 15:26:51+0000</a></p></blockquote><a name="https-//cockpit-ci.glinttlab.com/fhir-server/Location/a10c96c9-d781-456a-93e9-543036c8b00e"> </a><a name="Location_a10c96c9-d781-456a-93e9-543036c8b00e"> </a><a name="hcLocation_a10c96c9-d781-456a-93e9-543036c8b00e"> </a><hr/><p>Entry 12 - fullUrl = https://cockpit-ci.glinttlab.com/fhir-server/Location/a10c96c9-d781-456a-93e9-543036c8b00e</p><p>Resource Location:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Location a10c96c9-d781-456a-93e9-543036c8b00e</b></p><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a10c96c9-d781-456a-93e9-543036c8b00e"> </a><a name="hc11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a10c96c9-d781-456a-93e9-543036c8b00e"> </a><a name="11aaff57-acb7-48b3-9cda-58e5f2e4aa9e/a10c96c9-d781-456a-93e9-543036c8b00e-pt-PT"> </a><p><b>identifier</b>: <code>http://E2E-TESTS-SYSTEM.com</code>/a10c96c9-d781-456a-93e9-543036c8b00e (use: official, ), <code>http://E2E-TESTS-SYSTEM.com</code>/a10c96c9-d781-456a-93e9-543036c8b00e (use: usual, ), <code>https://glintt.com/viewer</code>/a10c96c9-d781-456a-93e9-543036c8b00e (use: official, )</p><p><b>status</b>: Active</p><p><b>name</b>: eum</p><p><b>mode</b>: Instance</p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.patientvisit#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 12, 2025 12:44+0000">2025-02-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

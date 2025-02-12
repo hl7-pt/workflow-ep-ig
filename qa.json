@@ -1,0 +1,20 @@
+{
+  "url" : "https://hl7.pt/fhir/patient-visit/ImplementationGuide/hl7.fhir.pt.patientvisit",
+  "name" : "HL7PTIGPatientVisit",
+  "title" : "HL7 PT FHIR Implementation Guide: Visita do Utente",
+  "description" : "Example IG exercises many of the fields in a SUSHI configuration.",
+  "ig-date" : "2024-12-01",
+  "status" : "active",
+  "package-id" : "hl7.fhir.pt.patientvisit",
+  "ig-ver" : "1.0.0",
+  "date" : "Wed, 12 Feb, 2025 12:44:35 +0000",
+  "dateISO8601" : "2025-02-12T12:44:35+00:00",
+  "errs" : 0,
+  "warnings" : 195,
+  "hints" : 10,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1267538744
+}
